@@ -1,0 +1,15 @@
+.stats {
+  /* create grid of 4 stat */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.stat {
+  /* element in grid */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
