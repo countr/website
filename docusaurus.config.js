@@ -21,11 +21,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.dev/countr/website/blob/master/docs/intro.md"
+          editUrl: "https://github.dev/countr/website/blob/master/docs/index.md"
         },
         blog: {
-          path: "pages",
-          routeBasePath: "pages",
+          path: "posts",
+          routeBasePath: "posts",
           blogTitle: "Countr Community Posts",
           blogDescription: "The latest posts from the Countr community",
           postsPerPage: 10,
@@ -58,7 +58,7 @@ const config = {
             label: "Docs",
             position: "left",
             type: "doc",
-            docId: "intro"
+            docId: "index"
           },
           {
             label: "Terms of Service",
