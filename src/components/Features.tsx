@@ -13,7 +13,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: "Instant setup",
     image: "/img/instant_setup.svg",
-    description: (<>Get started right away by adding the bot and setting it up. You can easily create a new counting channel, or use a channel you already have. <Link to="/docs/setup#new">Read more on how to set it up here</Link>.</>),
+    description: (<>Get started right away by adding the bot and setting it up. You can easily create a new counting channel, or use a channel you already have. <Link to="/docs">Read more on how to set it up here</Link>.</>),
     size: 4
   },
   {

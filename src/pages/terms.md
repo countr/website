@@ -6,7 +6,7 @@ title: Terms of Service
 
 ## 1. Terms {#terms}
 
-By accessing this Website, accessible from [countr.xyz](https://countr.xyz), you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagwith any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.
+By accessing this Website, accessible from [countr.xyz](https://countr.xyz), you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.
 
 ## 2. Use License {#use-license}
 
@@ -16,9 +16,9 @@ Permission is granted to temporarily download one copy of the materials on Promi
 - use the materials for any commercial purpose or for any public display;
 - attempt to reverse engineer any software contained on Promise Solutions' Website;
 - remove any copyright or other proprietary notations from the materials; or
-- transferring the materials to another person or "mirror" the materials on any other server.
+- transfer the materials to another person or "mirror" the materials on any other server.
 
-This will let Promise Solutions to terminate upon violations of any of these restrictions. Upon termination, your viewing right will also be terminated and you should destroy any downloaded materials in your possession whether it is printed or electronic formap>
+This will allow Promise Solutions to terminate upon violations of any of these restrictions. Upon termination, your viewing right will also be terminated and you should destroy any downloaded materials in your possession whether it is printed or electronic format.
 
 ## 3. Disclaimer {#disclaimer}
 
@@ -26,7 +26,7 @@ All the materials on Promise Solutions’s Website are provided "as is". Promise
 
 ## 4. Limitations {#limitations}
 
-Promise Solutions or its suppliers will not be hold accountable for any damages that will arise with the use or inability to use the materials on Promise Solutions’s Website, even if Promise Solutions or an authorize representative of this Website has bnotified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you.
+Promise Solutions or its suppliers will not be held accountable for any damages that will arise with the use or inability to use the materials on Promise Solutions’s Website, even if Promise Solutions or an authorized representative of this Website has bnotified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you.
 
 ## 5. Revisions and Errata {#revisions-and-errata}
 
@@ -46,4 +46,4 @@ Please read our [Privacy Policy](/privacy).
 
 ## 9. Governing Law {#governing-law}
 
-Any claim related to Promise Solutions' Website shall be governed by the laws of no without regards to its conflict of law provisions.
+Any claim related to Promise Solutions' Website shall be governed by the laws without regards to its conflict of law provisions.

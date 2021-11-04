@@ -62,6 +62,9 @@ const config = {
         defaultMode: "dark",
         respectPrefersColorScheme: true
       },
+      metadatas: [
+        { name: "theme-color", content: "#bd4632" }
+      ],
       navbar: {
         title: "Countr",
         logo: {
