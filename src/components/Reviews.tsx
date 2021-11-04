@@ -31,12 +31,6 @@ const reviews: Review[] = [
     server_identifier: "flare",
     server_invite: "cN8UVDH",
     description: "We have been using Countr for almost 2 years and it's become one of our favourite bots in the server. This bot is easy to set up, simple yet fun to use and customize, and has great support. Any servers looking for an easy way to add some fun into their server has got to try adding Countr!"
-  },
-  {
-    server_name: "Test",
-    server_identifier: "test",
-    server_invite: "test",
-    description: "Test review."
   }
 ];
 
@@ -67,7 +61,7 @@ export default class Reviews extends React.Component<Record<string, never>, { gu
           // get three random reviews and display them
           reviews.sort(() => Math.random() - 0.5).slice(0, 2).map((review, index) => (
             <div key={index} className={styles.review}>
-              <h2>{review.server_name} {guild_counts[review.server_identifier] ? `• ${guild_counts[review.server_identifier].toLocaleString("en-US")}` : ""}</h2>
+              <h2>{review.server_name} {guild_counts[review.server_identifier] ? `• ${guild_counts[review.server_identifier].toLocaleString("en-US")} members` : ""}</h2>
               <p>{review.description} <Link to={`https://discord.gg/${review.server_invite}`}>Join {review.server_name}</Link></p>
             </div>
           ))

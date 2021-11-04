@@ -21,7 +21,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.dev/countr/website/blob/master/docs/index.md"
+          editUrl: "https://github.dev/countr/website/blob/master",
+          exclude: [ "README.md", "template.md" ]
         },
         blog: {
           path: "posts",
@@ -30,12 +31,13 @@ const config = {
           blogDescription: "The latest posts from the Countr community",
           postsPerPage: 10,
           showReadingTime: true,
-          editUrl: "https://github.dev/countr/website/blob/master/posts/welcome.md",
+          editUrl: "https://github.dev/countr/website/blob/master",
           feedOptions: {
             type: "all",
             copyright: `Copyright © ${new Date().getFullYear()} Promise Solutions`
           },
-          authorsMapPath: "authors.yml"
+          authorsMapPath: "authors.yml",
+          exclude: [ "README.md", "template.md" ]
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
@@ -47,6 +49,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        appId: "6V1I8J0EG",
+        apiKey: "ebc85750d78ed148f779ff327fedcbcb",
+        indexName: ({
+          "production": "prod",
+          "development": "dev",
+          "testing": "test"
+        }[process.env.NODE_ENV || "testing"]) + "_countr-website",
+      },
+      colorMode: {
+        defaultMode: "dark",
+        respectPrefersColorScheme: true
+      },
       navbar: {
         title: "Countr",
         logo: {
@@ -59,6 +74,11 @@ const config = {
             position: "left",
             type: "doc",
             docId: "index"
+          },
+          {
+            label: "Community Posts",
+            position: "left",
+            to: "/posts"
           },
           {
             label: "Terms of Service",

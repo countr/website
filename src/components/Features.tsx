@@ -37,7 +37,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: "Completely free",
     image: "/img/free.svg",
-    description: (<>We believe in free and open-source bots with no ads. We also believe in a "pay-whatever-you-want"-model which has worked pretty well, starting from just $1/month. <Link to="/docs/pricing">Read more on Premium here</Link>.</>),
+    description: (<>We believe in free and open-source services with no ads. We also believe in a "pay-whatever-you-want"-model which has worked pretty well, starting from just $1/month. <Link to="/docs/pricing">Read more on Premium here</Link>.</>),
     size: 6
   }
 ];

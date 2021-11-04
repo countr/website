@@ -38,7 +38,7 @@ export default function Home(): JSX.Element {
         <Features />
         <div className={["container", styles.spaceAbove, styles.center].join(" ")}>
           <h1 className={styles.center}>Look at the chaos</h1>
-          <ResponsivePlayer url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+          <ResponsivePlayer url="https://youtu.be/l8OQSRJtlXI" front={true} start={88} loopAfter={105} />
         </div>
         <div className={["container", styles.spaceAbove, styles.center].join(" ")}>
           <h1 className={styles.center}>Stats we're proud of</h1>
