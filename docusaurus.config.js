@@ -20,7 +20,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.dev/countr/website/blob/master",
           exclude: [ "README.md", "template.md" ]
         },
