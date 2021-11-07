@@ -1,4 +1,4 @@
-name: Algolia Indexer
+name: Algolia Docsearch Indexer
 
 on:
   push:
@@ -8,13 +8,11 @@ on:
 jobs:
   indexer:
     runs-on: ubuntu-latest
-    env:
-      APPLICATION_ID: '6V1I8J0EG'
-      API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-      INDEX_NAME: 'countr-website'
-      CONFIG: '{"index_name":"countr-website","start_urls":["https://countr.pages.dev"],"sitemap_urls":["https://countr.pages.dev/sitemap.xml"],"sitemap_alternate_links":true,"stop_urls":[],"selectors":{"lvl0":{"selector":"(//ul[contains(@class,''menu__list'')]//a[contains(@class, ''menu__link menu__link--sublist menu__link--active'')]/text() | //nav[contains(@class, ''navbar'')]//a[contains(@class, ''navbar__link--active'')]/text())[last()]","type":"xpath","global":true,"default_value":"Documentation"},"lvl1":"header h1","lvl2":"article h2","lvl3":"article h3","lvl4":"article h4","lvl5":"article h5, article td:first-child","lvl6":"article h6","text":"article p, article li, article td:last-child"},"strip_chars":" .,;:#","custom_settings":{"separatorsToIndex":"_","attributesForFaceting":["language","version","type","docusaurus_tag"],"attributesToRetrieve":["hierarchy","content","anchor","url","url_without_anchor","type"]},"conversation_id":["833762294"],"nb_hits":46250}'
-    name: Index website
+    name: Indexer
     steps:
-    - name: Index website
-      id: algolia
-      uses: adapttive/algolia-docsearch-action@1.1.1
+      - uses: actions/checkout@v2
+      - uses: darrenjennings/algolia-docsearch-action@master
+        with:
+          algolia_application_id: '6V1I8J0EG'
+          algolia_api_key: ${{ secrets.ALGOLIA_API_KEY }}
+          file: algolia.config.json
