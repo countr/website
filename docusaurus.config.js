@@ -20,7 +20,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          editUrl: "https://github.dev/countr/website/blob/master",
+          editUrl: "https://github.dev/countr/website/blob/production",
           exclude: [ "README.md", "template.md" ]
         },
         blog: {
@@ -30,7 +30,7 @@ const config = {
           blogDescription: "The latest posts from the Countr community",
           postsPerPage: 10,
           showReadingTime: true,
-          editUrl: "https://github.dev/countr/website/blob/master",
+          editUrl: "https://github.dev/countr/website/blob/production",
           feedOptions: {
             type: "all",
             copyright: `Copyright © ${new Date().getFullYear()} Promise Solutions`
@@ -50,12 +50,9 @@ const config = {
     ({
       algolia: {
         appId: "6V1I8J0EG",
-        apiKey: "ebc85750d78ed148f779ff327fedcbcb",
-        indexName: ({
-          "production": "prod",
-          "development": "dev",
-          "testing": "test"
-        }[process.env.NODE_ENV || "testing"]) + "_countr-website",
+        apiKey: "a700949f1a3be63bf8c32dea2ea6130c",
+        contextualSearch: true,
+        indexName: "countr-website",
       },
       colorMode: {
         defaultMode: "dark",
