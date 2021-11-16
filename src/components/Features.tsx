@@ -61,7 +61,7 @@ export default function Features(): JSX.Element {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map(props => (<Feature {...props} />))}
+          {FeatureList.map((props, index) => (<Feature key={index} {...props} />))}
         </div>
       </div>
     </section>
