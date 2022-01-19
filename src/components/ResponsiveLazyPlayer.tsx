@@ -10,11 +10,13 @@ export default function ResponsivePlayer({ url, front, start, loopAfter }: { url
         muted={front}
         playing={front}
         loop={Boolean(loopAfter)}
-        config={start || loopAfter ? {
-          playerVars: {
-            start, end: loopAfter
-          }
-        } : {}}
+        config={start || loopAfter ?
+          {
+            playerVars: {
+              start, end: loopAfter,
+            },
+          } :
+          {}}
         url={url}
         width="100%"
         height="100%"

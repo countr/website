@@ -1,16 +1,16 @@
-import React from "react";
-import clsx from "clsx";
+import Features from "../components/Features";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./index.module.css";
-import Features from "../components/Features";
+import React from "react";
 import ResponsivePlayer from "../components/ResponsiveLazyPlayer";
-import Stats from "../components/Stats";
 import Reviews from "../components/Reviews";
+import Stats from "../components/Stats";
+import clsx from "clsx";
+import styles from "./index.module.css";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 function Header() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
@@ -29,7 +29,7 @@ function Header() {
 }
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       description={`${siteConfig.tagline}`}>
@@ -41,7 +41,7 @@ export default function Home(): JSX.Element {
           <ResponsivePlayer url="https://youtu.be/l8OQSRJtlXI" front={true} start={88} loopAfter={105} />
         </div>
         <div className={["container", styles.spaceAbove, styles.center].join(" ")}>
-          <h1 className={styles.center}>Stats we're proud of</h1>
+          <h1 className={styles.center}>Stats we&apos;re proud of</h1>
           <Stats />
         </div>
         <div className={["container", styles.spaceAbove, styles.center].join(" ")}>

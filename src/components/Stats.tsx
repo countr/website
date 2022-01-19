@@ -12,7 +12,7 @@ export default class Stats extends React.Component<Record<string, never>, { stat
   constructor(props) {
     super(props);
     this.state = {
-      stats: []
+      stats: [],
     };
   }
 
@@ -25,37 +25,35 @@ export default class Stats extends React.Component<Record<string, never>, { stat
             {
               title: "Bot Ranking",
               count: stats.server_count_rank,
-              link: "https://dblstatistics.com/bot/467377486141980682"
+              link: "https://dblstatistics.com/bot/467377486141980682",
             },
             {
               title: "Server Count",
-              count: stats.server_count
+              count: stats.server_count,
             },
             {
               title: "User Count",
-              count: stats.users
+              count: stats.users,
             },
             {
               title: "Counts this week",
-              count: stats.count
-            }
-          ]
+              count: stats.count,
+            },
+          ],
         });
       });
   }
 
   render() {
     const { stats } = this.state;
-    if (!stats.length) return (<div>Loading ...</div>);
+    if (!stats.length) return <div>Loading ...</div>;
 
     return (
       <div className={styles.stats}>
-        {stats.map((stat, index) => (
-          <div className={styles.stat} key={index}>
-            <h2>{stat.title}{stat.link ? <Link to={stat.link}>*</Link> : ""}</h2>
-            <p>{stat.count.toLocaleString("en-US")}</p>
-          </div>
-        ))}
+        {stats.map((stat, index) => <div className={styles.stat} key={index}>
+          <h2>{stat.title}{stat.link ? <Link to={stat.link}>*</Link> : ""}</h2>
+          <p>{stat.count.toLocaleString("en-US")}</p>
+        </div>)}
       </div>
     );
   }
