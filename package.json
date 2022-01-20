@@ -7,6 +7,7 @@
     "lint": "eslint ./src",
     "serve": "docusaurus serve",
     "start": "npm run serve",
+    "test": "tsc",
     "watch": "docusaurus start"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@biaw/eslint-config": "^1.0.2",
     "@docusaurus/module-type-aliases": "^2.0.0-beta.14",
+    "@docusaurus/types": "^2.0.0-beta.14",
     "@tsconfig/docusaurus": "^1.0.4",
     "eslint": "^8.7.0",
     "eslint-plugin-react": "^7.28.0",
