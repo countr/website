@@ -1,93 +1,64 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* @ts-check */
+// @ts-check
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const copyright = `Copyright © ${new Date().getFullYear()} Promise Solutions`;
+const editUrl = "https://github.dev/countr/website/blod/production"
 
-/** @type {import('@docusaurus/types').Config} */
+/** @type { import("@docusaurus/types").Config } */
 const config = {
-  title: "Countr",
-  tagline: "An advanced counting bot to manage a counting channel in your guild!",
-  url: "https://countr.xyz",
   baseUrl: "/",
+  title: "Countr",
+  url: "https://countr.xyz",
+  tagline: "An advanced counting bot to manage a counting channel in your guild!",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
 
-  presets: [
-    [
-      "@docusaurus/preset-classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          editUrl: "https://github.dev/countr/website/blob/production",
-          exclude: [ "README.md", "template.md" ]
-        },
-        blog: {
-          path: "posts",
-          routeBasePath: "posts",
-          blogTitle: "Countr Community Posts",
-          blogDescription: "The latest posts from the Countr community",
-          postsPerPage: 10,
-          showReadingTime: true,
-          editUrl: "https://github.dev/countr/website/blob/production",
-          feedOptions: {
-            type: "all",
-            copyright: `Copyright © ${new Date().getFullYear()} Promise Solutions`
-          },
-          authorsMapPath: "authors.yml",
-          exclude: [ "README.md", "template.md" ]
-        },
-        theme: {
-          customCss: require.resolve("./src/css/custom.css")
-        }
-      }),
-    ],
-  ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      algolia: {
-        appId: "6V1I8J0EG",
-        apiKey: "a700949f1a3be63bf8c32dea2ea6130c",
-        contextualSearch: true,
-        indexName: "countr-website",
-      },
+  themeConfig: {
+    // theme-classic
+    ...{
       colorMode: {
         defaultMode: "dark",
-        respectPrefersColorScheme: true
+        respectPrefersColorScheme: true,
       },
-      metadatas: [
-        { name: "theme-color", content: "#bd4632" }
+      metadata: [
+        { name: "theme-color", content: "#bd4632" },
       ],
+      image: undefined,//"img/meta.png",
       navbar: {
         title: "Countr",
         logo: {
-          alt: "Countr",
+          alt: "Countr Logo",
           src: "img/logo.svg",
         },
         items: [
           {
-            label: "Docs",
+            label: "Documentation",
             position: "left",
-            type: "doc",
-            docId: "index"
+            to: "docs",
+          },
+          {
+            label: "Blog",
+            position: "left",
+            to: "blog",
           },
           {
             label: "Community Posts",
             position: "left",
-            to: "/posts"
+            to: "/posts",
+          },
+          {
+            label: "Tutorials",
+            position: "left",
+            to: "/tutorials",
           },
           {
             label: "Terms of Service",
             position: "left",
-            to: "/terms"
+            to: "/terms",
           },
           {
             label: "Privacy Policy",
             position: "left",
-            to: "/privacy"
+            to: "/privacy",
           },
           {
             label: "GitHub",
@@ -100,23 +71,134 @@ const config = {
             href: "https://status.countr.xyz",
           },
         ],
-      },
-      footer: {
-        style: "dark",
-        links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Promise Solutions`,
+        hideOnScroll: true,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: require("prism-react-renderer/themes/github"),
+        darkTheme: require("prism-react-renderer/themes/dracula"),
       },
-    }),
-
+      footer: {
+        links: [
+          {
+            items: [
+            ],
+          },
+        ],
+        copyright,
+      },
+    },
+  },
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "content/docs",
+        editUrl: "https://github.com/countr/website/blob/production/content/docs",
+        routeBasePath: "/docs",
+        showLastUpdateTime: true,
+      }
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "plugin-content-blog--blog",
+        path: "content/blog",
+        blogTitle: "Countr Blog",
+        blogDescription: "The Countr Blog, where we announce all new about Countr.",
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: "Blog",
+        routeBasePath: "/blog",
+        authorsMapPath: "../authors.yml",
+        feedOptions: {
+          type: "all",
+          title: "Countr Blog",
+          description: "The Countr Blog, where we announce all new about Countr.",
+          copyright,
+          language: "en",
+        },
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "plugin-content-blog--tutorials",
+        path: "content/tutorials",
+        editUrl: "https://github.com/countr/website/blob/production/content/tutorials",
+        blogTitle: "Countr Tutorials",
+        blogDescription: "Get neat tips and tricks on how to customize Countr to the fullest.",
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: "Tutorials",
+        routeBasePath: "/tutorials",
+        authorsMapPath: "../authors.yml",
+        feedOptions: {
+          type: "all",
+          title: "Countr Tutorials",
+          description: "Get neat tips and tricks on how to customize Countr to the fullest.",
+          copyright,
+          language: "en",
+        },
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "plugin-content-blog--posts",
+        path: "content/posts",
+        editUrl: "https://github.com/countr/website/blob/production/content/posts",
+        blogTitle: "Countr Community Posts",
+        blogDescription: "Read posts from the community on how they use Countr.",
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: "Countr Commiunity Posts",
+        routeBasePath: "/posts",
+        authorsMapPath: "../authors.yml",
+        feedOptions: {
+          type: "all",
+          title: "Countr Community Posts",
+          description: "Read posts from the community on how they use Countr.",
+          copyright,
+          language: "en",
+        },
+        exclude: [ "README.md", "template.md" ]
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-pages",
+      {
+        path: "src/pages",
+        routeBasePath: "/",
+      },
+    ],
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        fromExtensions: [ "html" ],
+      },
+    ],
+    [
+      "@docusaurus/plugin-google-analytics",
+      {
+        trackingID: "UA-153861801-1",
+      },
+    ],
+    [
+      "@docusaurus/plugin-sitemap",
+      {
+        changefreq: "hourly",
+        priority: 0.5,
+      },
+    ],
+  ],
   scripts: [
     {
       src: "https://arc.io/widget.min.js#watbhJvw",
       async: true,
-    }
+    },
+  ],
+  themes: [
+    "@docusaurus/theme-classic",
+  ],
+  clientModules: [
+    require.resolve("./static/style.css"),
   ]
 };
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
+id: intro
 slug: .
 ---
 
-# Get started
+# Intro
