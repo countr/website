@@ -52,8 +52,6 @@
     },
     "extends": [
       "plugin:react/recommended",
-      "react-app",
-      "react-app/jest",
       "@biaw"
     ],
     "parserOptions": {
@@ -62,12 +60,6 @@
       },
       "ecmaVersion": 13,
       "sourceType": "module"
-    },
-    "rules": {
-      "linebreak-style": [
-        "error",
-        "unix"
-      ]
     }
   }
 }
