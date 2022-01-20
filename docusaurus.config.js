@@ -1,7 +1,7 @@
 // @ts-check
 
 const copyright = `Copyright © ${new Date().getFullYear()} Promise Solutions`;
-const editUrl = "https://github.dev/countr/website/blob/production"
+const editUrl = "https://github.dev/countr/website/blob/production";
 
 /** @type { import("@docusaurus/types").Config } */
 const config = {
@@ -19,10 +19,8 @@ const config = {
         defaultMode: "dark",
         respectPrefersColorScheme: true,
       },
-      metadata: [
-        { name: "theme-color", content: "#bd4632" },
-      ],
-      image: undefined,//"img/meta.png",
+      metadata: [{ name: "theme-color", content: "#bd4632" }],
+      image: undefined, // "img/meta.png",
       navbar: {
         title: "Countr",
         logo: {
@@ -88,7 +86,7 @@ const config = {
         editUrl,
         routeBasePath: "/docs",
         showLastUpdateTime: true,
-      }
+      },
     ],
     [
       "@docusaurus/plugin-content-blog",
@@ -150,7 +148,7 @@ const config = {
           copyright,
           language: "en",
         },
-        exclude: [ "README.md", "template.md" ]
+        exclude: ["README.md", "template.md"],
       },
     ],
     [
@@ -159,7 +157,7 @@ const config = {
     ],
     [
       "@docusaurus/plugin-client-redirects",
-      { fromExtensions: [ "html" ] },
+      { fromExtensions: ["html"]},
     ],
     [
       "@docusaurus/plugin-google-analytics",
@@ -170,15 +168,9 @@ const config = {
       { changefreq: "hourly", priority: 0.5 },
     ],
   ],
-  scripts: [
-    { src: "https://arc.io/widget.min.js#watbhJvw", async: true },
-  ],
-  themes: [
-    "@docusaurus/theme-classic",
-  ],
-  clientModules: [
-    require.resolve("./static/style.css"),
-  ]
+  scripts: [{ src: "https://arc.io/widget.min.js#watbhJvw", async: true }],
+  themes: ["@docusaurus/theme-classic"],
+  clientModules: [require.resolve("./static/style.css")],
 };
 
 module.exports = config;
