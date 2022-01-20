@@ -1,7 +1,7 @@
 // @ts-check
 
 const copyright = `Copyright © ${new Date().getFullYear()} Promise Solutions`;
-const editUrl = "https://github.dev/countr/website/blod/production"
+const editUrl = "https://github.dev/countr/website/blob/production"
 
 /** @type { import("@docusaurus/types").Config } */
 const config = {
@@ -77,15 +77,7 @@ const config = {
         theme: require("prism-react-renderer/themes/github"),
         darkTheme: require("prism-react-renderer/themes/dracula"),
       },
-      footer: {
-        links: [
-          {
-            items: [
-            ],
-          },
-        ],
-        copyright,
-      },
+      footer: { copyright },
     },
   },
   plugins: [
@@ -93,7 +85,7 @@ const config = {
       "@docusaurus/plugin-content-docs",
       {
         path: "content/docs",
-        editUrl: "https://github.com/countr/website/blob/production/content/docs",
+        editUrl,
         routeBasePath: "/docs",
         showLastUpdateTime: true,
       }
@@ -123,7 +115,7 @@ const config = {
       {
         id: "plugin-content-blog--tutorials",
         path: "content/tutorials",
-        editUrl: "https://github.com/countr/website/blob/production/content/tutorials",
+        editUrl,
         blogTitle: "Countr Tutorials",
         blogDescription: "Get neat tips and tricks on how to customize Countr to the fullest.",
         blogSidebarCount: "ALL",
@@ -144,7 +136,7 @@ const config = {
       {
         id: "plugin-content-blog--posts",
         path: "content/posts",
-        editUrl: "https://github.com/countr/website/blob/production/content/posts",
+        editUrl,
         blogTitle: "Countr Community Posts",
         blogDescription: "Read posts from the community on how they use Countr.",
         blogSidebarCount: "ALL",
@@ -163,36 +155,23 @@ const config = {
     ],
     [
       "@docusaurus/plugin-content-pages",
-      {
-        path: "src/pages",
-        routeBasePath: "/",
-      },
+      { path: "src/pages", routeBasePath: "/" },
     ],
     [
       "@docusaurus/plugin-client-redirects",
-      {
-        fromExtensions: [ "html" ],
-      },
+      { fromExtensions: [ "html" ] },
     ],
     [
       "@docusaurus/plugin-google-analytics",
-      {
-        trackingID: "UA-153861801-1",
-      },
+      { trackingID: "UA-153861801-1" },
     ],
     [
       "@docusaurus/plugin-sitemap",
-      {
-        changefreq: "hourly",
-        priority: 0.5,
-      },
+      { changefreq: "hourly", priority: 0.5 },
     ],
   ],
   scripts: [
-    {
-      src: "https://arc.io/widget.min.js#watbhJvw",
-      async: true,
-    },
+    { src: "https://arc.io/widget.min.js#watbhJvw", async: true },
   ],
   themes: [
     "@docusaurus/theme-classic",
