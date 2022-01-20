@@ -3,10 +3,10 @@ name: Linting
 on:
   push:
     branches:
-      - djs-13
+      - production
   pull_request:
     branches:
-      - djs-13
+      - production
 
 jobs:
   lint:
