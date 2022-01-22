@@ -17,7 +17,7 @@ export default class Stats extends React.Component<Record<string, never>, { stat
   }
 
   componentDidMount() {
-    fetch("https://countr-splash-stats.promise.workers.dev/")
+    fetch("/api/stats")
       .then(res => res.json())
       .then(stats => {
         this.setState({

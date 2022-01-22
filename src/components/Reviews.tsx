@@ -43,7 +43,7 @@ export default class Reviews extends React.Component<Record<string, never>, { gu
   }
 
   componentDidMount() {
-    fetch("https://countr-splash-stats.promise.workers.dev/")
+    fetch("/api/stats")
       .then(res => res.json())
       .then(stats => {
         this.setState({
