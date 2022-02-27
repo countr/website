@@ -4,7 +4,7 @@
   "scripts": {
     "build": "docusaurus build",
     "clear": "docusaurus clear",
-    "lint": "eslint ./src",
+    "lint": "eslint ./src ./functions",
     "serve": "docusaurus serve",
     "start": "npm run serve",
     "test": "tsc",
@@ -24,13 +24,16 @@
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-player": "^2.9.0"
+    "react-player": "^2.9.0",
+    "wrangler": "^0.0.17"
   },
   "devDependencies": {
     "@biaw/eslint-config": "^1.0.2",
+    "@cloudflare/workers-types": "^3.4.0",
     "@docusaurus/module-type-aliases": "^2.0.0-beta.14",
     "@docusaurus/types": "^2.0.0-beta.14",
     "@tsconfig/docusaurus": "^1.0.4",
+    "@types/node": "^16.11.26",
     "eslint": "^8.7.0",
     "eslint-plugin-react": "^7.28.0",
     "typescript": "^4.5.2"

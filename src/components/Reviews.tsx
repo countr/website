@@ -1,10 +1,7 @@
+import { APIStats } from "@site/functions/api/stats";
 import Link from "@docusaurus/Link";
 import React from "react";
 import styles from "./Reviews.module.css";
-
-interface InviteInfo {
-  [serverIdentifier: string]: number;
-}
 
 interface Review {
   serverName: string;
@@ -34,7 +31,7 @@ const reviews: Review[] = [
   },
 ];
 
-export default class Reviews extends React.Component<Record<string, never>, { guildCounts: InviteInfo; }> {
+export default class Reviews extends React.Component<Record<string, never>, { guildCounts: APIStats["servers"]; }> {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,7 +42,7 @@ export default class Reviews extends React.Component<Record<string, never>, { gu
   componentDidMount() {
     fetch("https://countr-splash-stats.promise.workers.dev/")
       .then(res => res.json())
-      .then(stats => {
+      .then((stats: APIStats) => {
         this.setState({
           guildCounts: stats.servers,
         });

@@ -1,3 +1,4 @@
+import { APIStats } from "@site/functions/api/stats";
 import Link from "@docusaurus/Link";
 import React from "react";
 import styles from "./Stats.module.css";
@@ -17,19 +18,19 @@ export default class Stats extends React.Component<Record<string, never>, { stat
   }
 
   componentDidMount() {
-    fetch("https://countr-splash-stats.promise.workers.dev/")
+    fetch("/api/stats")
       .then(res => res.json())
-      .then(stats => {
+      .then((stats: APIStats) => {
         this.setState({
           stats: [
             {
               title: "Bot Ranking",
-              count: stats.server_count_rank,
+              count: stats.ranking,
               link: "https://dblstatistics.com/bot/467377486141980682",
             },
             {
               title: "Server Count",
-              count: stats.server_count,
+              count: stats.guilds,
             },
             {
               title: "User Count",
