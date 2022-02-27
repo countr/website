@@ -24,7 +24,8 @@
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-player": "^2.9.0"
+    "react-player": "^2.9.0",
+    "wrangler": "^0.0.17"
   },
   "devDependencies": {
     "@biaw/eslint-config": "^1.0.2",
