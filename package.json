@@ -34,7 +34,7 @@
     "@docusaurus/types": "^2.0.0-beta.14",
     "@tsconfig/docusaurus": "^1.0.4",
     "@types/node": "^16.11.26",
-    "eslint": "^8.7.0",
+    "eslint": "^8.10.0",
     "eslint-plugin-react": "^7.28.0",
     "typescript": "^4.5.2"
   },
