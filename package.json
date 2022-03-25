@@ -30,7 +30,7 @@
   "devDependencies": {
     "@biaw/eslint-config": "^1.0.2",
     "@cloudflare/workers-types": "^3.4.0",
-    "@docusaurus/module-type-aliases": "^2.0.0-beta.17",
+    "@docusaurus/module-type-aliases": "^2.0.0-beta.18",
     "@docusaurus/types": "^2.0.0-beta.17",
     "@tsconfig/docusaurus": "^1.0.5",
     "@types/node": "^16.11.26",
