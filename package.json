@@ -25,7 +25,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-player": "^2.10.0",
-    "wrangler": "^0.0.23"
+    "wrangler": "^0.0.24"
   },
   "devDependencies": {
     "@biaw/eslint-config": "^1.0.2",
