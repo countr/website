@@ -28,10 +28,10 @@
     "wrangler": "^0.0.24"
   },
   "devDependencies": {
-    "@biaw/eslint-config": "^1.0.2",
     "@cloudflare/workers-types": "^3.4.0",
     "@docusaurus/module-type-aliases": "^2.0.0-beta.18",
     "@docusaurus/types": "^2.0.0-beta.18",
+    "@promise/eslint-config": "github:promise/eslint-config",
     "@tsconfig/docusaurus": "^1.0.5",
     "@types/node": "^16.11.26",
     "eslint": "^8.11.0",
@@ -57,7 +57,7 @@
     },
     "extends": [
       "plugin:react/recommended",
-      "@biaw"
+      "@promise"
     ],
     "parserOptions": {
       "ecmaFeatures": {
@@ -65,6 +65,10 @@
       },
       "ecmaVersion": 13,
       "sourceType": "module"
+    },
+    "rules": {
+      "@typescript-eslint/no-unnecessary-condition": "off",
+      "@typescript-eslint/strict-boolean-expressions": "off"
     }
   }
 }

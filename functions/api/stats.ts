@@ -1,9 +1,9 @@
-export type APIStats = {
+export interface APIStats {
   guilds: number;
   ranking: number;
   users: number;
   count: number;
-  servers: Record<string, number>,
+  servers: Record<string, number>;
   last: number;
 }
 
@@ -20,6 +20,7 @@ let stats: APIStats = {
   last: 0,
 };
 
+// eslint-disable-next-line no-undef -- is a global type definition
 export const onRequest: PagesFunction = async request => {
   const now = Date.now();
   if (stats.last + 300_000 < now) {
@@ -48,44 +49,44 @@ export const onRequest: PagesFunction = async request => {
   return new Response(JSON.stringify(stats));
 };
 
-async function getDblStatistics(token?: string) {
+async function getDblStatistics(token?: string): Promise<{ guilds: number; ranking: number }> {
   if (!token) return { guilds: 0, ranking: 0 };
 
-  const json = await fetch("https://dblstatistics.com/api/bots/467377486141980682", {
+  const {
+    server_count: guilds = 0,
+    server_count_rank: ranking = 0,
+  } = await fetch("https://dblstatistics.com/api/bots/467377486141980682", {
     headers: {
-      Authorization: token,
+      Authorization: token, // eslint-disable-line @typescript-eslint/naming-convention
     },
-  }).then(res => res.json()).catch(() => ({})) as {
-    server_count?: number;
-    server_count_rank?: number;
-  };
+  }).then(async res => res.json())
+    .catch(() => ({})) as Record<string, number>;
 
-  return {
-    guilds: json.server_count || 0,
-    ranking: json.server_count_rank || 0,
-  };
+  return { guilds, ranking };
 }
 
-async function getCountrUsers(endpoint?: string) {
+async function getCountrUsers(endpoint?: string): Promise<number> {
   if (!endpoint) return 0;
-  const json = await fetch(endpoint).then(res => res.json()).catch(() => ({})) as {
-    users?: number;
-  };
+  const { users = 0 } = await fetch(endpoint)
+    .then(async res => res.json())
+    .catch(() => ({})) as Record<"users", number>;
 
-  return json.users || 0;
+  return users;
 }
 
-async function getCountrCount(endpoint?: string) {
+async function getCountrCount(endpoint?: string): Promise<number> {
   if (!endpoint) return 0;
-  const count = parseInt(await fetch(endpoint).then(res => res.text()).catch(() => "0"));
+  const count = parseInt(await fetch(endpoint)
+    .then(async res => res.text())
+    .catch(() => "0"));
 
   return count || 0;
 }
 
-async function getMembers(invite: string) {
-  const i = await fetch(`https://discord.com/api/v8/invites/${invite}?with_counts=true`).then(res => res.json()).catch(() => ({})) as {
-    approximate_member_count?: number;
-  };
+async function getMembers(invite: string): Promise<number> {
+  const { approximate_member_count: memberCount = 0 } = await fetch(`https://discord.com/api/v8/invites/${invite}?with_counts=true`)
+    .then(async res => res.json())
+    .catch(() => ({})) as Record<string, number>;
 
-  return Math.floor((i.approximate_member_count || 0) / 10_000) * 10_000;
+  return Math.floor(memberCount / 10_000) * 10_000;
 }
