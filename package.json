@@ -28,7 +28,7 @@
     "wrangler": "^0.0.26"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^3.6.0",
+    "@cloudflare/workers-types": "^3.8.0",
     "@docusaurus/module-type-aliases": "^2.0.0-beta.18",
     "@docusaurus/types": "^2.0.0-beta.18",
     "@promise/eslint-config": "github:promise/eslint-config",
