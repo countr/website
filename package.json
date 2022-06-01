@@ -11,7 +11,7 @@
     "watch": "docusaurus start"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.20",
+    "@docusaurus/core": "^2.0.0-beta.21",
     "@docusaurus/plugin-client-redirects": "^2.0.0-beta.21",
     "@docusaurus/plugin-content-blog": "^2.0.0-beta.21",
     "@docusaurus/plugin-content-docs": "^2.0.0-beta.21",
