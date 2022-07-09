@@ -78,7 +78,7 @@ async function getCountrCount(endpoint?: string): Promise<number> {
   if (!endpoint) return 0;
   const count = parseInt(await fetch(endpoint)
     .then(async res => res.text())
-    .catch(() => "0"));
+    .catch(() => "0"), 10);
 
   return count || 0;
 }
