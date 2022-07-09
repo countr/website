@@ -138,7 +138,7 @@ const config = {
         blogTitle: "Countr Community Posts",
         blogDescription: "Read posts from the community on how they use Countr.",
         blogSidebarCount: "ALL",
-        blogSidebarTitle: "Countr Commiunity Posts",
+        blogSidebarTitle: "Countr Community Posts",
         routeBasePath: "/posts",
         authorsMapPath: "../authors.yml",
         feedOptions: {

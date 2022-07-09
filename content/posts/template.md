@@ -7,6 +7,7 @@ authors:
     title: Server Owner of XYZ
     url: https://github.com/promise
     image_url: https://github.com/promise.png
+    email: ex@mple.com
 tags: [hello, world]
 ---
 Hello world. You would typically have something short about the post here.
