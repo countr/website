@@ -34,7 +34,7 @@
     "@promise/eslint-config": "github:promise/eslint-config",
     "@tsconfig/docusaurus": "^1.0.6",
     "@types/node": "^16.11.43",
-    "eslint": "^8.19.0",
+    "eslint": "^8.20.0",
     "eslint-config-promise": "github:promise/eslint-config",
     "typescript": "^4.7.4"
   },
