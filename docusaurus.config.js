@@ -169,7 +169,10 @@ const config = {
   ],
   scripts: [{ src: "https://arc.io/widget.min.js#watbhJvw", async: true }],
   themes: ["@docusaurus/theme-classic"],
-  clientModules: [require.resolve("./static/style.css")],
+  clientModules: [
+    require.resolve("./static/discord-components.js"),
+    require.resolve("./static/style.css"),
+  ],
 };
 
 module.exports = config;
