@@ -1,4 +1,4 @@
-window.$discordMessage = {
+require("global/window").$discordMessage = {
   profiles: {
     countr: {
       author: "Countr",
