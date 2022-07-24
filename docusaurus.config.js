@@ -20,7 +20,6 @@ const config = {
         respectPrefersColorScheme: true,
       },
       metadata: [{ name: "theme-color", content: "#bd4632" }],
-      image: undefined, // "img/meta.png",
       navbar: {
         title: "Countr",
         logo: {
