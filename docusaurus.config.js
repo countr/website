@@ -8,6 +8,7 @@ const config = {
   baseUrl: "/",
   title: "Countr",
   url: "https://countr.xyz",
+  favicon: "/img/favicon.ico",
   tagline: "An advanced counting bot to manage a counting channel in your guild!",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
