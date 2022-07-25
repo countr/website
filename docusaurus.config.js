@@ -34,37 +34,17 @@ const config = {
             to: "docs",
           },
           {
-            label: "Blog",
-            position: "left",
-            to: "blog",
-          },
-          {
-            label: "Community Posts",
-            position: "left",
-            to: "/posts",
-          },
-          {
             label: "Tutorials",
             position: "left",
             to: "/tutorials",
           },
           {
-            label: "Terms of Service",
+            label: "Blog",
             position: "left",
-            to: "/terms",
+            to: "blog",
           },
           {
-            label: "Privacy Policy",
-            position: "left",
-            to: "/privacy",
-          },
-          {
-            label: "GitHub",
-            position: "right",
-            href: "https://github.com/countr/countr",
-          },
-          {
-            label: "Status",
+            label: "Uptime Status",
             position: "right",
             href: "https://status.countr.xyz",
           },
@@ -75,7 +55,61 @@ const config = {
         theme: require("prism-react-renderer/themes/github"),
         darkTheme: require("prism-react-renderer/themes/dracula"),
       },
-      footer: { copyright },
+      footer: {
+        links: [
+
+          {
+            title: "Need more help?",
+            items: [
+              {
+                label: "Documentation",
+                to: "docs/",
+              },
+              {
+                label: "Tutorials",
+                to: "tutorials/",
+              },
+              {
+                label: "Support Server",
+                href: "https://discord.com/app",
+              },
+            ],
+          },
+          {
+            title: "Community",
+            items: [
+
+              {
+                label: "Community Posts",
+                to: "/posts",
+              },
+              {
+                label: "Support Server",
+                href: "https://promise.solutions/discord",
+              },
+            ],
+          },
+          {
+            title: "Countr",
+            items: [
+              {
+                label: "Terms of Service",
+                to: "/terms",
+              },
+              {
+                label: "Privacy Policy",
+                to: "/privacy",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/countr/countr",
+              },
+            ],
+          },
+        ],
+
+        copyright,
+      },
     },
   },
   plugins: [
