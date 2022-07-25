@@ -24,7 +24,7 @@ These videos are from content creators. These content creators have given consen
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/l8OQSRJtlXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> Video's from [Youtube.com/Sounddrout](https://Youtube.com/Sounddrout)
+> Videos from [Youtube.com/Sounddrout](https://Youtube.com/Sounddrout)
 
 
 *We will contact you if we feel like we want your video added to this page, do not contact us the other way around.*
