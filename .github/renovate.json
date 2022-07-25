@@ -1,7 +1,3 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "automerge": true,
-  "configMigration": true,
-  "labels": ["dependencies"],
-  "packageRules": [{ "groupName": "Docusaurus", "matchPackagePatterns": "^@docusaurus/" }]
+  "extends": ["github>promise/renovate-config:fully-automated-repository"]
 }
