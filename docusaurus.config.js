@@ -44,7 +44,7 @@ const config = {
             to: "blog",
           },
           {
-            label: "Status",
+            label: "Uptime Status",
             position: "right",
             href: "https://status.countr.xyz",
           },
@@ -59,24 +59,24 @@ const config = {
         links: [
 
           {
-            title: 'Need more help?',
+            title: "Need more help?",
             items: [
               {
-                label: 'Documentation',
-                to: 'docs/',
+                label: "Documentation",
+                to: "docs/",
               },
               {
-                label: 'Tutorials',
-                to: 'tutorials/',
+                label: "Tutorials",
+                to: "tutorials/",
               },
               {
-                label: 'Discord server',
-                href: 'https://discord.com/app',
-              }
+                label: "Support Server",
+                href: "https://discord.com/app",
+              },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
 
               {
@@ -84,13 +84,13 @@ const config = {
                 to: "/posts",
               },
               {
-                label: 'Discord server',
-                href: 'https://discord.com/invite/Ccj5bjb',
-              }
+                label: "Support Server",
+                href: "https://promise.solutions/discord",
+              },
             ],
           },
           {
-            title: 'Countr',
+            title: "Countr",
             items: [
               {
                 label: "Terms of Service",
@@ -108,7 +108,7 @@ const config = {
           },
         ],
 
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright,
       },
     },
   },
@@ -191,7 +191,7 @@ const config = {
     ],
     [
       "@docusaurus/plugin-client-redirects",
-      { fromExtensions: ["html"] },
+      { fromExtensions: ["html"]},
     ],
     [
       "@docusaurus/plugin-google-analytics",
