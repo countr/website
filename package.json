@@ -4,10 +4,12 @@
   "scripts": {
     "build": "docusaurus build",
     "clear": "docusaurus clear",
-    "lint": "eslint ./src ./functions",
+    "lint": "eslint ./src ./functions --max-warnings=0",
+    "lint:fix": "eslint ./src ./functions --fix",
     "serve": "docusaurus serve",
     "start": "npm run serve",
     "test": "tsc",
+    "test:watch": "tsc -w",
     "watch": "docusaurus start"
   },
   "dependencies": {
@@ -56,17 +58,6 @@
     },
     "extends": [
       "promise"
-    ],
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "ecmaVersion": 13,
-      "sourceType": "module"
-    },
-    "rules": {
-      "@typescript-eslint/no-unnecessary-condition": "off",
-      "@typescript-eslint/strict-boolean-expressions": "off"
-    }
+    ]
   }
 }

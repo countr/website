@@ -12,11 +12,11 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 function Header() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", styles["heroBanner"])}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <div className={styles["buttons"]}>
           <Link
             className="button button--secondary button--lg"
             to="/docs">
@@ -32,20 +32,20 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      description={`${siteConfig.tagline}`}>
+      description={siteConfig.tagline}>
       <Header />
       <main>
         <Features />
-        <div className={["container", styles.spaceAbove, styles.center].join(" ")}>
-          <h1 className={styles.center}>Look at the chaos</h1>
+        <div className={["container", styles["spaceAbove"], styles["center"]].join(" ")}>
+          <h1 className={styles["center"]}>Look at the chaos</h1>
           <ResponsivePlayer url="https://youtu.be/l8OQSRJtlXI" front={true} start={88} loopAfter={105} />
         </div>
-        <div className={["container", styles.spaceAbove, styles.center].join(" ")}>
-          <h1 className={styles.center}>Stats we&apos;re proud of</h1>
+        <div className={["container", styles["spaceAbove"], styles["center"]].join(" ")}>
+          <h1 className={styles["center"]}>Stats we&apos;re proud of</h1>
           <Stats />
         </div>
-        <div className={["container", styles.spaceAbove, styles.center].join(" ")}>
-          <h1 className={styles.center}>Reviews from big community owners</h1>
+        <div className={["container", styles["spaceAbove"], styles["center"]].join(" ")}>
+          <h1 className={styles["center"]}>Reviews from big community owners</h1>
           <Reviews />
         </div>
       </main>

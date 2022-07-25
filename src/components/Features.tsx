@@ -2,12 +2,12 @@ import Link from "@docusaurus/Link";
 import React from "react";
 import styles from "./Features.module.css";
 
-type FeatureItem = {
+interface FeatureItem {
   title: string;
   image: string;
   description: JSX.Element;
   size: number;
-};
+}
 
 const FeatureList: FeatureItem[] = [
   {
@@ -46,7 +46,7 @@ function Feature({ title, image, description, size }: FeatureItem) {
   return (
     <div className={`col col--${size}`}>
       <div className="text--center">
-        <img className={styles.featureSvg} alt={title} src={image} />
+        <img className={styles["featureSvg"]} alt={title} src={image} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -58,7 +58,7 @@ function Feature({ title, image, description, size }: FeatureItem) {
 
 export default function Features(): JSX.Element {
   return (
-    <section className={styles.features}>
+    <section className={styles["features"]}>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, index) => <Feature key={index} {...props} />)}

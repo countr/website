@@ -1,10 +1,27 @@
+// # Docusaurus v2 + Strictest
+// https://github.com/tsconfig/bases/blob/main/bases/docusaurus.json
+// https://github.com/tsconfig/bases/blob/main/bases/strictest.json
+
 {
-  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "include": [ "./src", "./functions" ],
+  "extends": "@tsconfig/docusaurus",
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "lib": ["ES2020"],
-    "types": ["@types/node", "@cloudflare/workers-types"],
-    "baseUrl": "."
+    "types": ["@cloudflare/workers-types"],
+    "strict": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "importsNotUsedAsValues": "error",
+    "checkJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   }
 }

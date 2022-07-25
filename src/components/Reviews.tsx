@@ -1,4 +1,4 @@
-import { APIStats } from "@site/functions/api/stats";
+import type { APIStats } from "../../functions/api/stats";
 import Link from "@docusaurus/Link";
 import React from "react";
 import styles from "./Reviews.module.css";
@@ -31,35 +31,36 @@ const reviews: Review[] = [
   },
 ];
 
-export default class Reviews extends React.Component<Record<string, never>, { guildCounts: APIStats["servers"]; }> {
-  constructor(props) {
+export default class Reviews extends React.Component<Record<string, never>, { guildCounts: APIStats["servers"] }> {
+  constructor(props: Record<string, never>) {
     super(props);
     this.state = {
       guildCounts: {},
     };
   }
 
-  componentDidMount() {
-    fetch("https://countr-splash-stats.promise.workers.dev/")
-      .then(res => res.json())
-      .then((stats: APIStats) => {
+  override componentDidMount(): void {
+    void fetch("https://countr-splash-stats.promise.workers.dev/")
+      .then(res => res.json<APIStats>())
+      .then(stats => {
         this.setState({
           guildCounts: stats.servers,
         });
       });
   }
 
-  render() {
+  override render(): JSX.Element {
     const { guildCounts } = this.state;
 
     return (
-      <div className={styles.reviews}>
+      <div className={styles["reviews"]}>
         {
           // get three random reviews and display them
-          reviews.sort(() => Math.random() - 0.5).slice(0, 2).map((review, index) => <div key={index} className={styles.review}>
-            <h2>{review.serverName} {guildCounts[review.serverIdentifier] ? `• ${guildCounts[review.serverIdentifier].toLocaleString("en-US")} members` : ""}</h2>
-            <p>{review.description} <Link to={`https://discord.gg/${review.serverInvite}`}>Join {review.serverName}</Link></p>
-          </div>)
+          reviews.sort(() => Math.random() - 0.5).slice(0, 2)
+            .map((review, index) => <div key={index} className={styles["review"]}>
+              <h2>{review.serverName} {guildCounts[review.serverIdentifier] ? `• ${guildCounts[review.serverIdentifier]!.toLocaleString("en-US")} members` : ""}</h2>
+              <p>{review.description} <Link to={`https://discord.gg/${review.serverInvite}`}>Join {review.serverName}</Link></p>
+            </div>)
         }
       </div>
     );

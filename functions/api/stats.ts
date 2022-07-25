@@ -27,9 +27,9 @@ export const onRequest: PagesFunction = async request => {
     stats.last = now;
 
     const env = request.env as unknown as Record<string, string>;
-    const { guilds, ranking } = await getDblStatistics(env.DBL_TOKEN);
-    const users = await getCountrUsers(env.COUNTR_STATS_ENDPOINT);
-    const count = await getCountrCount(env.COUNTR_COUNT_ENDPOINT);
+    const { guilds, ranking } = await getDblStatistics(env["DBL_TOKEN"]);
+    const users = await getCountrUsers(env["COUNTR_STATS_ENDPOINT"]);
+    const count = await getCountrCount(env["COUNTR_COUNT_ENDPOINT"]);
 
     // eslint-disable-next-line require-atomic-updates
     stats = {
