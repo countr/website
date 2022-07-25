@@ -20,13 +20,13 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Initialize
-      uses: github/codeql-action/init@v1
+      uses: github/codeql-action/init@v2
 
     - name: Autobuild
-      uses: github/codeql-action/autobuild@v1
+      uses: github/codeql-action/autobuild@v2
 
     - name: Perform analysis and upload results
-      uses: github/codeql-action/analyze@v1
+      uses: github/codeql-action/analyze@v2
 
   njsscan:
     name: NJS Scan
@@ -42,7 +42,7 @@ jobs:
         args: '. --sarif --output results.sarif || true'
 
     - name: Upload results
-      uses: github/codeql-action/upload-sarif@v1
+      uses: github/codeql-action/upload-sarif@v2
       with:
         sarif_file: results.sarif
 
@@ -59,6 +59,6 @@ jobs:
       id: analysis
 
     - name: Upload results
-      uses: github/codeql-action/upload-sarif@v1
+      uses: github/codeql-action/upload-sarif@v2
       with:
         sarif_file: ${{ steps.analysis.outputs.sarifFile }}
