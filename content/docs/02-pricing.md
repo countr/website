@@ -10,7 +10,8 @@ Countr is not free for us to host, as the bill is rising we need some supporters
 
 ## How to get Premium
 You can get Premium in two ways: [on Patreon](https://patreon.com/promises) or through a Nitro boost in our support server.
-:::caution
+
+:::caution Warning
 
 - You must be in the support server to get your rewards, this is due to our automated credits system.
 - You must have connected your Discord to Patreon to get your Patreon-rewards. Get help from [this guide](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role#h_21f22930-84c5-4950-b6b1-3e83312f66dc) made by Patreon themselves.
