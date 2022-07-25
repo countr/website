@@ -1,0 +1,66 @@
+import {
+  DiscordActionRow as ActionRow,
+  DiscordAttachments as Attachments,
+  DiscordBold as Bold,
+  DiscordButton as Button,
+  DiscordCommand as Command,
+  DiscordEmbedDescription as Description,
+  DiscordMessages as Discord,
+  DiscordEmbed as Embed,
+  DiscordMessage as Message,
+} from "@skyra/discord-components-react";
+
+# Triggers
+
+A trigger is something that will activate and run the flow. If you're a premium user and have multiple triggers, any one of the triggers can activate the flow.
+
+Available triggers:
+
+<Discord>
+  <Message profile="countr">
+    <Command slot="reply" profile="promise" command="/flows edit"></Command>
+    <Embed embedTitle="Select Action" color="#bd4732">
+      <Description slot="description">
+        0 - <b>Clear/Empty</b>
+        <br />This will add a role to the user who triggered this flow.
+        <br /><br />
+        1 - <b>Give a role to the user</b>
+        <br />This will add a role to the user who triggered this flow.
+        <br /><br />
+        2 - <b>Take a role away from the user</b>
+        <br />This will remove a role from the user who triggered this flow.
+        <br /><br />
+        3 - <b>Remove everyone from a role</b>
+        <br />This will remove everyone from this role.
+        <br /> Note: This might not remove everyone from the role due to caching. Some inactive users might not lose their role.
+        <br /><br />
+        4 - <b>Pin the count message</b>
+        <br />
+        <br />
+        5 - <b>Send a message</b>
+        <br />This will send a message in a channel (it doesn't have to be the counting channel!)
+        <br /><br />
+        6 - <b>Lock the counting channel</b>
+        <br />This will lock the counting channel for the everyone-role, and will be read-only.
+        <br /><br />
+        7 - <b>Reset the current count</b>
+      </Description>
+    </Embed>
+    <Attachments slot="components">
+      <ActionRow>
+        <Button type="primary" >0</Button>
+        <Button type="primary" >1</Button>
+        <Button type="primary" >2</Button>
+        <Button type="primary" >3</Button>
+        <Button type="primary" >4</Button>
+      </ActionRow>
+      <ActionRow>
+        <Button type="primary" >5</Button>
+        <Button type="primary" >6</Button>
+        <Button type="primary" >7</Button>
+        <Button type="secondary" >cancel</Button>
+      </ActionRow>
+    </Attachments>
+
+  </Message>
+</Discord>
