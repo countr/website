@@ -34,34 +34,14 @@ const config = {
             to: "docs",
           },
           {
-            label: "Blog",
-            position: "left",
-            to: "blog",
-          },
-          {
-            label: "Community Posts",
-            position: "left",
-            to: "/posts",
-          },
-          {
             label: "Tutorials",
             position: "left",
             to: "/tutorials",
           },
           {
-            label: "Terms of Service",
+            label: "Blog",
             position: "left",
-            to: "/terms",
-          },
-          {
-            label: "Privacy Policy",
-            position: "left",
-            to: "/privacy",
-          },
-          {
-            label: "GitHub",
-            position: "right",
-            href: "https://github.com/countr/countr",
+            to: "blog",
           },
           {
             label: "Status",
@@ -75,7 +55,61 @@ const config = {
         theme: require("prism-react-renderer/themes/github"),
         darkTheme: require("prism-react-renderer/themes/dracula"),
       },
-      footer: { copyright },
+      footer: {
+        links: [
+
+          {
+            title: 'Need more help?',
+            items: [
+              {
+                label: 'Documentation',
+                to: 'docs/',
+              },
+              {
+                label: 'Tutorials',
+                to: 'tutorials/',
+              },
+              {
+                label: 'Discord server',
+                href: 'https://discord.com/app',
+              }
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+
+              {
+                label: "Community Posts",
+                to: "/posts",
+              },
+              {
+                label: 'Discord server',
+                href: 'https://discord.com/invite/Ccj5bjb',
+              }
+            ],
+          },
+          {
+            title: 'Countr',
+            items: [
+              {
+                label: "Terms of Service",
+                to: "/terms",
+              },
+              {
+                label: "Privacy Policy",
+                to: "/privacy",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/countr/countr",
+              },
+            ],
+          },
+        ],
+
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      },
     },
   },
   plugins: [
@@ -157,7 +191,7 @@ const config = {
     ],
     [
       "@docusaurus/plugin-client-redirects",
-      { fromExtensions: ["html"]},
+      { fromExtensions: ["html"] },
     ],
     [
       "@docusaurus/plugin-google-analytics",
