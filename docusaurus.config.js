@@ -80,7 +80,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/countr/countr",
+                href: "https://github.com/countr",
               },
             ],
           },
