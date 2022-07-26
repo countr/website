@@ -3,14 +3,12 @@
   "private": true,
   "scripts": {
     "build": "docusaurus build",
-    "clear": "docusaurus clear",
+    "dev": "docusaurus start",
     "lint": "eslint ./src ./functions --max-warnings=0",
     "lint:fix": "eslint ./src ./functions --fix",
     "serve": "docusaurus serve",
-    "start": "npm run serve",
     "test": "tsc",
-    "test:watch": "tsc -w",
-    "watch": "docusaurus start"
+    "test:watch": "tsc -w"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-rc.1",

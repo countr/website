@@ -34,19 +34,29 @@ const config = {
             to: "docs",
           },
           {
-            label: "Tutorials",
-            position: "left",
-            to: "/tutorials",
-          },
-          {
             label: "Blog",
             position: "left",
             to: "blog",
           },
           {
-            label: "Uptime Status",
+            label: "Tutorials",
+            position: "left",
+            to: "/tutorials",
+          },
+          {
+            label: "Community Posts",
+            position: "left",
+            to: "posts",
+          },
+          {
+            label: "Bot Status",
             position: "right",
             href: "https://status.countr.xyz",
+          },
+          {
+            label: "Support Server",
+            position: "right",
+            href: "https://discord.com/app",
           },
         ],
         hideOnScroll: true,
@@ -57,38 +67,6 @@ const config = {
       },
       footer: {
         links: [
-
-          {
-            title: "Need more help?",
-            items: [
-              {
-                label: "Documentation",
-                to: "docs/",
-              },
-              {
-                label: "Tutorials",
-                to: "tutorials/",
-              },
-              {
-                label: "Support Server",
-                href: "https://discord.com/app",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-
-              {
-                label: "Community Posts",
-                to: "/posts",
-              },
-              {
-                label: "Support Server",
-                href: "https://promise.solutions/discord",
-              },
-            ],
-          },
           {
             title: "Countr",
             items: [
@@ -120,6 +98,7 @@ const config = {
         editUrl,
         routeBasePath: "/docs",
         showLastUpdateTime: true,
+        exclude: ["README.md", "template.md"],
       },
     ],
     [
@@ -140,6 +119,7 @@ const config = {
           copyright,
           language: "en",
         },
+        exclude: ["README.md", "template.md"],
       },
     ],
     [
@@ -161,6 +141,7 @@ const config = {
           copyright,
           language: "en",
         },
+        exclude: ["README.md", "template.md"],
       },
     ],
     [
