@@ -175,8 +175,8 @@ const config = {
       { fromExtensions: ["html"]},
     ],
     [
-      "@docusaurus/plugin-google-analytics",
-      { trackingID: "UA-153861801-1" },
+      "@docusaurus/plugin-google-gtag",
+      { trackingID: "G-07GPGSSG3Y" },
     ],
     [
       "@docusaurus/plugin-sitemap",
