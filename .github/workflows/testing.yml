@@ -33,5 +33,5 @@ jobs:
       run: npm ci
       if: steps.cache-packages.outputs.cache-hit != 'true'
 
-    - name: Build project
+    - name: Test build project
       run: npm run build
