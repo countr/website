@@ -1,3 +1,11 @@
+[![Build test](https://img.shields.io/github/workflow/status/countr/website/Testing)](https://github.com/countr/website/actions/workflows/testing.yml)
+[![Linting](https://img.shields.io/github/workflow/status/countr/website/Linting?label=quality)](https://github.com/countr/website/actions/workflows/linting.yml)
+[![Analysis and Scans](https://img.shields.io/github/workflow/status/countr/website/Analysis%20and%20Scans?label=scan)](https://github.com/countr/website/actions/workflows/analysis-and-scans.yml)
+[![DeepScan grade](https://deepscan.io/api/teams/16173/projects/21787/branches/633467/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16173&pid=21787&bid=633467)
+[![docusaurus version](https://img.shields.io/github/package-json/dependency-version/countr/website/@docusaurus/core?label=docusaurus)](https://github.com/facebook/docusaurus/releases)
+[![GitHub Issues](https://img.shields.io/github/issues-raw/countr/website.svg)](https://github.com/countr/website/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr-raw/countr/website.svg)](https://github.com/countr/website/pulls)
+
 # Countr Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/) and deployed using [Cloudflare Pages](https://pages.cloudflare.com/).
