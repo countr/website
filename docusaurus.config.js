@@ -16,6 +16,13 @@ const config = {
   themeConfig: {
     // theme-classic
     ...{
+      // remove this soon:tm:
+      announcementBar: {
+        id: "new-website-design",
+        content: "We are trying out a new website design for our upcoming rewrite. A blog post will be posted soon about it. We can't wait to see what you think!",
+      },
+      // end
+
       colorMode: {
         defaultMode: "dark",
         respectPrefersColorScheme: true,
