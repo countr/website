@@ -11,7 +11,7 @@ We are doing a massive upgrade on Countr that we've planned for way over a year.
 
 ## Visible changes
 
-* **Slash commands:** We're finally moving over to slash commands! There will be some @mention commands, but these are mostly for the support team of the bot to help you if you need help.
+* **Slash commands:** We're finally moving over to slash commands! There will be some @mention commands, but these are mostly for the support team of the bot to assist you if you need help.
 * **Stability improvements:** The uptime and stability is improved as it's now using the latest Discord.js version. It is now also a lot more scalable and easier to upgrade in the future.
     * *Technical explanation: our approach before was to spawn a worker thread per shard, but we used this way before it scaled to 120 shards. We will now spawn 12 clusters (same as 12 workers) with 10 shards each, and we can easily scale this in the future. It's also now dockerized, so if one cluster crashes then it will auto-restart, versus using pm2 that just restarts all 120 worker shards. Aka. a very nice improvement we should've done a long time ago.*
 * **Multiple counting channels + Threads:** You can now make multiple counting channels for your server! You can also now use threads for your counting channels!
