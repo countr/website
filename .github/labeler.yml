@@ -1,0 +1,23 @@
+# GitHub
+
+repository:
+- "*"
+- ".github/*"
+- ".github/**/*"
+
+
+# countr/website
+
+content:
+- "content/*/*"
+- "content/*/**/*"
+
+frontend:
+- "src/*"
+- "src/**/*"
+- "static/*"
+- "static/**/*"
+
+backend:
+- "functions/*"
+- "functions/**/*"
