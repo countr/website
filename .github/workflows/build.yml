@@ -1,4 +1,4 @@
-name: Linting
+name: Testing
 
 on:
   push:
@@ -9,8 +9,8 @@ on:
     - production
 
 jobs:
-  lint:
-    name: ESLint
+  build:
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
@@ -33,5 +33,5 @@ jobs:
       run: npm ci
       if: steps.cache-packages.outputs.cache-hit != 'true'
 
-    - name: Run ESLint
-      run: npm run lint
+    - name: Build project
+      run: npm run build
