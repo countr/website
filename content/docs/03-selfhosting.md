@@ -15,8 +15,11 @@ We will have to do this once:
 
 After all this, start the bot with `npm run start`.
 
-> [!WARNING]
-> There is literally no warranty if you self-host Countr, and we will not help you set it up either. If you wish to set the bot up yourself, we expect you have well enough knowledge in Node.js. We still recommend using the original bot.
+:::caution Warning
+
+There is literally no warranty if you self-host Countr, and we will not help you set it up either. If you wish to set the bot up yourself, we expect you have well enough knowledge in Node.js. We still recommend using the original bot.
+
+:::
 
 ## Configuration
 
