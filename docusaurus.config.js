@@ -63,7 +63,7 @@ const config = {
           {
             label: "Support Server",
             position: "right",
-            href: "https://discord.com/app",
+            href: "https://promise.solutions/discord",
           },
         ],
         hideOnScroll: true,
