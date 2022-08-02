@@ -19,7 +19,7 @@ const config = {
       // remove this soon:tm:
       announcementBar: {
         id: "new-website-design-with-blog",
-        content: "Scheduled maintenance planned this week! <a href=\"/blog/2022/07/26/countr-upgrade-maintenance-announcement\">Read the blog post!</a>",
+        content: "Scheduled maintenance planned this week! <a href=\"/blog/2022/08/02/countr-upgrade-maintenance-announcement\">Read the blog post!</a>",
       },
       // end
 
