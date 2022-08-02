@@ -18,8 +18,8 @@ const config = {
     ...{
       // remove this soon:tm:
       announcementBar: {
-        id: "new-website-design",
-        content: "We are trying out a new website design for our upcoming rewrite. A blog post will be posted soon about it. We can't wait to see what you think!",
+        id: "new-website-design-with-blog",
+        content: "Scheduled maintenance planned this week! <a href=\"/blog/2022/07/26/countr-upgrade-maintenance-announcement\">Read the blog post!</a>",
       },
       // end
 
@@ -40,11 +40,11 @@ const config = {
             position: "left",
             to: "docs",
           },
-          // {
-          //   label: "Blog",
-          //   position: "left",
-          //   to: "blog",
-          // },
+          {
+            label: "Blog",
+            position: "left",
+            to: "blog",
+          },
           // {
           //   label: "Tutorials",
           //   position: "left",
@@ -108,27 +108,27 @@ const config = {
         exclude: ["README.md", "template.md"],
       },
     ],
-    // [
-    //   "@docusaurus/plugin-content-blog",
-    //   {
-    //     id: "plugin-content-blog--blog",
-    //     path: "content/blog",
-    //     blogTitle: "Countr Blog",
-    //     blogDescription: "The Countr Blog, where we announce all new about Countr.",
-    //     blogSidebarCount: "ALL",
-    //     blogSidebarTitle: "Blog",
-    //     routeBasePath: "/blog",
-    //     authorsMapPath: "../authors.yml",
-    //     feedOptions: {
-    //       type: "all",
-    //       title: "Countr Blog",
-    //       description: "The Countr Blog, where we announce all new about Countr.",
-    //       copyright,
-    //       language: "en",
-    //     },
-    //     exclude: ["README.md", "template.md"],
-    //   },
-    // ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "plugin-content-blog--blog",
+        path: "content/blog",
+        blogTitle: "Countr Blog",
+        blogDescription: "The Countr Blog, where we announce all new about Countr.",
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: "Blog",
+        routeBasePath: "/blog",
+        authorsMapPath: "../authors.yml",
+        feedOptions: {
+          type: "all",
+          title: "Countr Blog",
+          description: "The Countr Blog, where we announce all new about Countr.",
+          copyright,
+          language: "en",
+        },
+        exclude: ["README.md", "template.md"],
+      },
+    ],
     // [
     //   "@docusaurus/plugin-content-blog",
     //   {
