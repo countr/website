@@ -40,7 +40,7 @@ export default class Reviews extends React.Component<Record<string, never>, { gu
   }
 
   override componentDidMount(): void {
-    void fetch("https://countr-splash-stats.promise.workers.dev/")
+    void fetch("/api/stats")
       .then(res => res.json<APIStats>())
       .then(stats => {
         this.setState({

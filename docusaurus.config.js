@@ -190,11 +190,14 @@ const config = {
       { changefreq: "hourly", priority: 0.5 },
     ],
   ],
-  scripts: [{ src: "https://arc.io/widget.min.js#watbhJvw", async: true }],
+  scripts: [
+    { src: "https://arc.io/widget.min.js#7MqQMouh", async: true },
+    { src: "https://status.countr.xyz/widget/script.js", async: true },
+  ],
   themes: ["@docusaurus/theme-classic"],
   clientModules: [
-    require.resolve("./static/discord-components.js"),
-    require.resolve("./static/style.css"),
+    require.resolve("./src/discord-components.js"),
+    require.resolve("./src/style.css"),
   ],
 };
 
