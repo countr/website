@@ -31,13 +31,13 @@ const FeatureList: FeatureItem[] = [
   {
     title: "Well documented",
     image: "/img/docs.svg",
-    description: <>The documentation is up-to-date, and we will keep it that way. <Link to="/docs">Read the documentation here</Link>.</>,
+    description: <>The documentation is up-to-date, and we will keep it that way. We also now have a Posts-tab that we regularly post articles on. <Link to="/docs">Read the docs here</Link> and <Link to="/posts">check out the posts here</Link>.</>,
     size: 6,
   },
   {
     title: "Completely free",
     image: "/img/free.svg",
-    description: <>We believe in free and open-source services with no ads. We also believe in a &quot;pay-whatever-you-want&quot;-model which has worked pretty well, starting from just $1/month. <Link to="/docs/premium">Read more on Premium here</Link>.</>,
+    description: <>We believe in free and open-source services with no ads. We also believe in a &quot;pay-whatever-you-want&quot;-model which has worked pretty well, starting from just $1/month. <Link to="/docs/pricing">Read more on Premium here</Link>.</>,
     size: 6,
   },
 ];

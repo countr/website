@@ -1,0 +1,95 @@
+import {
+  DiscordActionRow as ActionRow,
+  DiscordAttachments as Attachments,
+  DiscordBold as Bold,
+  DiscordButton as Button,
+  DiscordCommand as Command,
+  DiscordEmbedDescription as Description,
+  DiscordMessages as Discord,
+  DiscordEmbed as Embed,
+  DiscordMessage as Message,
+} from "@skyra/discord-components-react";
+
+# Counting systems
+
+The default is the [decimal system](#decimal), we all know this one. You count from 0 to 9, and then add a 1 at the end.
+
+There's more than one way to count though.
+
+## List of supported systems
+
+### Decimal
+
+The default counting system. Also known as the base-10 system.
+
+<Discord>
+  <Message>399</Message>
+  <Message>400</Message>
+  <Message>401</Message>
+</Discord>
+
+### Hexadecimal
+
+Count 0-9 and then A-F. Also known as the base-16 system.
+
+<Discord>
+  <Message>27D9</Message>
+  <Message>27DA</Message>
+  <Message>27DB</Message>
+</Discord>
+
+### Binary
+
+Count in 0s and 1s. Also known as the base-2 system.
+
+<Discord>
+  <Message>1100110</Message>
+  <Message>1100111</Message>
+  <Message>1101000</Message>
+</Discord>
+
+### Base36
+
+Count 0-9 and then A-Z. This is a bit tricky.
+
+<Discord>
+  <Message>271k</Message>
+  <Message>271l</Message>
+  <Message>271m</Message>
+</Discord>
+
+### Base64
+
+Count 0-9 and then A-Z and then a-z. Might include a few other characters like equals at the end. Good luck with this one.
+
+<Discord>
+  <Message>MzAwMjk0OTk=</Message>
+  <Message>MzAwMjk1MDA=</Message>
+  <Message>MzAwMjk1MDE=</Message>
+</Discord>
+
+### Roman
+
+Count in roman numerals. Uses the letters I, V, X, L, C, D, M.
+
+Note: Traditionally, the highest number you can represent using roman numerals is 3,999. However, the bot accepts higher values by just adding more M's.
+
+<Discord>
+  <Message>CDXXIII</Message>
+  <Message>CDXXIV</Message>
+  <Message>CDXXV</Message>
+</Discord>
+
+### Math equations
+
+Count with math equations to train your brian.
+
+<Discord>
+  <Message>27*3+14</Message>
+  <Message>16*6</Message>
+  <Message>9^2+2^4</Message>
+</Discord>
+
+## How do I know what number I'm on?
+
+When you run `/count`, you get information about the current number and what your next number is as well. This is quite handy for complex systems like the [base64-system](#base64)!
