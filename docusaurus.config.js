@@ -114,7 +114,7 @@ const config = {
         id: "plugin-content-blog--blog",
         path: "content/blog",
         blogTitle: "Countr Blog",
-        blogDescription: "The Countr Blog, where we announce all new about Countr.",
+        blogDescription: "The Countr Blog, where we announce everything new about Countr.",
         blogSidebarCount: "ALL",
         blogSidebarTitle: "Blog",
         routeBasePath: "/blog",
@@ -122,7 +122,7 @@ const config = {
         feedOptions: {
           type: "all",
           title: "Countr Blog",
-          description: "The Countr Blog, where we announce all new about Countr.",
+          description: "The Countr Blog, where we announce everything new about Countr.",
           copyright,
           language: "en",
         },
