@@ -96,6 +96,16 @@ const config = {
         copyright,
       },
     },
+
+    // theme-search-algolia
+    ...{
+      algolia: {
+        appId: "W0EOHXQRJJ",
+        apiKey: "911d13589678145ce659d8ff2fb31c8f",
+        indexName: "countr",
+        placeholder: "Search",
+      },
+    },
   },
   plugins: [
     [
@@ -194,7 +204,7 @@ const config = {
     { src: "https://arc.io/widget.min.js#7MqQMouh", async: true },
     { src: "https://status.countr.xyz/widget/script.js", async: true },
   ],
-  themes: ["@docusaurus/theme-classic"],
+  themes: ["@docusaurus/theme-classic", "@docusaurus/theme-search-algolia"],
   clientModules: [
     require.resolve("./src/discord-components.js"),
     require.resolve("./src/style.css"),
