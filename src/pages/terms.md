@@ -4,46 +4,78 @@ title: Terms of Service
 
 # Terms of Service
 
-## 1. Terms {#terms}
+## 1. Introduction {#introduction}
 
-By accessing this Website, accessible from [countr.xyz](https://countr.xyz), you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.
+Please read these Terms of Service (these "Terms") carefully as they govern your use of
+Promise Solutions’ (the “Service Provider”) services through Countr (the “Bot”), an application
+on the Discord platform.
 
-## 2. Use License {#use-license}
+Use of Countr may be subject to additional terms and conditions presented by Promise
+Solutions, which are hereby incorporated by this reference into these Terms.
 
-Permission is granted to temporarily download one copy of the materials on Promise Solutions' Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+By using Countr or by otherwise interacting with it in any way, you agree to these Terms. If
+you do not agree to these Terms, then you must not use the Countr bot application in any
+capacity.
 
-- modify or copy the materials;
-- use the materials for any commercial purpose or for any public display;
-- attempt to reverse engineer any software contained on Promise Solutions' Website;
-- remove any copyright or other proprietary notations from the materials; or
-- transfer the materials to another person or "mirror" the materials on any other server.
 
-This will allow Promise Solutions to terminate upon violations of any of these restrictions. Upon termination, your viewing right will also be terminated and you should destroy any downloaded materials in your possession whether it is printed or electronic format.
+## 2. Availability of Service {#availability-of-service}
 
-## 3. Disclaimer {#disclaimer}
+The Service Provider cannot assuredly guarantee that you will have continuous uninterrupted
+access to Countr. For whatever reason, at any time, the Bot may be made unavailable for
+maintenance or may unexpectedly stop responding to user-invoked instructions
+(“Commands”).
 
-All the materials on Promise Solutions’s Website are provided "as is". Promise Solutions makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, Promise Solutions does not make any representations concerning accuracy or reliability of the use of the materials on its Website or otherwise relating to such materials or any sites linked to this Website.
+You must also be cognisant that unavailability may sometimes be out of the control of the
+Bot’s maintainers and could instead be reliant on Discord’s Application Programming
+Interface (“API”) having an outage. In these instances, the Service Provider will make every
+reasonable effort to notify its users.
 
-## 4. Limitations {#limitations}
+Alternatively, Promise Solutions reserves the right to temporarily or permanently revoke
+access to the Bot, on multiple bases, including servers, channels, and users, for any, or no,
+reason, though users have a reasonable assumption to believe that it will be due to what has
+been determined as misuse. This can happen where a user’s interactions with the Bot have
+been determined to be with malicious aforethought, and if their access to the Bot remained,
+there may be an existing threat to the upkeep of the Bot.
 
-Promise Solutions or its suppliers will not be held accountable for any damages that will arise with the use or inability to use the materials on Promise Solutions’s Website, even if Promise Solutions or an authorized representative of this Website has bnotified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you.
 
-## 5. Revisions and Errata {#revisions-and-errata}
+## 3. Our Promise to you {#our-promise-to-you}
 
-The materials appearing on Promise Solutions’s Website may include technical, typographical, or photographic errors. Promise Solutions will not promise that any of the materials in this Website are accurate, complete, or current. Promise Solutions may change materials contained on its Website at any time without notice. Promise Solutions does not make any commitment to update the materials.
+As the Service Provider, we will act with professional diligence and will aim to resolve any
+disputes with you amicably. We can be held to the standard that our support representatives
+and any associated officials will respond to queries with their best knowledge on the topic
+and will approach senior representatives if any disambiguation is required. Likewise, we
+expect that you will respect our support representatives and all officials that represent
+Countr or Promise Solutions.
 
-## 6. Links {#links}
 
-Promise Solutions has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by Promise Solutions of the site. The use of any linked website is at user’s own risk.
+## 4. Privacy Policy {#privacy-policy}
 
-## 7. Site Terms of Use Modifications {#site-terms-of-use-modifications}
+Promise Solutions maintains a Privacy Policy, which is a legal document which defines how
+Promise Solutions (the “Data Controller”) handles and stores your data, what data is stored, as
+well as conditions for erasure and anonymisation of existing information. You can access
+Countr’s Privacy Policy by clicking [here](/privacy).
 
-Promise Solutions may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use.
 
-## 8. Your Privacy {#your-privacy}
+## 5. Changes to these Terms {#changes-to-these-terms}
 
-Please read our [Privacy Policy](/privacy).
+Promise Solutions may apply amendments, omissions, or addendums to this Terms of Service
+document at any time, for whatever, or no, reason. The Service Provider will make every
+reasonable effort to notify its users of significant changes to the Terms of Service document.
+Minor amendments, omissions, or addendums may not be announced in an official capacity.
 
-## 9. Governing Law {#governing-law}
 
-Any claim related to Promise Solutions' Website shall be governed by the laws without regards to its conflict of law provisions.
+## 6. Right to Disambiguation {#right-to-disambiguation}
+
+You have the right to disambiguation, meaning that you can ask us for clarification about
+anything mentioned in this document and we can explain to you what it means in more
+accessible terminology, though we have made a reasonable effort to do so herein. You can
+contact us at [terms@countr.xyz](mailto:terms@countr.xyz).
+
+
+## 7. Termination {#termination}
+
+Promise Solutions, as well as you, have the right to terminate these Terms at any time, for
+whatever, or no reason, without consequence. This does not invalidate any actions that may
+have been performed prior to the activation of the Termination clause. Terminating this
+agreement also means that Promise Solutions reserves the right to revoke your access to the
+Bot. For information about how your data is handled, refer to Countr’s [Privacy Policy](/privacy).
