@@ -20,7 +20,6 @@ let stats: APIStats = {
   last: 0,
 };
 
-// eslint-disable-next-line no-undef -- is a global type definition
 export const onRequest: PagesFunction = async request => {
   const now = Date.now();
   if (stats.last + 300_000 < now) {

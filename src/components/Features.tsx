@@ -49,7 +49,7 @@ function Feature({ title, image, description, size }: FeatureItem) {
         <img className={styles["featureSvg"]} alt={title} src={image} />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>{description}</p>
       </div>
     </div>

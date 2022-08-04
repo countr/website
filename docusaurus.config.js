@@ -89,6 +89,16 @@ const config = {
         copyright,
       },
     },
+
+    // theme-search-algolia
+    ...{
+      algolia: {
+        appId: "W0EOHXQRJJ",
+        apiKey: "911d13589678145ce659d8ff2fb31c8f",
+        indexName: "countr",
+        placeholder: "Search",
+      },
+    },
   },
   plugins: [
     [
@@ -107,7 +117,7 @@ const config = {
         id: "plugin-content-blog--blog",
         path: "content/blog",
         blogTitle: "Countr Blog",
-        blogDescription: "The Countr Blog, where we announce all new about Countr.",
+        description: "The Countr Blog, where we announce everything new about Countr.",
         blogSidebarCount: "ALL",
         blogSidebarTitle: "Blog",
         routeBasePath: "/blog",
@@ -183,11 +193,14 @@ const config = {
       { changefreq: "hourly", priority: 0.5 },
     ],
   ],
-  scripts: [{ src: "https://arc.io/widget.min.js#watbhJvw", async: true }],
-  themes: ["@docusaurus/theme-classic"],
+  scripts: [
+    { src: "https://arc.io/widget.min.js#7MqQMouh", async: true },
+    { src: "https://status.countr.xyz/widget/script.js", async: true },
+  ],
+  themes: ["@docusaurus/theme-classic", "@docusaurus/theme-search-algolia"],
   clientModules: [
-    require.resolve("./static/discord-components.js"),
-    require.resolve("./static/style.css"),
+    require.resolve("./src/discord-components.js"),
+    require.resolve("./src/style.css"),
   ],
 };
 
