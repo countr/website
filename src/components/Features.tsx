@@ -19,7 +19,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: "Customize your channel",
     image: "/img/flows.svg",
-    description: <>We have even made it possible for you to customize how the counting works. Set up rewards, milestones, goals and more with flows. <Link to="/docs/flows">Read more on flows here</Link>.</>,
+    description: <>We have even made it possible for you to customize how the counting works. Set up rewards, milestones, goals and more with flows. <Link to="/docs/features/flows">Read more on flows here</Link>.</>,
     size: 4,
   },
   {
@@ -37,7 +37,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: "Completely free",
     image: "/img/free.svg",
-    description: <>We believe in free and open-source services with no ads. We also believe in a &quot;pay-whatever-you-want&quot;-model which has worked pretty well, starting from just $1/month. <Link to="/docs/pricing">Read more on Premium here</Link>.</>,
+    description: <>We believe in free and open-source services with no ads. We also believe in a &quot;pay-whatever-you-want&quot;-model which has worked pretty well, starting from just $1/month. <Link to="/docs/premium">Read more on Premium here</Link>.</>,
     size: 6,
   },
 ];
