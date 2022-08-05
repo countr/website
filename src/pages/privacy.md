@@ -57,7 +57,8 @@ browser where they get saved before going back to the same Website(s).
 
 Certain information may be stored about your usage of the Website(s) through Google
 Analytics, which is used for marketing and Search Engine Optimisation (SEO) purposes. This
-information is only accessible to authorised Countr administrative staff.
+information is only accessible to `Promise#0001`, with user identifier `110090225929191424`,
+hereby referenced to as the Bot Creator.
 
 
 ## 3. Why we collect Data about you {#why-we-collect-data-about-you}
@@ -87,7 +88,7 @@ exceptional circumstances where there is a requirement due to misuse or maintain
 of Countr.
 
 Amendments, omissions or other changes made to the database directly can only be enacted
-by `Promise#0001`, with user identifier `110090225929191424`.
+by the Bot Creator.
 
 
 ## 5. Request for Data Erasure
