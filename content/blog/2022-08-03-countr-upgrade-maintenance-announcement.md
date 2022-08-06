@@ -3,11 +3,13 @@ authors: promise
 tags: [changelog, maintenance]
 ---
 
+
 # Countr Upgrade + Maintenance Announcement
 
 We are doing a massive upgrade on Countr that we've planned for way over a year now. It's finally here. Global maintenance will take place on August 5th until August 7th, and will affect all services including Countr, Countr Premium, Website and Status page. We will most likely not use all three days for everything, and we hope to have the bot up on the 5th, however it might take some time to get everything up and running.
 
 <!--truncate-->
+
 
 ## Visible changes
 
@@ -26,6 +28,7 @@ We are doing a massive upgrade on Countr that we've planned for way over a year 
 [5]: https://en.wikipedia.org/wiki/Base_64
 [6]: https://en.wikipedia.org/wiki/Roman_numerals
 
+
 ## Countr rewritten for the third time
 
 I remember back in the day when Countr used discord.js version 11 and I was starting to make a rewrite to support version 12. The week after we launched our new version, the discord.js team launched version 13. That was quite frustrating to see.
@@ -36,6 +39,7 @@ The code was almost done, but then - even more frustratingly than the last time 
 
 I decided to scrap the code and rewrite it again. I also had better ideas for the code anyways so I would either have to rewrite every file in the project, or just start from scratch again. I am quite happy with how this code turned out though, and they also released version 14 two weeks ago which we successfully upgraded to.
 
+
 ## Website overhaul
 
 We've changed up our website and made it easier to maintain and also moved documentation here as well, instead of having two separate websites.
@@ -43,6 +47,7 @@ We've changed up our website and made it easier to maintain and also moved docum
 The community will also be able to contribute to the content of the website with tutorials or community posts where people can share their stories. More info on this in a future blog post :)
 
 We're also going to make changes to the status page, and will open-source this code as well.
+
 
 ## Still in BETA
 
