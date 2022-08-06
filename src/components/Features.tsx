@@ -19,7 +19,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: "Customize your channel",
     image: "/img/flows.svg",
-    description: <>We have even made it possible for you to customize how the counting works. Set up rewards, milestones, goals and more with flows. <Link to="/docs/flows">Read more on flows here</Link>.</>,
+    description: <>We have even made it possible for you to customize how the counting works. Set up rewards, milestones, goals and more with flows. <Link to="/docs/features/flows">Read more on flows here</Link>.</>,
     size: 4,
   },
   {
@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: "Well documented",
     image: "/img/docs.svg",
-    description: <>The documentation is up-to-date, and we will keep it that way. <Link to="/docs">Read the documentation here</Link>.</>,
+    description: <>The documentation is up-to-date, and we will keep it that way. We also now have a Posts-tab that we regularly post articles on. <Link to="/docs">Read the docs here</Link> and <Link to="/posts">check out the posts here</Link>.</>,
     size: 6,
   },
   {

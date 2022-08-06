@@ -16,13 +16,6 @@ const config = {
   themeConfig: {
     // theme-classic
     ...{
-      // remove this soon:tm:
-      announcementBar: {
-        id: "new-website-design-with-blog",
-        content: "Scheduled maintenance planned this week! <a href=\"/blog/2022/08/03/countr-upgrade-maintenance-announcement\">Read the blog post!</a>",
-      },
-      // end
-
       colorMode: {
         defaultMode: "dark",
         respectPrefersColorScheme: true,
@@ -45,21 +38,21 @@ const config = {
             position: "left",
             to: "blog",
           },
-          // {
-          //   label: "Tutorials",
-          //   position: "left",
-          //   to: "/tutorials",
-          // },
-          // {
-          //   label: "Community Posts",
-          //   position: "left",
-          //   to: "posts",
-          // },
-          // {
-          //   label: "Bot Status",
-          //   position: "right",
-          //   href: "https://status.countr.xyz",
-          // },
+          {
+            label: "Tutorials",
+            position: "left",
+            to: "/tutorials",
+          },
+          {
+            label: "Community Posts",
+            position: "left",
+            to: "posts",
+          },
+          {
+            label: "Bot Status",
+            position: "right",
+            href: "https://status.countr.xyz",
+          },
           {
             label: "Support Server",
             position: "right",
@@ -132,57 +125,57 @@ const config = {
         feedOptions: {
           type: "all",
           title: "Countr Blog",
-          description: "The Countr Blog, where we announce everything new about Countr.",
+          description: "The Countr Blog, where we announce all new about Countr.",
           copyright,
           language: "en",
         },
         exclude: ["README.md", "template.md"],
       },
     ],
-    // [
-    //   "@docusaurus/plugin-content-blog",
-    //   {
-    //     id: "plugin-content-blog--tutorials",
-    //     path: "content/tutorials",
-    //     editUrl,
-    //     blogTitle: "Countr Tutorials",
-    //     blogDescription: "Get neat tips and tricks on how to customize Countr to the fullest.",
-    //     blogSidebarCount: "ALL",
-    //     blogSidebarTitle: "Tutorials",
-    //     routeBasePath: "/tutorials",
-    //     authorsMapPath: "../authors.yml",
-    //     feedOptions: {
-    //       type: "all",
-    //       title: "Countr Tutorials",
-    //       description: "Get neat tips and tricks on how to customize Countr to the fullest.",
-    //       copyright,
-    //       language: "en",
-    //     },
-    //     exclude: ["README.md", "template.md"],
-    //   },
-    // ],
-    // [
-    //   "@docusaurus/plugin-content-blog",
-    //   {
-    //     id: "plugin-content-blog--posts",
-    //     path: "content/posts",
-    //     editUrl,
-    //     blogTitle: "Countr Community Posts",
-    //     blogDescription: "Read posts from the community on how they use Countr.",
-    //     blogSidebarCount: "ALL",
-    //     blogSidebarTitle: "Countr Community Posts",
-    //     routeBasePath: "/posts",
-    //     authorsMapPath: "../authors.yml",
-    //     feedOptions: {
-    //       type: "all",
-    //       title: "Countr Community Posts",
-    //       description: "Read posts from the community on how they use Countr.",
-    //       copyright,
-    //       language: "en",
-    //     },
-    //     exclude: ["README.md", "template.md"],
-    //   },
-    // ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "plugin-content-blog--tutorials",
+        path: "content/tutorials",
+        editUrl,
+        blogTitle: "Countr Tutorials",
+        blogDescription: "Get neat tips and tricks on how to customize Countr to the fullest.",
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: "Tutorials",
+        routeBasePath: "/tutorials",
+        authorsMapPath: "../authors.yml",
+        feedOptions: {
+          type: "all",
+          title: "Countr Tutorials",
+          description: "Get neat tips and tricks on how to customize Countr to the fullest.",
+          copyright,
+          language: "en",
+        },
+        exclude: ["README.md", "template.md"],
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "plugin-content-blog--posts",
+        path: "content/posts",
+        editUrl,
+        blogTitle: "Countr Community Posts",
+        blogDescription: "Read posts from the community on how they use Countr.",
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: "Countr Community Posts",
+        routeBasePath: "/posts",
+        authorsMapPath: "../authors.yml",
+        feedOptions: {
+          type: "all",
+          title: "Countr Community Posts",
+          description: "Read posts from the community on how they use Countr.",
+          copyright,
+          language: "en",
+        },
+        exclude: ["README.md", "template.md"],
+      },
+    ],
     [
       "@docusaurus/plugin-content-pages",
       { path: "src/pages", routeBasePath: "/" },

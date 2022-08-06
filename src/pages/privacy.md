@@ -4,76 +4,127 @@ title: Privacy Policy
 
 # Privacy Policy
 
-## 1. Overview {#overview}
+## 1. Introduction {#introduction}
 
-Promise Solutions has developed this Privacy Policy to explain how Countr, as a Data Controller, may collect, retain, process, share and transfer your User Data when you visit our Sites or use our Services. This Privacy Policy applies to your User Data when you visit Sites or use Services, and is not applicable to online websites or services that we do not own or have any degree of control over.
-This Privacy Policy is designed to assist you in obtaining information about our privacy practices and to help you understand your privacy choices and their exhaustive capacities when you use our Sites and Services.
-We have defined some terms that we use throughout the Privacy Policy. You can find the meaning of a capitalised term in the Definitions section, located at the bottom of this document.
-We encourage you, the User, to read the entirety of this Privacy Policy prior to use of any of our Services. You are assumed liability for any potential damages caused due to failure to read this comprehensive legal document.
-Guild and User information is stored with respect to perpetuity. As per our desire to allow Users to have full control over how their data is managed, you are afforded the right of erasure or deletion of relevant information to you. This process can be initiated by sending us an email in correspondence with this regulation or through running c!factoryreset on a server that Countr is a member of. This is facilitated through sending a message, where ‘c!’ is the default prefix that invokes Countr to respond to and process the User’s request.
-Please contact us if you have any questions about our privacy practices that are not addressed in this Privacy Policy through [privacy@countr.xyz](mailto:privacy@countr.xyz).
+Please read this Privacy Policy carefully as the clauses herein specify exactly what information
+we collect about you, how it is used, who has access to it, and how it can be deleted (the right
+to erasure), as well as any other information we feel you have the right to know.
 
-## 2. What User Data do we collect? {#what-user-data-do-we-collect}
+By using Countr or by otherwise interacting with it in any way, you agree that Promise
+Solutions (the “Data Controller”) may use your data in the following ways. If you do not agree
+with all of the clauses in this agreement in exhaustive capacity, you should cease your
+interactions and usage of Countr (the “Bot”).
 
-We collect Personal Data about you when you visit our Sites or use our Services, including the following:
-
-- **Quintessential User information, including the following, to exhaustive capacity:**
-  - your User identifier upon the initiation of a count;
-  - your User identifier if you are the most recent User to count;
-  - your User identifier if you are timed out;
-  - your User identifier if you intentionally configure a notification alert.
+We strongly recommend that you also read Countr’s [Terms of Service](/terms) so you are able to
+ascertain a full understanding of our commitment to our users’ safety.
 
 
-- **Quintessential Guild information, including the following, to exhaustive capacity:**
-  - Guild identifier when our internal storage databases are modified, usually as per command invocation by a User of our Services;
-  - Channel identifier when a User configures an existing Channel to be used to fulfil the primary functionality of the bot.
+## 2. Personal Data we collect about you {#personal-data-we-collect-about-you}
 
-Countr caches the following information in lieu of perpetually storing it:
+We only collect data about our users when it is necessary for Countr to function and achieve
+its expected outcomes. The data that we collect is only for our own legitimate interests and
+we only use it in ways that are explicitly specified in this Privacy Policy.
 
-- names of Guilds that the bot has been added to;
-- icons of Guilds that the bot has been added to;
-- member lists of Guilds that the bot has been added to;
-- comprehensive Channel lists of Guilds that the bot has been added to;
-- the end User’s username, avatar, or anything else pertaining to a unique User on the platform;
-- anything else that is extraneous to the bot’s performance and functionalities that are served.
+It is necessary for us to collect the following information:
 
-## 3. How do we process User Data? {#how-do-we-process-user-data}
+  * guild identifiers (“IDs”)
+  * channel identifiers (“IDs”)
+  * user identifiers (“IDs”).
+    * Please note that user IDs may also be collected and stored due to an
+      administrator or authorised individual importing or setting a user’s score
+      manually.
 
-For our legitimate interests, including to:
+A “guild” is defined as an “isolated collection of users and channels”, as defined by Discord’s
+Developer Documentation. It is referred to in the user interface as a “server”.
 
-- enforce the terms of our Sites and Services;
-- manage our everyday needs, such as monitoring, analysing;
-- manage risk and abuse of Promise Solutions Services.
+Countr does not keep a temporary or perpetual store of messages sent outside of channels
+designated as “counting channels”, wherein users can send messages for the purpose of
+counting, following on from the previous users. In this instance, messages are stored only for
+the purpose of satisfying core functionality agreed upon by an authorised server
+representative.
 
-With your consent, including to:
+Some data may be temporarily stored by means of cache. With relevance to Discord, cache is a
+software component that stores data so that information can be served faster at a later point
+in time. Items stored in cache may include:
 
-- to use cookies and other tracking technologies to provide a targeted display, feature, Service or offer to you
-- to respond to your requests, for example to contact you about a question you submitted to our support team.
+  * Guild IDs and guild information that is publicly available;
+  * User IDs and user information that is publicly available.
 
-All user and Guild information that is available to Countr maintainers will only ever be internally accessed. We do not sell or transmit data to third-party aggregates under any condition. Disclosure of information will never be facilitated without prior permission from all involved Users of our Services.
-By using Countr, you hereby accept and understand with absolution what we store and how we use the collected data, as defined in this Privacy Policy, to best serve you as the User and your Guild.
+When interacting with our Website(s) (\*.countr.xyz, \*.countr.pages.dev), we may
+store cookies. Simply, cookies are small pieces of information in the form of a text file,
+containing a string of letters and numbers. This file is sent from the Website(s) to the user’s
+browser where they get saved before going back to the same Website(s).
 
-## 4. Website {#website}
+Certain information may be stored about your usage of the Website(s) through Google
+Analytics, which is used for marketing and Search Engine Optimisation (SEO) purposes. This
+information is only accessible to `Promise#0001`, with user identifier `110090225929191424`,
+hereby referenced to as the Bot Creator.
 
-Our website may link to external sites that are not operated, maintained or upheld by us. We are not responsible for any content found on external sites and we are not liable for any damages caused by engaging with or seeing content that is explicit in nature or illegal in any way. We make every effort possible to only associate with external sites that are in compliance with our own ethics. If, at any point in time, you encounter eternal activity that you believe in some way could pose harm or defamatory impositions for the Promise Solutions or Countr entities, you may contact us through privacy@countr.xyz.
-Third-party sites that may be operated in part by Promise Solutions include, but may not necessarily be limited to:
 
-- *.countr.xyz
-- *.but-it-actually.works
-- *.promise.solutions
-- *.promise.workers.dev
+## 3. Why we collect Data about you {#why-we-collect-data-about-you}
 
-We are not affiliated with or accept responsibility for any clauses in the Terms of Service, Privacy Policy or any other legal document in pertinence to another entity that is out of bounds of Promise Solutions’ capacity as an operator.
-By continuing to use and interact with this site, you are bound by the above agreement testament to our management of the site. If you feel yourself unable to agree with any of the above clauses, we urge you to cease use of our sites immediately.
+Data is collected solely for the purpose of providing a service to you. We collect the
+information below for the specified reasons.
 
-## 5. Definitions {#definitions}
+  * Guild IDs are collected for the purpose of the Bot being able to distinguish between
+    guilds and to associate data with a guild so the Bot can run on preferred settings;
+  * Channel IDs are collected for the purpose of identifying and associating internally
+    counting channels with certain predefined settings;
+  * User IDs are collected for the purpose of the Bot being able to tell different users
+    apart, and maintain statistics;
+  * Cookies are collected for the purpose of optimising your experience on the Website
+    and allowing information to be processed and accessible to you at a faster rate.
 
-- **Channel** refers to a medium on the Discord platform through which users can send messages and communicate with each other. Channels can be located in servers, but they also constitute Direct Messages with other users. In the context of Countr and Promise Solutions, requests are not parsed through Direct Messages.
-- **Countr** refers to a bot user that maintains a presence on the digital content distribution platform Discord, owned by Discord, Inc. The bot is not affiliated with any of Discord’s employees or the entity’s contracted partners. You can learn more about bots by accessing this link (it is external and redirects you to an official Discord-operated site): [https://discord.com/developers/docs/intro](https://discord.com/developers/docs/intro).
-- **Data Controller** means that Promise Solutions determines the purposes and means of the processing of User Data.
-- **Guild (or ‘Guilds’)** refers to a server on the Discord platform, through which users of the platform can communicate via the medium of Channels.
-- **Promise Solutions** refers to the development entity that maintains a presence on the instant messaging and digital distribution platform Discord. In this Privacy Policy, Promise Solutions is sometimes referred to as “we,” “us,” or “our,” depending on the context in which it is placed.
-- **Services** refers to any products, services, content, features, technologies, or functions, and all related websites, applications and services offered to you by Promise Solutions.
-- **Sites** refers to the websites, official social media platforms or other online properties through which we offer the Services and which have posted or linked to this Privacy Policy.
-- **User** refers to an individual who uses the Services or accesses the Sites.
-- **User Data** refers to information that can be associated with a User account on the Discord platform. “User Data” can include, but is not limited to, username, discriminator, User identifier (often abbreviated ‘ID’), User avatar.
+
+## 4. Disclosure of Data {#disclosure-of-data}
+
+Under no circumstance will we disclose your data to any third-parties for any reason. Your
+data is only accessible by Countr bot representatives (referred to henceforth as
+“Representatives”). Representatives may include administrative and support staff who have a
+legitimate interest in assisting you.
+
+Generally, your data will not be modified without informed consent, though there may be
+exceptional circumstances where there is a requirement due to misuse or maintain continuity
+of Countr.
+
+Amendments, omissions or other changes made to the database directly can only be enacted
+by the Bot Creator.
+
+
+## 5. Request for Data Erasure
+
+If you wish to clear any and all stored information on a guild in which you have sufficient
+access, you may run the /data reset command, which will remove your guild from our
+database, effective immediately.
+
+If you wish to clear any and all stored information about yourself (the user), you can contact
+the Data Controller at [gdpr-request@countr.xyz](mailto:gdpr-request@countr.xyz).
+
+We are unable to delete information about a guild that you do not have sufficient
+administrative access in. We will also refuse to delete information about other users through
+you as a proxy. They must approach us on behalf of themselves.
+
+
+## 6. Changes to these Terms {#changes-to-these-terms}
+
+Promise Solutions may apply amendments, omissions, or addendums to this Privacy Policy at
+any time, for whatever, or no, reason. The Service Provider will make every reasonable effort
+to notify its users of significant changes to the Privacy Policy. Minor amendments, omissions,
+or addendums may not be announced in an official capacity
+
+
+## 7. Right to Disambiguation {#right-to-disambiguation}
+
+You have the right to disambiguation, meaning that you can ask us for clarification about
+anything mentioned in this document and we can explain to you what it means in more
+accessible terminology, though we have made a reasonable effort to do so herein. You can
+contact us at [privacy@countr.xyz](mailto:privacy@countr.xyz).
+
+
+## 8. Termination {#termination}
+
+Promise Solutions, as well as you, have the right to terminate access to this Privacy Policy at
+any time, for whatever, or no reason, without consequence. This does not invalidate any
+actions that may have been performed prior to the activation of the Termination clause.
+Terminating this agreement also means that Promise Solutions reserves the right to revoke
+your access to the Bot.

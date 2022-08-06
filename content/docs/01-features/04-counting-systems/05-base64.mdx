@@ -1,0 +1,34 @@
+---
+description: The base-64 system, a weirder and impossible system to count in.
+---
+
+import {
+  DiscordInlineCode as Code,
+  DiscordCommand as Command,
+  DiscordMessages as Discord,
+  DiscordMention as Mention,
+  DiscordMessage as Message,
+} from "@skyra/discord-components-react";
+
+
+# Base64
+
+The base-64 system. A really confusing and weird system to count with, but really unique. It is mainly used to transfer chunks of binary data over the internet without losing any information.
+
+<Discord>
+  <Message>MTMzNw==</Message>
+  <Message>MTMzOA==</Message>
+  <Message>MTMzOQ==</Message>
+  <Message>MTM0MA==</Message>
+  <Message profile="countr" ephemeral>
+    <Command slot="reply" command="/count" />
+    {"📊 Current count for "}
+    <Mention type="channel">counting</Mention>
+    {" is "}
+    <Code>MTM0MA==</Code>
+    {", next up is "}
+    <Code>MTM0MQ==</Code>
+    {"."}
+  </Message>
+  <Message>MTM0MQ==</Message>
+</Discord>
