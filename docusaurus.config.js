@@ -88,6 +88,11 @@ const config = {
 
         copyright,
       },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
     },
 
     // theme-search-algolia
