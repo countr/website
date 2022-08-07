@@ -10,3 +10,7 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 <DocCardList items={useCurrentSidebarCategory().items}/>
 ```
+
+:::note
+You can always run `/count` to see what the next number will be. This is really helpful when counting in weird counting systems like [base64](./05-base64.md).
+:::
