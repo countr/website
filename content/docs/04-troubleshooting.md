@@ -27,3 +27,26 @@ If it never deletes your messages then it's probably a permission issue.
 Countr will block sending messages to you for five minutes if it detects it's unable to send you a notification. We do this because if Countr fails to send 10.000 direct messages within 10 minutes because the user has either blocked them on purpose (with bad intent) or not opened direct messages in the mutual server, then Countr will stop functioning globally and will be IP-banned for up to 12 hours. That's no fun.
 
 If you've recently made sure Countr can send you notifications and it's still not working after five minutes, then you might have an issue with the notification itself.
+
+
+## Countr reposted my message without a reposting module enabled {#reposting-tampered-message}
+
+Countr reposts messages that have been edited or deleted automatically. You can distinguish this from the [reposting module](01-features/02-modules/03-reposting.md) as the entire message is cursive, like this:
+
+```mdx-code-block
+import {
+  DiscordMessages as Discord,
+  DiscordItalic as Italic,
+  DiscordMention as Mention,
+  DiscordMessage as Message,
+} from "@skyra/discord-components-react";
+
+<Discord>
+  <Message profile="countr" highlight>
+    <Italic><Mention>Promise</Mention>{": 933"}</Italic>
+  </Message>
+</Discord>
+<br/>
+```
+
+If Countr deletes messages and reposts like this automatically in your server then check if there's some other bot interfering. One way to check if this is the case is to manually remove the "Manage Messages" permission from Countr in the counting channel, and then try to send a message. If it deletes then some other bot is interfereing, if it doesn't then it's an issue with your setup. Join our support server and we'll gladly help you.
