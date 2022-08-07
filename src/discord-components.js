@@ -10,7 +10,6 @@ require("global/window").$discordMessage = {
     promise: {
       author: "Promise",
       avatar: "https://github.com/promise.png",
-      verified: true,
     },
   },
 };
