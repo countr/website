@@ -29,6 +29,12 @@ const reviews: Review[] = [
     serverInvite: "cN8UVDH",
     description: "We have been using Countr for almost 2 years and it's become one of our favourite bots in the server. This bot is easy to set up, simple yet fun to use and customize, and has great support. Any servers looking for an easy way to add some fun into their server has got to try adding Countr!",
   },
+  {
+    serverName: "Opera GX",
+    serverIdentifier: "operagx",
+    serverInvite: "operagx",
+    description: "We initially added Countr to our server to see how far we can count as a community, and nowadays it's a channel for basically anyone to go and count a couple numbers when they are bored or just exploring the server. We're also awarding our users with a special role for counting \"special numbers\" picked by our staff members, next number in line at the time of this review is 420069! It's overall a fun bot for your community to interact with!",
+  },
 ];
 
 export default class Reviews extends React.Component<Record<string, never>, { guildCounts: APIStats["servers"] }> {

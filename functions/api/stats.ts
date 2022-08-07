@@ -40,6 +40,7 @@ export const onRequest: PagesFunction = async request => {
         slogo: await getMembersFromInvite("slogo"),
         sound: await getMembersFromInvite("sound"),
         flare: await getMembersFromInvite("cN8UVDH"),
+        operagx: await getMembersFromInvite("operagx"),
       },
     };
   }
