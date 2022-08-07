@@ -1,7 +1,8 @@
----
-description: The base-36 system, a weird system to count in.
----
+# Hexadecimal
 
+The base-16 system. Color codes are usually in hexadecimal format, like [#BD4632](https://google.com/search?q=%23BD4632).
+
+```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -10,25 +11,21 @@ import {
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
 
-
-# Base36
-
-The base-36 system. This is a weird system where you count 0-9, and then a-z. It's mostly used for things like IDs.
-
 <Discord>
-  <Message>27mk1h</Message>
-  <Message>27mk1i</Message>
-  <Message>27mk1j</Message>
-  <Message>27mk1k</Message>
+  <Message>539</Message>
+  <Message>53a</Message>
+  <Message>53b</Message>
+  <Message>53c</Message>
   <Message profile="countr" ephemeral>
     <Command slot="reply" command="/count" />
     {"📊 Current count for "}
     <Mention type="channel">counting</Mention>
     {" is "}
-    <Code>27mk1k</Code>
+    <Code>53c</Code>
     {", next up is "}
-    <Code>27mk1l</Code>
+    <Code>53d</Code>
     {"."}
   </Message>
-  <Message>27mk1l</Message>
+  <Message>53d</Message>
 </Discord>
+```

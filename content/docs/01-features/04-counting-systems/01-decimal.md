@@ -1,7 +1,8 @@
----
-description: The default counting system, also known as the base-10 system.
----
+# Decimal
 
+The default counting system, what we humans use on a daily basis. Also known as the base-10 system.
+
+```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -9,11 +10,6 @@ import {
   DiscordMention as Mention,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
-
-
-# Decimal
-
-The default counting system, what we humans use on a daily basis. Also known as the base-10 system.
 
 <Discord>
   <Message>399</Message>
@@ -32,3 +28,4 @@ The default counting system, what we humans use on a daily basis. Also known as 
   </Message>
   <Message>403</Message>
 </Discord>
+```

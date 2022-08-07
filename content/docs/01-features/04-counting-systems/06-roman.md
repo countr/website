@@ -1,7 +1,8 @@
----
-description: The roman numeral system using the letters I, V, X, L, C, D and M.
----
+# Roman numerals
 
+The roman numeral system. Uses the letters I, V, X, L, C, D and M.
+
+```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -9,11 +10,6 @@ import {
   DiscordMention as Mention,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
-
-
-# Roman numerals
-
-The roman numeral system. Uses the letters I, V, X, L, C, D and M.
 
 <Discord>
   <Message>CDXXIII</Message>
@@ -32,6 +28,7 @@ The roman numeral system. Uses the letters I, V, X, L, C, D and M.
   </Message>
   <Message>CDXXVII</Message>
 </Discord>
+```
 
 <br/>
 

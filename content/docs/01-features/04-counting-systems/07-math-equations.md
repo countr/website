@@ -1,7 +1,8 @@
----
-description: Count with math equations to train your brian.
----
+# Math equations
 
+Count with math equations to train your brian.
+
+```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -9,11 +10,6 @@ import {
   DiscordMention as Mention,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
-
-
-# Math equations
-
-Count with math equations to train your brian.
 
 <Discord>
   <Message>27*3+14</Message>
@@ -32,6 +28,7 @@ Count with math equations to train your brian.
   </Message>
   <Message>11*9</Message>
 </Discord>
+```
 
 <br/>
 

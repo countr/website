@@ -1,7 +1,13 @@
----
-description: A flow is a configurable automated process that will run one or more actions.
----
+# Flows
 
+A flow is a configurable automated process that will run one or more actions. It sounds complicated, but we've tried to make it as user-friendly as we can with our flow editor.
+
+Simply put, a flow is a list of triggers and actions, and whenever one of those triggers is triggered, the flow will run all the actions.
+
+
+## How to create a flow {#how}
+
+```mdx-code-block
 import {
   DiscordActionRow as ActionRow,
   DiscordAttachments as Attachments,
@@ -13,16 +19,6 @@ import {
   DiscordEmbed as Embed,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
-
-
-# Flows
-
-A flow is a configurable automated process that will run one or more actions. It sounds complicated, but we've tried to make it as user-friendly as we can with our flow editor.
-
-Simply put, a flow is a list of triggers and actions, and whenever one of those triggers is triggered, the flow will run all the actions.
-
-
-## How to create a flow {#how}
 
 <Discord>
   <Message profile="countr">
@@ -58,6 +54,7 @@ Simply put, a flow is a list of triggers and actions, and whenever one of those 
     </Attachments>
   </Message>
 </Discord>
+```
 
 <br/>
 

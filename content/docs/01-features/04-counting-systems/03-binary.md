@@ -1,7 +1,8 @@
----
-description: The base-16 system. Color codes are usually in hexadecimal format.
----
+# Binary
 
+The base-2 system. This is how computers count. Simply "on" or "off" for a computer.
+
+```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -10,25 +11,21 @@ import {
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
 
-
-# Hexadecimal
-
-The base-16 system. Color codes are usually in hexadecimal format, like [#BD4632](https://google.com/search?q=%23BD4632).
-
 <Discord>
-  <Message>539</Message>
-  <Message>53a</Message>
-  <Message>53b</Message>
-  <Message>53c</Message>
+  <Message>110100100</Message>
+  <Message>110100101</Message>
+  <Message>110100110</Message>
+  <Message>110100111</Message>
   <Message profile="countr" ephemeral>
     <Command slot="reply" command="/count" />
     {"📊 Current count for "}
     <Mention type="channel">counting</Mention>
     {" is "}
-    <Code>53c</Code>
+    <Code>110100111</Code>
     {", next up is "}
-    <Code>53d</Code>
+    <Code>110101000</Code>
     {"."}
   </Message>
-  <Message>53d</Message>
+  <Message>110101000</Message>
 </Discord>
+```
