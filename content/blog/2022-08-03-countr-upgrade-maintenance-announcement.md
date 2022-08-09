@@ -17,8 +17,8 @@ We are doing a massive upgrade on Countr that we've planned for way over a year 
 * **Stability improvements:** The uptime and stability are improved as it's now using the latest Discord.js version. It is now also a lot more scalable and easier to upgrade in the future.
     * *Technical explanation: our approach before was to spawn a worker thread per shard, but we used this way before it scaled to 120 shards. We will now spawn 12 clusters (same as 12 workers) with 10 shards each, and we can easily scale this in the future. It's also now dockerized, so if one cluster crashes then it will auto-restart, versus using pm2 that just restarts all 120 worker shards i.e,. a very nice improvement we should've done a long time ago.*
 * **Multiple counting channels + Threads:** You can now make multiple counting channels for your server! You can also now use threads for your counting channels!
-* **Support for other number systems:** Up until now you've only been able to count with the decimal counting system. We now have a lot more ways to count! [Check it out!](https://content-rewrite.countr.pages.dev/docs/category/counting-systems)
-* **Flow creator/editor improvements:** The flow editor previously created a channel where you can create a flow. We've rewritten it using slash commands and interactions instead. [Take a sneak peek!](https://content-rewrite.countr.pages.dev/docs/features/flows)
+* **Support for other number systems:** Up until now you've only been able to count with the decimal counting system. We now have a lot more ways to count! [Check it out!](https://a6107495.countr.pages.dev/docs/category/counting-systems)
+* **Flow creator/editor improvements:** The flow editor previously created a channel where you can create a flow. We've rewritten it using slash commands and interactions instead. [Take a sneak peek!](https://a6107495.countr.pages.dev/docs/features/flows)
 * **Export and import flows:** You can also now export your flow configuration and import it in another server or share it with others!
 
 [1]: https://en.wikipedia.org/wiki/Decimal
