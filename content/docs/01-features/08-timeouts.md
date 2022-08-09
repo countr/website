@@ -15,3 +15,12 @@ You can configure a timeout role with the `/timeoutrole set` command. You can re
 After you've configured a role, you can do whatever you want with it. The normal use case is to deny the "Send Messages" permission in the counting channel, so it actually functions.
 
 You can also configure a flow to do something whenever someone gets a timeout role.
+
+
+## How to see if you're timed out {#check}
+
+The `/user` command will tell you if you're timed out, and also how much time is left of your timeout.
+
+:::note
+The command only mentions your timeout status if you're actually timed out. It's hidden otherwise.
+:::

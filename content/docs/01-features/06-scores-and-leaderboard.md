@@ -10,7 +10,7 @@ You can use the `/scores modify` command to modify the score of a user. You can 
 
 ## Leaderboard {#view}
 
-You can view the scores table with the `/leaderboard` command.
+You can view the scores table with the `/leaderboard` command. You can also view individual scores with the `/user` command.
 
 
 ## Liveboard (live leaderboard) {#live}
