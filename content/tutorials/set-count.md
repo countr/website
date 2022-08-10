@@ -6,6 +6,23 @@ authors:
     image_url: https://github.com/Maseraphina.png
 tags: [set count, multiple counting channels]
 ---
+
+# How do I change the count?
+This tutorial will give you more information on how to change a count in your server, regardless of whether you have one or more counting channels in your server
+
+<!--truncate-->
+#### First of all, why is my count sometimes wrong?
+
+The count can be incorrectdue to various reasons:
+- You or someone else deleted the previous count, so it looks messed up.
+- Countr has been offline.
+- It bugged out due to high latency.
+- Or you've just invited countr in your server and there already is a counting channel.
+
+## /set count {#set}
+You can solve this very easily bye using `/set count` `latest-or-new-number-here` in the counting channel.
+
+```mdx-code-block
 import {
   DiscordActionRow as ActionRow,
   DiscordAttachments as Attachments,
@@ -18,25 +35,6 @@ import {
   DiscordMessage as Message,
   DiscordMention as Mention,
 } from "@skyra/discord-components-react";
-
-# How do I change the count?
-This tutorial will give you more information on how to change a count in your server.<br/>(regardless of whether you have 1 or more counting channels in your server)
-
-<!--truncate-->
-#### First of all, why is my count sometimes wrong?
-
-The count can be incorrectdue to various reasons:
-1. You or someone else deleted the previous count, so it looks messed up.
-2. Countr has been offline
-3. It bugged out due to high latency.
-  <br/>or
-4. you've just invited countr in your server and there already  is a counting channel.
-
-## /set count {#count}
-You can solve this very easily bye using `/set count` `latest-or-new-number-here` in the counting channel.
-
-```mdx-code-block
-
 
 <Discord>
   <Message>4</Message>
@@ -55,7 +53,6 @@ You can solve this very easily bye using `/set count` `latest-or-new-number-here
 
 If you have more than one counting channel in your server, the bot may not know which count needs to be changed.
 Use `/select` `#channel` to select the channel you want to adjust and use `/count` to set the count for that channel.
-
 
 ```mdx-code-block
 <Discord>
@@ -82,7 +79,7 @@ Use `/select` `#channel` to select the channel you want to adjust and use `/coun
 :::tip
 
 
-You can also use `/count` directly in the channel you want to change to skip this step
+You can also use `/set count` directly in the channel you want to change to skip this step
 
 
 ```mdx-code-block
