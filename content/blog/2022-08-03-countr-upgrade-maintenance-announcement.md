@@ -44,8 +44,6 @@ I decided to scrap the code and rewrite it again. I also had better ideas for th
 
 We've changed up our website and made it easier to maintain and also moved documentation here as well, instead of having two separate websites.
 
-The community will also be able to contribute to the content of the website with tutorials or community posts where people can share their stories. More info on this in a future blog post :)
-
 We're also going to make changes to the status page, and will open-source this code as well.
 
 

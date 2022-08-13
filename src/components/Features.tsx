@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: "Well documented",
     image: "/img/docs.svg",
-    description: <>The documentation is up-to-date, and we will keep it that way. We also now have a Posts-tab that we regularly post articles on. <Link to="/docs">Read the docs here</Link> and <Link to="/posts">check out the posts here</Link>.</>,
+    description: <>The documentation is up-to-date, and we will keep it that way. We also now have a Posts-tab that we regularly post articles on. <Link to="/docs">Read the docs here</Link>.</>,
     size: 6,
   },
   {
