@@ -8,7 +8,12 @@ slug: .
 Countr is an advanced counting bot which can manage a counting channel in your guild.
 
 
-## Create your first channel {#get-started}
+## What is a counting channel? {#explanation}
+
+A counting channel is a channel where you can count. That is the simple explanation. However, we have a vast amount of features that can be used in a counting channel. [Check them out here!](./category/features)
+
+
+## Create your first counting channel {#get-started}
 
   1. Add the bot with [this invite link](https://discord.com/api/oauth2/authorize?client_id=467377486141980682&scope=bot+applications.commands&permissions=395942423568).
   2. Use `/channels new` to create a new counting channel, or link a pre-existing channel with `/channels link`.
