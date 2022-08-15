@@ -15,4 +15,4 @@ You can view the scores table with the `/leaderboard` command. You can also view
 
 ## Liveboard (live leaderboard) {#live}
 
-You can get a live leaderboard by purchasing [Premium](../02-premium.md)
+You can get a live leaderboard by purchasing [Premium](../03-premium.md)

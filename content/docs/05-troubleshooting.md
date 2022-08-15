@@ -50,3 +50,10 @@ import {
 ```
 
 If Countr deletes messages and reposts like this automatically in your server then check if there's some other bot interfering. One way to check if this is the case is to manually remove the "Manage Messages" permission from Countr in the counting channel, and then try to send a message. If it deletes then some other bot is interfereing, if it doesn't then it's an issue with your setup. Join our support server and we'll gladly help you.
+
+
+## I don't see the commands. {#permissions}
+
+All commands have a default permission of either none or Administrator. This allows the server admins to override and grant whoever they'd like to access to the commands. A simple fix is to tell your server admin to grant you access, and to read the [Permissions-page](./02-permissions.md) for instructions on how to do so.
+
+If you're a server admin or the server owner then you should have access either way.
