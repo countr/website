@@ -1,7 +1,7 @@
 // @ts-check
 
 const copyright = `Copyright © ${new Date().getFullYear()} Promise Solutions`;
-const editUrl = "https://github.dev/countr/website/blob/production";
+const editUrl = "https://github.dev/countr/website/blob/main";
 
 /** @type { import("@docusaurus/types").Config } */
 const config = {

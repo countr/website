@@ -3,10 +3,10 @@ name: Analysis and Scans
 on:
   push:
     branches:
-    - production
+    - main
   pull_request:
     branches:
-    - production
+    - main
   schedule:
     - cron: '0 12 * * 3'
 

@@ -3,10 +3,10 @@ name: Linting
 on:
   push:
     branches:
-    - production
+    - main
   pull_request:
     branches:
-    - production
+    - main
 
 jobs:
   lint:
