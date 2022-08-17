@@ -144,6 +144,12 @@ const config = {
       /** @type {import('@docusaurus/plugin-sitemap').Options} */
       ({ changefreq: "hourly", priority: 0.5 }), // eslint-disable-line no-extra-parens
     ],
+    [
+      "@docusaurus/plugin-ideal-image",
+
+      /** @type {import('@docusaurus/plugin-ideal-image').PluginOptions} */
+      ({ name: "assets/images/[name]-[hash:hex:7]-[width].[ext]" }), // eslint-disable-line no-extra-parens
+    ],
   ],
   scripts: [
     { src: "https://arc.io/widget.min.js#7MqQMouh", async: true },

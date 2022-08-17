@@ -9,12 +9,18 @@ The default permissions are either none (0x0), or `Administrator` (0x8). You can
 
 Here's an image from our support server's setup.
 
-![Countr Integrations page](../../assets/docs/countr-integration.png)
+```mdx-code-block
+import Image from "@theme/IdealImage";
+
+<Image img={require("../../assets/docs/countr-integration.png")} alt="Countr Integrations page" />
+```
 
 You can see here that, although the `everyone` role has access to all the commands, it still requires the `Staff` role to be added and granted permissions as well. *Why? Discord is weird.*
 
 Discord doesn't actually tell you which commands are locked behind permissions, even if we click in on a permission-locked command. We hope this will be fixed soon.
 
-![Countr /data command](../../assets/docs/countr-data-command.png)
+```mdx-code-block
+<Image img={require("../../assets/docs/countr-data-command.png")} alt="Countr /data command" />
+```
 
 This command is still only available to those with the `Administrator` permission, and also everyone in the Staff role.

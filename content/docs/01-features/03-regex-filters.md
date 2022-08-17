@@ -17,7 +17,11 @@ You can add a new filter using the `/filters add` command, and remove using `/fi
 
 We recommend using a [Regex Tester](https://regexr.com/) to test your regex filters. Here's an example:
 
-![Regex example](../../../assets/docs/regex-tester.png)
+```mdx-code-block
+import Image from "@theme/IdealImage";
+
+<Image img={require("../../../assets/docs/regex-tester.png")} alt="Regex Tester" />
+```
 
 In this example, the regex is `hello world`. You add this regex filter by doing `/filters add regex:hello world`.
 
