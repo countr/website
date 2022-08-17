@@ -17,7 +17,7 @@ You can add a new filter using the `/filters add` command, and remove using `/fi
 
 We recommend using a [Regex Tester](https://regexr.com/) to test your regex filters. Here's an example:
 
-![Regex example](/img/docs/regex-tester.png)
+![Regex example](../../../assets/docs/regex-tester.png)
 
 In this example, the regex is `hello world`. You add this regex filter by doing `/filters add regex:hello world`.
 

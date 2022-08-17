@@ -2,7 +2,7 @@ require("global/window").$discordMessage = {
   profiles: {
     countr: {
       author: "Countr",
-      avatar: "/img/countr.png",
+      avatar: "/countr.svg",
       bot: true,
       verified: true,
       roleColor: "#bd4632",
