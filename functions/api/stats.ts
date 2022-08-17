@@ -1,90 +1,67 @@
+const cacheTtl = 60 * 60;
+
 export interface APIStats {
+  count: number;
   guilds: number;
   ranking: number;
   users: number;
-  count: number;
-  servers: Record<string, number>;
-  last: number;
 }
 
-let stats: APIStats = {
-  guilds: 0,
-  ranking: 0,
-  users: 0,
-  count: 0,
-  servers: {
-    slogo: 0,
-    sound: 0,
-    flare: 0,
-  },
-  last: 0,
+export const onRequest: PagesFunction<Partial<Record<"COUNTR_STATS_ENDPOINT" | "DBL_TOKEN", string>>, never, never> = async request => {
+  const { guilds, ranking } = await getDblStatistics(request.env.DBL_TOKEN);
+  const { count, users } = await getCountrStatistics(request.env.COUNTR_STATS_ENDPOINT);
+
+  const content = JSON.stringify({
+    count: Math.floor(count / 1000) * 1000,
+    guilds: Math.floor(guilds / 100) * 100,
+    ranking,
+    users: Math.floor(users / 100_000) * 100_000,
+  } as APIStats);
+
+  return new Response(content, {
+    headers: {
+      "Content-Type": "application/json",
+      "Content-Length": String(content.length),
+      "Cache-Control": `public, max-age=${cacheTtl}`,
+    },
+  });
 };
 
-export const onRequest: PagesFunction = async request => {
-  const now = Date.now();
-  if (stats.last + 300_000 < now) {
-    stats.last = now;
-
-    const env = request.env as unknown as Record<string, string>;
-    const { guilds, ranking } = await getDblStatistics(env["DBL_TOKEN"]);
-    const { users, count } = await getCountrStatistics(env["COUNTR_STATS_ENDPOINT"]);
-
-    // eslint-disable-next-line require-atomic-updates
-    stats = {
-      ...stats,
-      guilds: Math.floor(guilds / 100) * 100,
-      ranking,
-      users: Math.floor(users / 100_000) * 100_000,
-      count: Math.floor(count / 1000) * 1000,
-      servers: {
-        slogo: await getMembersFromInvite("slogo"),
-        sound: await getMembersFromInvite("sound"),
-        flare: await getMembersFromInvite("cN8UVDH"),
-        operagx: await getMembersFromInvite("operagx"),
-      },
-    };
-  }
-
-  return new Response(JSON.stringify(stats));
-};
-
-async function getDblStatistics(token?: string): Promise<{ guilds: number; ranking: number }> {
+async function getDblStatistics(token?: string): Promise<Record<"guilds" | "ranking", number>> {
   if (!token) return { guilds: 0, ranking: 0 };
 
   const {
-    server_count: guilds = 0,
-    server_count_rank: ranking = 0,
+    server_count: guilds,
+    server_count_rank: ranking,
   } = await fetch("https://dblstatistics.com/api/bots/467377486141980682", {
     headers: { Authorization: token },
-  }).then(async res => res.json())
-    .catch(() => ({})) as Record<string, number>;
+    cf: { cacheTtl, cacheEverything: true },
+  })
+    .then(async res => res.json<Record<"server_count_rank" | "server_count", number>>())
+    .catch(() => ({
+      /* eslint-disable camelcase */
+      server_count: 0,
+      server_count_rank: 0,
+      /* eslint-enable camelcase */
+    }));
 
   return { guilds, ranking };
 }
 
-export interface CountrApiResponse {
-  shards: Record<string, {
-    guilds: number;
-    users: number;
-  }>;
-  weeklyCount: number;
-}
+async function getCountrStatistics(endpoint?: string): Promise<Record<"count" | "users", number>> {
+  if (!endpoint) return { count: 0, users: 0 };
 
-async function getCountrStatistics(endpoint?: string): Promise<{ users: number; count: number }> {
-  if (!endpoint) return { users: 0, count: 0 };
-  const { shards, weeklyCount } = await fetch(endpoint)
-    .then(async res => res.json<CountrApiResponse>())
-    .catch(() => ({ shards: {}, weeklyCount: 0 } as CountrApiResponse));
+  const { shards, weeklyCount } = await fetch(endpoint, { cf: { cacheTtl, cacheEverything: true }})
+    .then(async res => res.json<{
+      shards: Record<string, { users: number }>;
+      weeklyCount: number;
+    }>())
+    .catch(() => ({
+      shards: {},
+      weeklyCount: 0,
+    }));
 
-  const users = Object.values(shards).reduce((sum, shard) => sum + shard.users, 0);
+  const totalUsers = Object.values(shards).reduce((sum, { users }) => sum + users, 0);
 
-  return { users, count: weeklyCount };
-}
-
-async function getMembersFromInvite(invite: string): Promise<number> {
-  const { approximate_member_count: memberCount = 0 } = await fetch(`https://discord.com/api/v8/invites/${invite}?with_counts=true`)
-    .then(async res => res.json())
-    .catch(() => ({})) as Record<string, number>;
-
-  return Math.floor(memberCount / 10_000) * 10_000;
+  return { count: weeklyCount, users: totalUsers };
 }
