@@ -95,7 +95,6 @@ const config = {
         path: "content/docs",
         editUrl,
         routeBasePath: "/docs",
-        showLastUpdateTime: true,
         exclude: ["README.md", "template.md"],
       }),
     ],
