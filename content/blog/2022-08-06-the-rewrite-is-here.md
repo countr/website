@@ -10,6 +10,8 @@ This is a follow-up to [our previous blog post](./2022-08-03-countr-upgrade-main
 
 There's a lot of changes, which also means a lot of things might've been missed or broken in the update, so please let us know in [the support server](https://promise.solutions/discord) if you see anything!
 
+<!-- truncate -->
+
 ```mdx-code-block
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 
