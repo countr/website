@@ -89,12 +89,31 @@ Keep in mind that **any trigger** will trigger **all actions** in a flow. So if 
 | **Remove a role (or list of roles) from the user**<br/>This will remove a role, or a list of roles, from the user who triggered this flow. |
 | **Remove everyone from a role (or list of roles)**<br/>This will remove everyone from a role, or a list of roles.<br/>Note: This might not remove everyone from the role(s). This is due to caching. [Read more](../06-troubleshooting.md#role-member-caching). |
 | **Pin the count message** |
-| **Send a message**<br/>This will send a message in any channel you'd like. |
+| **Send a message**<br/>This will send a message in any channel you'd like. See placeholders [further down](#send-a-message-placeholders). |
 | **Lock the counting channel**<br/>This will lock the counting channel for the everyone-role. This action won't work in threads as of right now. |
 | **Set the count** |
 | **Modify the count** |
 | **Set the user's score** |
 | **Modify the user's score** |
+
+
+### "Send a message" placeholders
+
+<details>
+  <summary>Click to see all placeholders</summary>
+
+  | Placeholder | Description                                           |
+  |:-----------:|:------------------------------------------------------|
+  | {count}     | The count that triggered this flow                  |
+  | {mention}   | Mentions the user who triggered this flow           |
+  | {tag}       | The tag of the user who triggered this flow         |
+  | {username}  | The username of the user who triggered this flow    |
+  | {nickname}  | The nickname of the user who triggered this flow    |
+  | {everyone}  | Mentions the everyone-role                          |
+  | {score}     | The new score of the user who triggered this flow   |
+  | {content}   | The content of the message that triggered this flow |
+</details>
+
 
 
 ## Flow Ideas {#ideas}
