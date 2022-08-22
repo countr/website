@@ -57,3 +57,8 @@ If Countr deletes messages and reposts like this automatically in your server th
 All commands have a default permission of either none or Administrator. This allows the server admins to override and grant whoever they'd like to access to the commands. A simple fix is to tell your server admin to grant you access, and to read the [Permissions-page](./02-permissions.md) for instructions on how to do so.
 
 If you're a server admin or the server owner then you should have access either way.
+
+
+## What is Countr's prefix? {#prefix}
+
+We've fully moved over to slash commands, so you can use `/` as your new prefix!
