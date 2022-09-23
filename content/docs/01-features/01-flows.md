@@ -87,7 +87,8 @@ Keep in mind that **any trigger** will trigger **all actions** in a flow. So if 
 |:-------:|
 | **Give a role (or list of roles) to the user**<br/>This will add a role, or a list of roles, to the user who triggered this flow. |
 | **Remove a role (or list of roles) from the user**<br/>This will remove a role, or a list of roles, from the user who triggered this flow. |
-| **Remove everyone from a role (or list of roles)**<br/>This will remove everyone from a role, or a list of roles.<br/>Note: This might not remove everyone from the role(s). This is due to caching. [Read more](../06-troubleshooting.md#role-member-caching). |
+| **Remove everyone from a role (or list of roles) [DEPRECATED]**<br/>Use the new action called "unique role" to achieve the same effect. |
+| **Give a unique role (or list of roles) to the user**<br/>This will add a role, or a list of roles, to the user who triggered this flow, and also remove previous users that had this role or these roles. |
 | **Pin the count message** |
 | **Send a message**<br/>This will send a message in any channel you'd like. See placeholders [further down](#send-a-message-placeholders). |
 | **Lock the counting channel**<br/>This will lock the counting channel for the everyone-role. This action won't work in threads as of right now. |
