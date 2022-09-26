@@ -36,7 +36,7 @@
     "@docusaurus/preset-classic": "2.1.0",
     "@docusaurus/types": "2.1.0",
     "@tsconfig/docusaurus": "1.0.6",
-    "discord-api-types": "0.37.10",
+    "discord-api-types": "0.37.11",
     "eslint": "8.24.0",
     "eslint-config-promise": "github:promise/eslint-config",
     "typescript": "4.8.3",
