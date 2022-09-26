@@ -25,8 +25,8 @@
     "@skyra/discord-components-react": "3.4.1",
     "clsx": "1.2.1",
     "global": "4.4.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-player": "2.11.0",
     "react-twitter-embed": "4.0.4"
   },
