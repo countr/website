@@ -1,3 +1,13 @@
 {
-  "extends": ["github>promise/renovate-config:fully-automated-repository"]
+  "extends": ["github>promise/renovate-config:fully-automated-repository"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["react", "react-dom"],
+      "allowedVersions": "17"
+    },
+    {
+      "matchPackageNames": ["@mdx-js/react"],
+      "allowedVersions": "1"
+    }
+  ]
 }
