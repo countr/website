@@ -1,6 +1,6 @@
 ---
 authors: promise
-tags: [updates, hacktoberfest]
+tags: [hacktoberfest]
 ---
 
 
