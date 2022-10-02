@@ -13,7 +13,7 @@ We're looking for contributors to help us with our [GitHub repositories](https:/
 
 ## How to contribute
 
-It can be some code changes, some documentation changes, some bug fixes, anything that helps us improve our projects! You can find our repositories [here](https://github.com/orgs/countr/repositories). If you're not sure where to start, you can check out our [issues](https://github.com/search?q=org%3Acountr+is%3Aissue+is%3Aopen+-label%3Adependencies) and see if there's anything you can help with. If you're not sure how to contribute, you can also ask us on our [Discord server](https://discord.gg/2Z8Y4Z5) and we'll be happy to help you out!
+It can be some code changes, some documentation changes, some bug fixes, anything that helps us improve our projects! You can find our repositories [here](https://github.com/orgs/countr/repositories). If you're not sure where to start, you can check out our [issues](https://github.com/search?q=org%3Acountr+is%3Aissue+is%3Aopen+-label%3Adependencies) and see if there's anything you can help with. If you're not sure how to contribute, you can also ask us on our [Discord server](https://promise.solutions/discord) and we'll be happy to help you out!
 
 
 ## Quality of contributions
