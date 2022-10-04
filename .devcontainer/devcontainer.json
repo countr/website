@@ -1,0 +1,38 @@
+{
+	"name": "Countr Website Dev Container",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"christian-kohler.npm-intellisense"
+			]
+		}
+	},
+
+	"forwardPorts": [3000, 8787],
+
+	"portsAttributes": {
+		"3000": {
+			"label": "Website Preview",
+			"onAutoForward": "openBrowser"
+		},
+		"8787": {
+			"label": "Website Preview with API",
+			"onAutoForward": "openBrowser"
+		}
+	},
+	"otherPortsAttributes": {
+		"onAutoForward": "ignore"
+	},
+
+	"updateContentCommand": "npm ci",
+
+	"remoteUser": "node",
+	"features": {
+		"docker-in-docker": "latest"
+	}
+}
