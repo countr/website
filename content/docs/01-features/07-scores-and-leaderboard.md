@@ -15,4 +15,4 @@ You can view the scores table with the `/leaderboard` command. You can also view
 
 ## Liveboard (live leaderboard) {#live}
 
-You can get a live leaderboard by purchasing [Premium](../03-premium.md)
+Liveboard is a leaderboard which automatically updates every 5 minutes. You can get a live leaderboard by purchasing [Premium](../03-premium.md)
