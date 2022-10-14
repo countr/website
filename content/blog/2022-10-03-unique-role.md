@@ -10,6 +10,8 @@ We've gotten multiple reports about "removing all users from a role" being quite
 
 To cut the long story short, we've added a new action called "Unique role" that will remove the previous user from the role, and add it to the new user. It's a lot more reliable than the "Remove all users from role" action, and it's a lot less reliant on cache (which is why it was buggy in the first place).
 
+<!-- truncate -->
+
 
 ## "Remove everyone from a role" action is deprecated
 

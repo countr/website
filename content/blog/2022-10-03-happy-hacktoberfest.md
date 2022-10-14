@@ -10,6 +10,7 @@ We're participating in Hacktoberfest this year! If you're not familiar with it, 
 
 We're looking for contributors to help us with our [GitHub repositories](https://github.com/countr) and we'll be giving away some Discord Nitro codes to the best contributions! We'll be giving away 3 codes, for the best 3 contributions.
 
+<!-- truncate -->
 
 ## How to contribute
 
