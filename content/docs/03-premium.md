@@ -9,6 +9,7 @@ Countr is not free for us to host. As the bill is rising, we need some supporter
 - Early access to fancy new beta features
 - Premium support on our support server, and a fancy role for your support!
 - Live scoreboard (like `/leaderboard`, but updates every five minutes)
+- Upto 100 position roles
 - More flows, triggers and actions (25 of each)
 
 :::note
