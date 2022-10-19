@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-16-bullseye@sha256:4e43cb6822af33bce6fd36238173d57312d9a5465818c165847ca688f4579d05
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-16-bullseye@sha256:59e56822378def444e0f503357507df55c3bf0698a310e9ec37ac2a0a1d20438
