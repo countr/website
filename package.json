@@ -37,7 +37,7 @@
     "@docusaurus/types": "2.2.0",
     "@tsconfig/docusaurus": "1.0.6",
     "discord-api-types": "0.37.20",
-    "eslint": "8.28.0",
+    "eslint": "8.29.0",
     "eslint-config-promise": "github:promise/eslint-config",
     "typescript": "4.9.3",
     "wrangler": "2.5.0"
