@@ -50,6 +50,10 @@ in time. Items stored in cache may include:
   * Guild IDs and guild information that is publicly available;
   * User IDs and user information that is publicly available.
 
+By being in a server that has the Bot in it, you agree that it may listen for Discord bot tokens
+for the sole purpose of resetting them in order to prevent malicious use of the token, recognising
+that it is a key for authorisation. This information is not stored permanently.
+
 When interacting with our Website(s) (\*.countr.xyz, \*.countr.pages.dev), we may
 store cookies. Simply, cookies are small pieces of information in the form of a text file,
 containing a string of letters and numbers. This file is sent from the Website(s) to the user’s
