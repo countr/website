@@ -1,6 +1,6 @@
 # Math equations
 
-Count with math equations to train your brian.
+Count with math equations to train your brain.
 
 ```mdx-code-block
 import {
