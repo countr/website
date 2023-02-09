@@ -1,6 +1,5 @@
 [![Build test](https://img.shields.io/github/actions/workflow/status/countr/website/build-test.yml)](https://github.com/countr/website/actions/workflows/build-test.yml)
 [![Linting](https://img.shields.io/github/actions/workflow/status/countr/website/linting.yml?label=quality)](https://github.com/countr/website/actions/workflows/linting.yml)
-[![Analysis and Scans](https://img.shields.io/github/actions/workflow/status/countr/website/analysis-and-scans.yml?label=scan)](https://github.com/countr/website/actions/workflows/analysis-and-scans.yml)
 [![DeepScan grade](https://deepscan.io/api/teams/16173/projects/21787/branches/633467/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16173&pid=21787&bid=633467)
 [![docusaurus version](https://img.shields.io/github/package-json/dependency-version/countr/website/@docusaurus/core?label=docusaurus)](https://github.com/facebook/docusaurus/releases)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/countr/website.svg)](https://github.com/countr/website/issues)
