@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "github>promise/renovate-config:fully-automated-repository",
-    "github>promise/renovate-config:force-node-version(16)"
-  ],
+  "extends": ["github>promise/renovate-config:fully-automated-repository"],
   "packageRules": [
     {
       "matchPackageNames": ["react", "react-dom"],
