@@ -1,4 +1,4 @@
-[![Build test](https://img.shields.io/github/actions/workflow/status/countr/website/testing.yml)](https://github.com/countr/website/actions/workflows/testing.yml)
+[![Build test](https://img.shields.io/github/actions/workflow/status/countr/website/build-test.yml)](https://github.com/countr/website/actions/workflows/build-test.yml)
 [![Linting](https://img.shields.io/github/actions/workflow/status/countr/website/linting.yml?label=quality)](https://github.com/countr/website/actions/workflows/linting.yml)
 [![Analysis and Scans](https://img.shields.io/github/actions/workflow/status/countr/website/analysis-and-scans.yml?label=scan)](https://github.com/countr/website/actions/workflows/analysis-and-scans.yml)
 [![DeepScan grade](https://deepscan.io/api/teams/16173/projects/21787/branches/633467/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16173&pid=21787&bid=633467)
@@ -27,7 +27,8 @@ Any contribution is welcome as long as it follows our guidelines.
 ### Installation
 
 ```sh
-$ npm i
+$ npm i -g pnpm
+$ pnpm i
 ```
 
 ### Local development
