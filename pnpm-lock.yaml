@@ -13,6 +13,7 @@ specifiers:
   '@docusaurus/plugin-sitemap': 2.3.1
   '@docusaurus/preset-classic': 2.3.1
   '@docusaurus/theme-classic': 2.3.1
+  '@docusaurus/theme-common': 2.3.1
   '@docusaurus/theme-search-algolia': 2.3.1
   '@docusaurus/types': 2.3.1
   '@mdx-js/react': 1.6.22
@@ -54,6 +55,7 @@ devDependencies:
   '@cloudflare/workers-types': 4.20230115.0
   '@docusaurus/module-type-aliases': 2.3.1_t7uzlowrq5oleizgp4fojkmrce
   '@docusaurus/preset-classic': 2.3.1_4a3g526ago2tlcq3xihvtbo72y
+  '@docusaurus/theme-common': 2.3.1_zmrpc4xwfognnnjd7blwzmfdwy
   '@docusaurus/types': 2.3.1_t7uzlowrq5oleizgp4fojkmrce
   '@tsconfig/docusaurus': 1.0.6
   discord-api-types: 0.37.31
