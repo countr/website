@@ -34,6 +34,7 @@ jobs:
       shell: bash
       run: |
           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
     - name: Set up module cache
       uses: actions/cache@627f0f41f6904a5b1efbaed9f96d9eb58e92e920 # v3
       id: cache-packages
@@ -42,6 +43,7 @@ jobs:
         key: pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
         restore-keys: |
           pnpm-store-
+
     - name: Install dependencies
       run: pnpm install
 
