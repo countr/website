@@ -1,6 +1,6 @@
-import type { APIServerData } from "../../functions/api/server/[serverInvite]/data.json";
 import Link from "@docusaurus/Link";
 import React from "react";
+import type { APIServerData } from "../../functions/api/server/[serverInvite]/data.json";
 import styles from "./Reviews.module.css";
 
 interface Review {

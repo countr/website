@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export -- this is a cloudflare function */
 import type { RESTGetAPIInviteResult } from "discord-api-types/rest/v10";
 
 const cacheTtl = 60 * 60 * 24;

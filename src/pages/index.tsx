@@ -1,13 +1,13 @@
-import Features from "../components/Features";
-import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import clsx from "clsx";
 import React from "react";
+import Features from "../components/Features";
 import ResponsivePlayer from "../components/ResponsiveLazyPlayer";
 import Reviews from "../components/Reviews";
 import Stats from "../components/Stats";
-import clsx from "clsx";
 import styles from "./index.module.css";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 function Header() {
   const { siteConfig } = useDocusaurusContext();
