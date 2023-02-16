@@ -1,6 +1,6 @@
-import type { APIStats } from "../../functions/api/stats";
 import Link from "@docusaurus/Link";
 import React from "react";
+import type { APIStats } from "../../functions/api/stats";
 import styles from "./Stats.module.css";
 
 interface Stat {
