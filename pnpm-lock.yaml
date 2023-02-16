@@ -21,7 +21,7 @@ specifiers:
   '@tsconfig/docusaurus': 1.0.6
   '@types/react': 18.0.28
   clsx: 1.2.1
-  discord-api-types: 0.37.31
+  discord-api-types: 0.37.34
   eslint: 8.34.0
   eslint-config-promise: github:promise/eslint-config
   global: 4.4.0
@@ -60,7 +60,7 @@ devDependencies:
   '@docusaurus/types': 2.3.1_t7uzlowrq5oleizgp4fojkmrce
   '@tsconfig/docusaurus': 1.0.6
   '@types/react': 18.0.28
-  discord-api-types: 0.37.31
+  discord-api-types: 0.37.34
   eslint: 8.34.0
   eslint-config-promise: github.com/promise/eslint-config/374e2c8bc9f1cee75219c909881c26d273f36941_2bepdrichzi2p7to35qb73hy6e
   typescript: 4.9.5
@@ -4633,8 +4633,8 @@ packages:
     dependencies:
       path-type: 4.0.0
 
-  /discord-api-types/0.37.31:
-    resolution: {integrity: sha512-k9DQQ7Wv+ehiF7901qk/FnP47k6O2MHm3meQFee4gUzi5dfGAVLf7SfLNtb4w7G2dmukJyWQtVJEDF9oMb9yuQ==}
+  /discord-api-types/0.37.34:
+    resolution: {integrity: sha512-3sX2QMX2vLjT93n6+c1rN6lM6qWHycjYol6x/ls6U5hbZPdGH00dRMjg2csF58ISMf7DGV/6inDKgY1u5niWhA==}
     dev: true
 
   /dns-equal/1.0.0:
