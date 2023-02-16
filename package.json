@@ -27,7 +27,7 @@
     "global": "4.4.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-player": "2.11.1",
+    "react-player": "2.11.2",
     "react-twitter-embed": "4.0.4"
   },
   "devDependencies": {
@@ -37,7 +37,7 @@
     "@docusaurus/theme-common": "2.3.1",
     "@docusaurus/types": "2.3.1",
     "@tsconfig/docusaurus": "1.0.6",
-    "@types/react": "18.0.27",
+    "@types/react": "18.0.28",
     "discord-api-types": "0.37.31",
     "eslint": "8.34.0",
     "eslint-config-promise": "github:promise/eslint-config",
