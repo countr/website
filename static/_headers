@@ -3,3 +3,11 @@
   Access-Control-Allow-Origin: *
   X-Robots-Tag: nosnippet
   Cache-Control: max-age=31536000, public
+
+# block the main pages.dev page from being indexed
+https://promise-solutions.pages.dev/*
+  X-Robots-Tag: noindex
+
+# block any preview branches on the pages.dev domain from being indexed
+https://:preview.promise-solutions.pages.dev/*
+  X-Robots-Tag: noindex

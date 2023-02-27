@@ -13,7 +13,6 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   onDuplicateRoutes: "warn",
-  noIndex: process.env.NODE_ENV !== "production",
 
   /** @type { import("@docusaurus/preset-classic").ThemeConfig } */
   themeConfig: {
