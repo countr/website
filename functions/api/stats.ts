@@ -52,7 +52,7 @@ async function getDblStatistics(token?: string): Promise<Record<"guilds" | "rank
 async function getCountrStatistics(endpoint?: string): Promise<Record<"count" | "users", number>> {
   if (!endpoint) return { count: 0, users: 0 };
 
-  const { shards, weeklyCount } = await fetch(endpoint, { cf: { cacheTtl, cacheEverything: true }})
+  const { shards, weeklyCount } = await fetch(endpoint, { cf: { cacheTtl, cacheEverything: true } })
     .then(async res => res.json<{
       shards: Record<string, { users: number }>;
       weeklyCount: number;
