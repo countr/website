@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@cloudflare/workers-types': 4.20230221.0
+  '@cloudflare/workers-types': 4.20230228.0
   '@docusaurus/core': 2.3.1
   '@docusaurus/module-type-aliases': 2.3.1
   '@docusaurus/plugin-client-redirects': 2.3.1
@@ -53,7 +53,7 @@ dependencies:
   react-twitter-embed: 4.0.4_sfoxds7t5ydpegc3knd667wn6m
 
 devDependencies:
-  '@cloudflare/workers-types': 4.20230221.0
+  '@cloudflare/workers-types': 4.20230228.0
   '@docusaurus/module-type-aliases': 2.3.1_t7uzlowrq5oleizgp4fojkmrce
   '@docusaurus/preset-classic': 2.3.1_mcinnld6djh3uglnrmbcgqncwe
   '@docusaurus/theme-common': 2.3.1_hbniqssy3lgo4ywwe6brepqvmq
@@ -62,7 +62,7 @@ devDependencies:
   '@types/react': 18.0.28
   discord-api-types: 0.37.35
   eslint: 8.35.0
-  eslint-config-promise: github.com/promise/eslint-config/1ad2096887e0325968697db3fb129388cb3a5955_dnraj3q5zlrehm5jfedec5mdmy
+  eslint-config-promise: github.com/promise/eslint-config/ec167af44722e4a8da67e3a2897680f7708cff2e_dnraj3q5zlrehm5jfedec5mdmy
   typescript: 4.9.5
   wrangler: 2.12.0
 
@@ -1414,8 +1414,8 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@cloudflare/workers-types/4.20230221.0:
-    resolution: {integrity: sha512-Ge8csuFQMNv3hd8r85PFWv4KV6bHAtKoBaanTkjbbeJS+mizoiBn4OBva0CFQiGfRJklFSGd4OxuCuiK05kogg==}
+  /@cloudflare/workers-types/4.20230228.0:
+    resolution: {integrity: sha512-tDaqH3DrKmDoe/YrCnzVSqjNH6GnUOOajv2Ztj2h7BPLFyYTb81iCkARgb+G4bpxhn7y4f1KxxDT2+Yp4rt7Hg==}
     dev: true
 
   /@colors/colors/1.5.0:
@@ -9590,9 +9590,9 @@ packages:
   /zwitch/1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
 
-  github.com/promise/eslint-config/1ad2096887e0325968697db3fb129388cb3a5955_dnraj3q5zlrehm5jfedec5mdmy:
-    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/1ad2096887e0325968697db3fb129388cb3a5955}
-    id: github.com/promise/eslint-config/1ad2096887e0325968697db3fb129388cb3a5955
+  github.com/promise/eslint-config/ec167af44722e4a8da67e3a2897680f7708cff2e_dnraj3q5zlrehm5jfedec5mdmy:
+    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/ec167af44722e4a8da67e3a2897680f7708cff2e}
+    id: github.com/promise/eslint-config/ec167af44722e4a8da67e3a2897680f7708cff2e
     name: eslint-config-promise
     version: 0.0.0
     peerDependencies:
