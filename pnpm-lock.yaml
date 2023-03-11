@@ -18,7 +18,7 @@ specifiers:
   '@docusaurus/types': 2.3.1
   '@mdx-js/react': 1.6.22
   '@skyra/discord-components-react': 3.6.0
-  '@tsconfig/docusaurus': 1.0.6
+  '@tsconfig/docusaurus': 1.0.7
   '@types/react': 18.0.28
   clsx: 1.2.1
   discord-api-types: 0.37.35
@@ -58,11 +58,11 @@ devDependencies:
   '@docusaurus/preset-classic': 2.3.1_h4hjvyjmkfzxnwlbyyqjkfta6i
   '@docusaurus/theme-common': 2.3.1_zoloxfpkxb3lyczaws5wgofhze
   '@docusaurus/types': 2.3.1_t7uzlowrq5oleizgp4fojkmrce
-  '@tsconfig/docusaurus': 1.0.6
+  '@tsconfig/docusaurus': 1.0.7
   '@types/react': 18.0.28
   discord-api-types: 0.37.35
   eslint: 8.36.0
-  eslint-config-promise: github.com/promise/eslint-config/c3e65145b03c9258ebe74bed000ead320269469f_jpalyieylsbpjrtzdvsi36kkmy
+  eslint-config-promise: github.com/promise/eslint-config/fbeb489834f50030110ae6a25fa61733b0e69ac6_jpalyieylsbpjrtzdvsi36kkmy
   typescript: 4.9.5
   wrangler: 2.12.2
 
@@ -3065,8 +3065,8 @@ packages:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
 
-  /@tsconfig/docusaurus/1.0.6:
-    resolution: {integrity: sha512-1QxDaP54hpzM6bq9E+yFEo4F9WbWHhsDe4vktZXF/iDlc9FqGr9qlg+3X/nuKQXx8QxHV7ue8NXFazzajsxFBA==}
+  /@tsconfig/docusaurus/1.0.7:
+    resolution: {integrity: sha512-ffTXxGIP/IRMCjuzHd6M4/HdIrw1bMfC7Bv8hMkTadnePkpe0lG0oDSdbRpSDZb2rQMAgpbWiR10BvxvNYwYrg==}
     dev: true
 
   /@types/better-sqlite3/7.6.3:
@@ -9606,15 +9606,15 @@ packages:
   /zwitch/1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
 
-  github.com/promise/eslint-config/c3e65145b03c9258ebe74bed000ead320269469f_jpalyieylsbpjrtzdvsi36kkmy:
-    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/c3e65145b03c9258ebe74bed000ead320269469f}
-    id: github.com/promise/eslint-config/c3e65145b03c9258ebe74bed000ead320269469f
+  github.com/promise/eslint-config/fbeb489834f50030110ae6a25fa61733b0e69ac6_jpalyieylsbpjrtzdvsi36kkmy:
+    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/fbeb489834f50030110ae6a25fa61733b0e69ac6}
+    id: github.com/promise/eslint-config/fbeb489834f50030110ae6a25fa61733b0e69ac6
     name: eslint-config-promise
     version: 0.0.0
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^5.54.1
       '@typescript-eslint/parser': ^5.54.1
-      eslint: ^8.35.0
+      eslint: ^8.36.0
       eslint-import-resolver-typescript: ^3.5.3
       eslint-plugin-import: ^2.27.5
       eslint-plugin-jest: ^27.2.1
