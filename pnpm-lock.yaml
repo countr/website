@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@cloudflare/workers-types': 4.20230307.0
+  '@cloudflare/workers-types': 4.20230321.0
   '@docusaurus/core': 2.3.1
   '@docusaurus/module-type-aliases': 2.3.1
   '@docusaurus/plugin-client-redirects': 2.3.1
@@ -53,7 +53,7 @@ dependencies:
   react-twitter-embed: 4.0.4_sfoxds7t5ydpegc3knd667wn6m
 
 devDependencies:
-  '@cloudflare/workers-types': 4.20230307.0
+  '@cloudflare/workers-types': 4.20230321.0
   '@docusaurus/module-type-aliases': 2.3.1_t7uzlowrq5oleizgp4fojkmrce
   '@docusaurus/preset-classic': 2.3.1_olim36wmw65jl46vwmhfeqwbju
   '@docusaurus/theme-common': 2.3.1_v4ixxshhgcucqmrpl75gihnvs4
@@ -1414,8 +1414,8 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@cloudflare/workers-types/4.20230307.0:
-    resolution: {integrity: sha512-Go968aDDcqONHQcUdgIiPRkPdT4QTzD0ecHJsI1u7ZiHPMOoZn+Dy7hYsdUJ5ldX9wTZDrICBM1rDKTRaDUitg==}
+  /@cloudflare/workers-types/4.20230321.0:
+    resolution: {integrity: sha512-zyRFz9AUS0tbg3/kJ+3zxvp9fl/O9yOJlChih/o86hhOqRMcZVbWefYAvFPidRvYUHM5YTG1wjU1bF9FFckRVg==}
     dev: true
 
   /@colors/colors/1.5.0:
