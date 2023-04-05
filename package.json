@@ -31,7 +31,7 @@
     "react-twitter-embed": "4.0.4"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20230321.0",
+    "@cloudflare/workers-types": "4.20230404.0",
     "@docusaurus/module-type-aliases": "2.4.0",
     "@docusaurus/preset-classic": "2.4.0",
     "@docusaurus/theme-common": "2.4.0",
