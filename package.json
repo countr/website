@@ -41,7 +41,7 @@
     "discord-api-types": "0.37.37",
     "eslint": "8.37.0",
     "eslint-config-promise": "github:promise/eslint-config",
-    "typescript": "5.0.3",
+    "typescript": "5.0.4",
     "wrangler": "2.14.0"
   },
   "browserslist": {
