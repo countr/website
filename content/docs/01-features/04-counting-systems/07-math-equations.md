@@ -27,6 +27,7 @@ import {
     {"."}
   </Message>
   <Message>11*9</Message>
+  <Message>100</Message>
 </Discord>
 ```
 
