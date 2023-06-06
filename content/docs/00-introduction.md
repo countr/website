@@ -17,6 +17,11 @@ Countr is an advanced counting bot which can manage a counting channel in your g
 Yeah, it's actually that simple to set up. *mic drop* 🎤
 
 
+## Importing your scores
+
+If you have a JSON-file with all your scores from a previous system then you can use the `/data import scores` command. If you don't have this file then you can queue up to get one with the `/scores fetch` command. Make sure your channel is linked before doing this, and we also recommend locking your counting channel while this is running.
+
+
 ## Purpose
 
 There is a lot of multi-purpose bots out there, some of them may also include a simple counting setup. What's wrong about multi-purpose is that they're focused on so many things that some of the features are poorly executed and very limited. Countr is not multi-purpose, it's only focused on counting. This means Countr has much more counting features than other bots.
