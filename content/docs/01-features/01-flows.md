@@ -96,6 +96,7 @@ Keep in mind that **any trigger** will trigger **all actions** in a flow. So if 
 | **Modify the count** |
 | **Set the user's score** |
 | **Modify the user's score** |
+| **Message reaction**<br/>This will react to the counting message with an emoji. It also supports the `nodelete` module for failed counts. |
 
 
 ### "Send a message" placeholders
@@ -115,6 +116,12 @@ Keep in mind that **any trigger** will trigger **all actions** in a flow. So if 
   | {content}   | The content of the message that triggered this flow |
 </details>
 
+
+## How to use emojis in flows
+
+Some actions, such as the Message reaction action, allows for emojis as input. If you're on Windows then you can press Windows key + . (period) which will open up the emoji picker. If you want to use a server emoji then type out the emoji in a Discord channel and prefix it with a backslash, like this: `\:emoji:`. It will then look something like this: `<:emoji:1234567890123456789>` - paste this entire thing in the field where it asks for an emoji.
+
+Make sure to only enter one emoji in the text field, and no spaces.
 
 
 ## Flow Ideas {#ideas}
