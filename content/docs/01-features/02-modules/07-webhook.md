@@ -23,4 +23,4 @@ There will appear a BOT tag in the message since it's posted through a webhook. 
 
 ## Purpose
 
-The purpose is, like the [embed](01-embed.md#purpose) and the [reposting](03-reposting.md#purpose) module, to disallow the members to edit or delete their messages afterwards.
+The purpose is, like the [embed](01-embed.md#purpose) and the [reposting](04-reposting.md#purpose) module, to disallow the members to edit or delete their messages afterwards.
