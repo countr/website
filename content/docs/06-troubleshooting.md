@@ -31,7 +31,7 @@ If you've recently made sure Countr can send you notifications and it's still no
 
 ## Countr reposted my message without a reposting module enabled {#reposting-tampered-message}
 
-Countr reposts messages that have been edited or deleted automatically. You can distinguish this from the [reposting module](01-features/02-modules/03-reposting.md) as the entire message is cursive, like this:
+Countr reposts messages that have been edited or deleted automatically. You can distinguish this from the [reposting module](01-features/02-modules/04-reposting.md) as the entire message is cursive, like this:
 
 ```mdx-code-block
 import {

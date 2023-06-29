@@ -25,7 +25,7 @@ import {
 
 ## Purpose
 
-The purpose is, like the [reposting](03-reposting.md#purpose) and the [webhook](06-webhook.md#purpose) module, to disallow the members to edit or delete their messages afterwards.
+The purpose is, like the [reposting](04-reposting.md#purpose) and the [webhook](07-webhook.md#purpose) module, to disallow the members to edit or delete their messages afterwards.
 
 
 ## Feedback
