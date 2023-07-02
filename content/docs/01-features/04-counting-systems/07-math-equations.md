@@ -14,8 +14,8 @@ import {
 <Discord>
   <Message>27*3+14</Message>
   <Message>16*6</Message>
-  <Message>9^2+2^4</Message>
-  <Message>7^2*2</Message>
+  <Message>81+16</Message>
+  <Message>7*7*2</Message>
   <Message profile="countr" ephemeral>
     <Command slot="reply" command="/count" />
     {"📊 Current count for "}
