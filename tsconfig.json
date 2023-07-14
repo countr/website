@@ -1,26 +1,7 @@
-// # Docusaurus v2 + Strictest
-// https://github.com/tsconfig/bases/blob/main/bases/docusaurus.json
-// https://github.com/tsconfig/bases/blob/main/bases/strictest.json
-
 {
   "include": [ "./src", "./functions" ],
-  "extends": "@tsconfig/docusaurus",
+  "extends": ["@tsconfig/docusaurus", "@tsconfig/strictest"],
   "compilerOptions": {
-    "types": ["@cloudflare/workers-types"],
-    "strict": true,
-    "allowUnusedLabels": false,
-    "allowUnreachableCode": false,
-    "exactOptionalPropertyTypes": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "importsNotUsedAsValues": "error",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "types": ["@cloudflare/workers-types"]
   }
 }
