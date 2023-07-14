@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export -- this is a cloudflare function */
 const cacheTtl = 60 * 60;
 
 export interface APIStats {

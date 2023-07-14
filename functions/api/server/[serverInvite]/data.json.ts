@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export -- this is a cloudflare function */
 import type { RESTGetAPIInviteResult } from "discord-api-types/rest/v10";
 
 export interface APIServerData {
