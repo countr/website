@@ -10,7 +10,7 @@ export default function ResponsivePlayer({ url, front = false, start, loopAfter 
         muted={front}
         playing={front}
         loop={Boolean(loopAfter)}
-        config={start || loopAfter ?
+        config={start ?? loopAfter ?
           {
             playerVars: {
               start, end: loopAfter,
