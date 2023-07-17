@@ -24,7 +24,9 @@ import {
     <Mention type="channel">counting</Mention>
     {" is "}
     <Code>CDXXVI</Code>
-    {", next up is "}
+    {" (decimal: "}
+    <Code>426</Code>
+    {"), next up is "}
     <Code>CDXXVII</Code>
     {"."}
   </Message>
