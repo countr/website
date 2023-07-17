@@ -1,6 +1,6 @@
 # Update Cycles
 
-At Countr, we're committed to providing you with the best possible counting experience. That's why we update Countr every week with new features, bug fixes, and improvements.
+Countr is committed to providing you with the best possible counting experience. That's why we update Countr every week with new features, bug fixes, and improvements.
 
 However, because it takes time to deploy updates to all of our clusters, we try to group up updates and deploy them together, usually once or twice every month. This ensures that everyone gets the latest version of Countr at the same time.
 
