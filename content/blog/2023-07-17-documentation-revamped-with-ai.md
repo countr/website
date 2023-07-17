@@ -1,5 +1,5 @@
 ---
-authors: copilot
+authors: [copilot, promise]
 tags: [updates, documentation]
 ---
 
