@@ -87,15 +87,12 @@ Keep in mind that any trigger will activate all actions in a flow. For example, 
 | **Timeout role triggered**<br/>This trigger will activate whenever someone gets the timeout role. |
 | **Greater than or equal to number X**<br/>This trigger will activate whenever a user counts a number that is greater than or equal to the number X. |
 | **Score greater than or equal to X**<br/>This trigger will activate whenever a user has counted a total of X counts, or more than X counts. |
-| **Give a role (or list of roles) to the user**<br/>This action will add one or many roles to the user who triggered this flow. |
-| **Remove a role (or list of roles) from the user**<br/>This action will remove one or many roles from the user who triggered this flow. |
-| **Give a unique role (or list of roles) to the user**<br/>This action will add one or many roles to the user who triggered this flow, and also remove previous users from this or these roles. |
 
 | Actions |
 |:-------:|
-| **Give a role (or list of roles) to the user**<br/>This action will add a role, or a list of roles, to the user who triggered this flow.. |
-| **Remove a role (or list of roles) from the user**<br/>This action will remove a role, or a list of roles, from the user who triggered this flow. |
-| **Give a unique role (or list of roles) to the user**<br/>This action will add a role, or a list of roles, to the user who triggered this flow, and also remove previous users that had this role or these roles. |
+| **Give a role (or list of roles) to the user**<br/>This action will add one or many roles to the user who triggered this flow. |
+| **Remove a role (or list of roles) from the user**<br/>This action will remove one or many roles from the user who triggered this flow. |
+| **Give a unique role (or list of roles) to the user**<br/>This action will add one or many roles to the user who triggered this flow, and also remove previous users from this or these roles. |
 | **Pin the count message**<br/>This action will pin the counting message. |
 | **Send a message**<br/>This action will send a message in any channel you'd like. See placeholders [further down](#send-a-message-placeholders). |
 | **Lock the counting channel**<br/>This action will lock the counting channel for the everyone-role. This action won't work in threads as of right now.. |
