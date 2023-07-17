@@ -4,6 +4,8 @@ A flow is a configurable automated process that will run one or more actions. It
 
 Simply put, a flow is a list of triggers and actions, and whenever one of those triggers is triggered, the flow will run all the actions.
 
+You can also make it run a random action by enabling the "Randomize action" option in the flow editor. This will make it pick a random action from the list of actions you've added to the flow.
+
 
 ## How to create a flow {#how}
 
