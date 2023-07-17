@@ -24,6 +24,6 @@ If you have a JSON file with all your scores from another bot, you can use the `
 
 ## Advanced Features
 
-Countr has more than just basic counting features. It also has cool advanced features like [flows](./01-features/01-flows.md), [modules](./01-features/02-modules/), and more. With Countr, you can take your counting game to the next level!
+Countr has more than just basic counting features. It also has cool advanced features like [flows](./01-features/01-flows.md), [modules](./01-features/02-modules/index.md), and more. With Countr, you can take your counting game to the next level!
 
 Thanks for choosing Countr! If you have any questions or feedback, feel free to reach out to us.
