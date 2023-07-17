@@ -1,6 +1,6 @@
 # Decimal
 
-The default counting system, what we humans use on a daily basis. Also known as the base-10 system.
+Decimal is the default counting system that us humans use on a daily basis. It's also known as the base-10 system.
 
 ```mdx-code-block
 import {

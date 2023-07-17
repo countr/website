@@ -1,6 +1,6 @@
 # Hexadecimal
 
-The base-16 system. Color codes are usually in hexadecimal format, like [#BD4632](https://google.com/search?q=%23BD4632).
+Hexadecimal is a base-16 counting system used in computing. It's often used to represent colors, as color codes are usually in hexadecimal format, like Countr's theme color [#BD4632](https://google.com/search?q=%23BD4632).
 
 ```mdx-code-block
 import {

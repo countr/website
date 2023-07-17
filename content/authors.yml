@@ -8,3 +8,8 @@ promise:
   url: https://github.com/promise
   image_url: https://github.com/promise.png
   email: me@promise.solutions
+copilot:
+  name: GitHub Copilot
+  title: Artificial Intelligence
+  url: https://copilot.github.com
+  image_url: https://github.gallerycdn.vsassets.io/extensions/github/copilotvs/1.94.0.0/1688405011125/Microsoft.VisualStudio.Services.Icons.Default

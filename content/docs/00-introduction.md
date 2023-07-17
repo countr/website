@@ -3,27 +3,27 @@ slug: .
 ---
 
 
-# Introduction
+# Welcome to Countr! {#introduction}
 
-Countr is an advanced counting bot which can manage a counting channel in your guild.
+Countr is a powerful counting bot that can help you manage a counting channel in your Discord server. Unlike other multi-purpose bots that try to do too many things at once, Countr is focused solely on counting, which means it has more advanced counting features than other bots.
 
 
-## Create your first channel {#get-started}
+## Getting Started {#get-started}
 
-  1. Add the bot with [this invite link](https://discord.com/api/oauth2/authorize?client_id=467377486141980682&scope=bot+applications.commands&permissions=395942423568).
-  2. Use `/channels new` to create a new counting channel, or link a pre-existing channel with `/channels link`.
+  1. Add the bot to your server using [this invite link](https://discord.com/api/oauth2/authorize?client_id=467377486141980682&scope=bot+applications.commands&permissions=395942423568).
+  2. Use the `/channels new` command to create a new counting channel, or link an existing channel with `/channels link`.
   3. Count in the counting channel.
 
-Yeah, it's actually that simple to set up. *mic drop* 🎤
+That's it! With Countr, you can easily keep track of your counts and compete with your friends.
 
 
 ## Importing your scores
 
-If you have a JSON-file with all your scores from a previous system then you can use the `/data import scores` command. If you don't have this file then you can queue up to get one with the `/scores fetch` command. Make sure your channel is linked before doing this, and we also recommend locking your counting channel while this is running.
+If you have a JSON file with all your scores from a previous system, you can use the `/data import scores` command to import them into Countr. If you don't have a file, you can use the /scores fetch command to queue one up. Just make sure your channel is linked before doing this, and we recommend locking your counting channel while the import is running.
 
 
-## Purpose
+## Advanced Features
 
-There is a lot of multi-purpose bots out there, some of them may also include a simple counting setup. What's wrong about multi-purpose is that they're focused on so many things that some of the features are poorly executed and very limited. Countr is not multi-purpose, it's only focused on counting. This means Countr has much more counting features than other bots.
+Countr has more than just basic counting features. It also has cool advanced features like flows, modules, and more. With Countr, you can take your counting game to the next level!
 
-Countr has a simple setup but also has cool advanced features, such as flows, modules and more.
+Thanks for choosing Countr! If you have any questions or feedback, feel free to reach out to us.

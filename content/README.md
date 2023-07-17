@@ -1,13 +1,13 @@
 # Content
 
-| Part of Website                                      | Directory                  | Who can contribute? |
-|:-----------------------------------------------------|:---------------------------|:--------------------|
-| [countr.xyz/docs](https://countr.xyz/docs)           | [`/docs`](docs/)           | Anyone              |
-| [countr.xyz/blog](https://countr.xyz/blog)           | [`/blog`](blog/)           | Staff only*         |
+| Part of Website | Directory | Who can contribute? |
+|:-------------------|:-----------|:------------------------|
+| [countr.xyz/docs](https://countr.xyz/docs) | [`/docs`](docs/) | Anyone |
+| [countr.xyz/blog](https://countr.xyz/blog) | [`/blog`](blog/) | Staff only* |
 
 More information about each one is in the directories' README's.
 
-**\*Staff only:** if you find spelling mistakes then feel free to fix them. You can't create your own content though as this is reserved for staff only.
+If you find spelling mistakes then feel free to fix them and send a PR.
 
 ## [`authors.yml`](authors.yml)
 

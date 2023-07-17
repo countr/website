@@ -1,6 +1,6 @@
 # Nodelete module
 
-The nodelete module allows you to send anything in the chat.
+The nodelete module allows you to send any message in the chat.
 
 ```mdx-code-block
 import {
@@ -17,7 +17,7 @@ import {
 
 ## Purpose
 
-The purpose is to allow for normal messages in chat. Combined with the ["Message reaction" flow action](../01-flows.md), you can easily distinguish between correct counts and failed counts/other messages.
+The purpose of the nodelete module is to allow for normal messages in the chat. Combined with the ["Message reaction" flow action](../01-flows.md), you can easily distinguish between correct counts and failed counts/other messages.
 
 ```mdx-code-block
 import {

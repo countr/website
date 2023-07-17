@@ -15,3 +15,7 @@ import {
   <Message profile="promise">435</Message>
 </Discord>
 ```
+
+:::note
+Keep in mind that spamming can be disruptive to the Discord API and we do not encourage spamming or breaking Discord's Terms of Service. Use the spam module responsibly and considerately.
+:::

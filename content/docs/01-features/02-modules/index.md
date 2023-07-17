@@ -1,6 +1,6 @@
 # Modules
 
-Modules are optional components of your counting channel that you can enable. You can use the `/modules` command to enable, disable and list all your enabled modules.
+Modules are additional features that you can enable for your counting channel. You can use the `/modules` command to enable, disable, and list all of your enabled modules.
 
 ```mdx-code-block
 import DocCardList from '@theme/DocCardList';

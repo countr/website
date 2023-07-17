@@ -1,6 +1,6 @@
 # Binary
 
-The base-2 system. This is how computers count. Simply "on" or "off" for a computer.
+Binary is a base-2 counting system used by computers. In binary, each digit can only be 0 or 1, representing "off" or "on", respectively.
 
 ```mdx-code-block
 import {

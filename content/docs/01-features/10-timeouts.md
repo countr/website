@@ -1,26 +1,26 @@
 # Timeouts
 
-A timeout role is a way for you to give a role automatically if they fail X amount of times within Y seconds.
+A timeout role is a way for you to automatically give a role to users who fail a certain number of times within a certain time period. This can be useful for preventing spam in your channel or slowing down the rate of failed counts.
 
 
 ## Purpose
 
-To prevent people spamming your channel, you can set up a role to be given automatically, and then restrict that role from sending messages in the counting channel. You can obviously do whatever you want with it though, but the main use case is to slow down the rate of failed counts in your channel.
+The main purpose of a timeout role is to prevent people from spamming your channel. By automatically giving a role to users who fail a certain number of times within a certain time period, you can restrict that role from sending messages in the counting channel. This can help slow down the rate of failed counts and keep your channel more organized.
 
 
 ## How to set up {#how}
 
-You can configure a timeout role with the `/timeoutrole set` command. You can remove the timeout role with the `/timeoutrole remove` command.
+To configure a timeout role, use the `/timeoutrole set` command. This command allows you to set the number of failed counts and the time period in which those counts must occur. Once you've configured a role, you can do whatever you want with it. The normal use case is to deny the "Send Messages" permission in the counting channel, so that users with the timeout role cannot send messages in that channel.
 
-After you've configured a role, you can do whatever you want with it. The normal use case is to deny the "Send Messages" permission in the counting channel, so it actually functions.
+You can also configure a flow to do something whenever someone gets a timeout role. For example, you could send a message to a log channel or notify a moderator.
 
-You can also configure a flow to do something whenever someone gets a timeout role.
+To remove the timeout role, use the `/timeoutrole remove` command.
 
 
-## How to see if you're timed out {#check}
+## How to check if you're timed out {#check}
 
-The `/user` command will tell you if you're timed out, and also how much time is left of your timeout.
+To check if you're timed out, use the `/user` command. This command will tell you if you're timed out and how much time is left in your timeout period. If you're not timed out, the command will not mention your timeout status.
 
 :::note
-The command only mentions your timeout status if you're actually timed out. It's hidden otherwise.
+The /user command only mentions your timeout status if you're actually timed out. If you're not timed out, the command will not mention your timeout status.
 :::

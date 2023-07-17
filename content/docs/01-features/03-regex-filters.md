@@ -1,16 +1,16 @@
-# Regex filters
+# Regex Filters
 
-A regex filter can filter out bad or unwanted messages in your counting channel without screwing up the count.
+Regex filters are a powerful tool for filtering out unwanted messages in your counting channel without affecting the count.
 
 
 ## Purpose
 
-Discord is filled with potentially unwanted messages, so we've added this so moderators can try to filter out most of them from the counting channel automatically. Whenever a message matches a regex filter you've configured, the count will automatically fail and the message will be deleted.
+Discord channels can be filled with unwanted messages, so we've added regex filters to help moderators automatically filter out most of them from the counting channel. Whenever a message matches a regex filter that you've configured, the count will automatically fail and the message will be deleted.
 
 
-## How to manage regex filters {#manage}
+## How to Manage Regex Filters {#manage}
 
-You can add a new filter using the `/filters add` command, and remove using `/filters remove`. You can list all your filters with `/filters list`.
+To add a new filter, use the `/filters add` command. To remove a filter, use the `/filters remove` command. You can list all of your filters with the `/filters list` command.
 
 
 ## How to test regex filters {#test}
@@ -23,8 +23,6 @@ import Image from "@theme/IdealImage";
 <Image img={require("../../../assets/docs/regex-tester.png")} alt="Regex Tester" />
 ```
 
-In this example, the regex is `hello world`. You add this regex filter by doing `/filters add regex:hello world`.
+In the tester, you can enter a regex pattern and test it against sample messages to see if it matches. Once you have a working regex pattern, you can add it as a filter using the /filters add command.
 
-:::note
-Our regex evaluator is timed, so if you have a complex regex, it might fail to evaluate.
-:::
+Please note that our regex evaluator is timed, so if you have a complex regex, it might fail to evaluate.
