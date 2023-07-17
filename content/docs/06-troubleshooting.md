@@ -53,3 +53,15 @@ If you're a server admin or the server owner, you should have access to all comm
 ## What is Countr's prefix? {#prefix}
 
 Countr uses Discord slash commands, so you can use `/` as your new prefix! To see a list of available commands, simply type `/` in any channel where Countr is present.
+
+## Does Countr have a dashboard? {#dashboard}
+
+No, Countr does not have a dashboard. We've made it easy to manage your counting channels with slash commands, so you don't need a dashboard. If you have feedback on the current user interface, please let us know in the [support server](https://promise.solutions/discord)!
+
+## Can we add a slowmode? {#slowmode}
+
+Discord integrates slowmode into the channel itself, so you can use the `/set slowmode` command to set a slowmode, or optionally edit the channel itself.
+
+## Does Countr support multiple languages? {#languages}
+
+We currently only support English, but we might add more languages in the future.
