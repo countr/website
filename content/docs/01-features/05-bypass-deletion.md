@@ -1,6 +1,6 @@
 # Bypass Message Deletion
 
-If you want to make an announcement in the counting channel without actually counting something, you can set up a bypassable role. Anyone with a bypassable role can bypass message deletion by starting their message with !. You can later edit the message and remove the exclamation mark.
+If you want to make an announcement in the counting channel without actually counting something, you can set up a bypassable role. Anyone with a bypassable role can bypass message deletion by starting their message with `!`. Once your message is sent, feel free to edit the message and remove the exclamation mark.
 
 ```mdx-code-block
 import {
@@ -18,5 +18,3 @@ import {
 ## How to set up {#how}
 
 You can add a bypassable role with the `/bypassroles add` command. You can list all your bypassable roles with the `/bypassroles list` command. You can also remove a bypassable role with the `/bypassroles remove` command.
-
-To add a bypassable role, use the `/bypassroles add` command. You can list all of your bypassable roles with the `/bypassroles list` command. To remove a bypassable role, use the `/bypassroles remove` command.

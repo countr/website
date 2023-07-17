@@ -1,6 +1,6 @@
 # Regex Filters
 
-Regex filters are a powerful tool for filtering out unwanted messages in your counting channel without affecting the count.
+Regex filters are an advanced tool for filtering out unwanted messages in your counting channel without affecting the count.
 
 
 ## Purpose
@@ -23,6 +23,8 @@ import Image from "@theme/IdealImage";
 <Image img={require("../../../assets/docs/regex-tester.png")} alt="Regex Tester" />
 ```
 
-In the tester, you can enter a regex pattern and test it against sample messages to see if it matches. Once you have a working regex pattern, you can add it as a filter using the /filters add command.
+In the tester, you can enter a regex pattern and test it against sample messages to see if it matches. Once you have a working regex pattern, you can add it as a filter using the `/filters add` command.
 
-Please note that our regex evaluator is timed, so if you have a complex regex, it might fail to evaluate.
+:::note
+The regex evaluator built into Countr is timed, so if you have a complex regex, it may fail to evaluate.
+:::

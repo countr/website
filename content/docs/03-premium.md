@@ -7,7 +7,7 @@ Countr offers Premium access to users who want to take their counting game to th
 
 Upgrade to Premium and get access to these exclusive features:
 
-* Premium bot with less downtime, faster response time, and faster startup time during outages
+* Access to the Countr Premium bot with less downtime, faster response times, and faster startups after outages
 * Early access to new beta features
 * Premium support on our support server, including a fancy role for your support
 * Live scoreboard that updates every five minutes
@@ -15,7 +15,7 @@ Upgrade to Premium and get access to these exclusive features:
 * Up to 100 position roles
 * More flows, triggers, and actions (25 of each)
 
-Please note that these features are only available through the Premium bot and are not available through the normal bot. Upgrade to Premium today and take your counting game to the next level!
+These features are only available with the Countr Premium bot! Upgrade to Premium today and take your counting game to the next level!
 
 
 ## How to Get Premium {#how}
@@ -34,6 +34,6 @@ After you've done that, you can ask one of the support members for an invite lin
 
 ## Refunds Policy {#refunds}
 
-Please note that there are no refunds for Premium. Premium is only $1/month, so refunding you will be a waste of time for both of us. If you're unsure about sacrificing a dollar to at least test out Premium's features, then you should probably just keep your money instead.
+We do not offer refunds.
 
-If you change your mind later and want to downgrade to the free bot, you can safely do so by kicking the Premium bot and adding the free bot again. Both bots use the same database, so your data is safe and mirrored over when you add the bot back.
+If your subscription ends or you've changed your mind later and want or need to downgrade to the free bot, you can safely do so by kicking the Countr Premium bot and adding the free bot again. Both bots use the same database, so your data is safe and not lost during the transition.

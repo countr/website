@@ -60,7 +60,13 @@ import {
 
 <br/>
 
-In the first step, the editor will give you an overview of the flow creation process and what to expect. In the second step, you'll be able to choose one or more triggers that will activate the flow. In the third step, you'll be able to choose one or more actions that will be performed when the flow is triggered. In the fourth step, you'll be able to add optional details to the flow, such as a name and description.
+First, the editor will give you an overview of the flow creation process and what to expect.
+
+Next, you'll be able to choose one or more triggers that will activate the flow.
+
+After this, you'll be able to choose one or more actions that will be performed when the flow is triggered.
+
+Finally, you'll be able to add optional details to the flow, such as a name and description before saving.
 
 Once you've completed all four steps, your flow will be created and ready to use. You can view your flows using the `/flows list` command, and you can edit or delete a flow using the `/flows edit` and `/flows delete` commands, respectively.
 
@@ -77,13 +83,13 @@ Keep in mind that any trigger will activate all actions in a flow. For example, 
 | **Only number X**<br/>This trigger will activate whenever a user counts the number X, and only the number X. |
 | **Score of X**<br/>This trigger will activate whenever a user has counted a total of X counts. |
 | **Regex match**<br/>This trigger will activate when a successful count message matches a regex. |
-| **Count fail**<br/>This trigger will activate whenever someone fails a count. |
+| **Count fail**<br/>This trigger will activate whenever someone fails to count, for example by counting the wrong number. |
 | **Timeout role triggered**<br/>This trigger will activate whenever someone gets the timeout role. |
 | **Greater than or equal to number X**<br/>This trigger will activate whenever a user counts a number that is greater than or equal to the number X. |
 | **Score greater than or equal to X**<br/>This trigger will activate whenever a user has counted a total of X counts, or more than X counts. |
-
-
-## Actions
+| **Give a role (or list of roles) to the user**<br/>This action will add one or many roles to the user who triggered this flow. |
+| **Remove a role (or list of roles) from the user**<br/>This action will remove one or many roles from the user who triggered this flow. |
+| **Give a unique role (or list of roles) to the user**<br/>This action will add one or many roles to the user who triggered this flow, and also remove previous users from this or these roles. |
 
 | Actions |
 |:-------:|
@@ -114,13 +120,13 @@ When using the "Send a message" action in a flow, you can use placeholders to cu
 * `{content}`:	The content of the message that triggered this flow.
 * `{failreason}`:	The reason why the count failed (if it failed).
 
-To use a placeholder, simply include it in your message surrounded by curly braces. For example, if you want to mention the user who triggered the flow, you can use the `{mention}`` placeholder.
+To use a placeholder, simply include it in your message surrounded by curly braces. For example, if you want to mention the user who triggered the flow, you can use the `{mention}` placeholder.
 
 ## How to use emojis in flows
 
 Some actions, such as the Message reaction action, allow for emojis as input. If you're on Windows, you can press Windows key + . (period) to open the emoji picker. If you want to use a server emoji, type out the emoji in a Discord channel and prefix it with a backslash, like this: `\:emoji:`. It will then look something like this: `<:emoji:1234567890123456789>` - paste this entire thing in the field where it asks for an emoji.
 
-Make sure to only enter one emoji in the text field, and no spaces.
+Please be sure to only enter one emoji in the text field, and no spaces.
 
 
 ## Flow Ideas {#ideas}

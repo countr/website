@@ -1,6 +1,6 @@
 # Notifications
 
-If you want to stay up-to-date in your counting channel, or someone else's counting channel, you can set up Countr to send you a DM whenever you'd like.
+Countr can send you a DM to help you stay up-to-date in counting channels everywhere!
 
 
 ## How to set up {#how}

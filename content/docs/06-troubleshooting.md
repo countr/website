@@ -3,13 +3,6 @@
 If you're experiencing issues with Countr, don't worry! We're here to help. Check out the common issues below to see if your problem is listed. If it's not, or if you're still having trouble, join our [support server](https://promise.solutions/discord) and we'll assist you further.
 
 
-## "Remove everyone from a role" action is not working {#role-member-caching}
-
-If you're having trouble with the "Remove everyone from a role" action, it may be due to a memory-saving feature we use. We don't cache everyone's user information, including their roles. We've tried to work around this issue by fetching everyone in the server that have a score in the counting channel, and then filter out who has the role and who doesn't, but this isn't always reliable. Unfortunately, there's currently no way of fetching everyone from a role or setting a role's members directly through the Discord API.
-
-As a workaround, you can use the "Give unique role" flow action instead. This action will give a role to the user who triggered the flow, and remove the previous user that triggered the action. This will effectively remove everyone from the original role.
-
-
 ## My regex doesn't work as it should {#regex}
 
 If your regex isn't working as expected, there are two possible reasons. First, your regex may not be correct or functioning the way you intended. You can test your regex with a [regex tester](01-features/03-regex-filters.md#test).
@@ -59,4 +52,4 @@ If you're a server admin or the server owner, you should have access to all comm
 
 ## What is Countr's prefix? {#prefix}
 
-Countr has fully moved over to slash commands, so you can use `/`` as your new prefix! This means that all of Countr's commands are now accessed through the Discord slash command interface. To see a list of available commands, simply type `/`` in any channel where Countr is present.
+Countr uses Discord slash commands, so you can use `/` as your new prefix! To see a list of available commands, simply type `/` in any channel where Countr is present.
