@@ -34,5 +34,5 @@ import {
 <br/>
 
 :::note
-You won't see any effect until the bot goes offline and then comes back online.
+Keep in mind that you won't see any effect until the bot goes offline and then comes back online.
 :::

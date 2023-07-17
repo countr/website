@@ -21,13 +21,3 @@ import {
   </Message>
 </Discord>
 ```
-
-
-## Purpose
-
-The purpose is, like the [reposting](04-reposting.md#purpose) and the [webhook](07-webhook.md#purpose) module, to disallow the members to edit or delete their messages afterwards.
-
-
-## Feedback
-
-This probably isn't the best module in the form of looks, but it's been requested before so we added it. If you have feedback on it then [join our support server](https://promise.solutions/support) and let us know!

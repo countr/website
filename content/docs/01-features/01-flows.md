@@ -7,6 +7,8 @@ Simply put, a flow is a list of triggers and actions, and whenever one of those 
 
 ## How to create a flow {#how}
 
+To create a flow, use the `/flows create` command. This will open the flow editor, which will guide you through the process of creating a new flow.
+
 ```mdx-code-block
 import {
   DiscordActionRow as ActionRow,
@@ -58,12 +60,18 @@ import {
 
 <br/>
 
-When you first run the command `/flows create`, this message will come up. Looks like a lot, and looks quite advanced, but it's actually pretty simple and user friendly.
+First, the editor will give you an overview of the flow creation process and what to expect.
 
-You are first greeted with this welcome message. It's a bit long, but it's a good way to get started. Click Next to go to the next step. There are in total four steps. Step 2 and 3 is where you configure your flow, and step 4 is where you can give your flow a name or toggle it as well. After step 4, you can save the flow.
+Next, you'll be able to choose one or more triggers that will activate the flow.
+
+After this, you'll be able to choose one or more actions that will be performed when the flow is triggered.
+
+Finally, you'll be able to add optional details to the flow, such as a name and description before saving.
+
+Once you've completed all four steps, your flow will be created and ready to use. You can view your flows using the `/flows list` command, and you can edit or delete a flow using the `/flows edit` and `/flows delete` commands, respectively.
 
 :::note
-Keep in mind that **any trigger** will trigger **all actions** in a flow. So if you have multiple triggers, let's say "each 10" and "only 15" are your flow's triggers, then all of your flow's actions will run if someone counts 10, 20, 30 etc. and also if someone counts the number 15. So if you plan on making role rewards then you need a flow for each role you want to give out.
+Keep in mind that any trigger will activate all actions in a flow. For example, if you have multiple triggers such as "each 10" and "only 15", then all actions in your flow will run if someone counts 10, 20, 30, etc. or if someone counts the number 15. Therefore, if you plan on creating role rewards, you need a separate flow for each role you want to give out.
 :::
 
 
@@ -71,67 +79,59 @@ Keep in mind that **any trigger** will trigger **all actions** in a flow. So if 
 
 | Triggers |
 |:--------:|
-| **Each X number**<br/>This will get triggered whenever a user counts a multiple of X. For example, if X is 10, this will trigger on 10, 20, 30 etc. |
-| **Only number X**<br/>This will get triggered whenever a user counts the number X, and only the number X. |
-| **Score of X**<br/>This will get triggered whenever a user has counted a total of X counts. |
-| **Regex match**<br/>This will get triggered when a successful count message matches a regex. |
-| **Count fail**<br/>This will get triggered whenever someone fails a count. |
-| **Timeout role triggered**<br/>This will get triggered whenever someone gets the timeout role. |
-| **Greater than or equal to number X**<br/>This will get triggered whenever a user counts a number that is greater than or equal to the number X. |
-| **Score greater than or equal to X**<br/>This will get triggered whenever a user has counted a total of X counts, or more than X counts. |
-
-
-## Actions
+| **Each X number**<br/>This trigger will activate whenever a user counts a multiple of X. For example, if X is 10, this trigger will activate on 10, 20, 30, etc. |
+| **Only number X**<br/>This trigger will activate whenever a user counts the number X, and only the number X. |
+| **Score of X**<br/>This trigger will activate whenever a user has counted a total of X counts. |
+| **Regex match**<br/>This trigger will activate when a successful count message matches a regex. |
+| **Count fail**<br/>This trigger will activate whenever someone fails to count, for example by counting the wrong number. |
+| **Timeout role triggered**<br/>This trigger will activate whenever someone gets the timeout role. |
+| **Greater than or equal to number X**<br/>This trigger will activate whenever a user counts a number that is greater than or equal to the number X. |
+| **Score greater than or equal to X**<br/>This trigger will activate whenever a user has counted a total of X counts, or more than X counts. |
 
 | Actions |
 |:-------:|
-| **Give a role (or list of roles) to the user**<br/>This will add a role, or a list of roles, to the user who triggered this flow. |
-| **Remove a role (or list of roles) from the user**<br/>This will remove a role, or a list of roles, from the user who triggered this flow. |
-| **Remove everyone from a role (or list of roles) [DEPRECATED]**<br/>Use the new action called "unique role" to achieve the same effect. |
-| **Give a unique role (or list of roles) to the user**<br/>This will add a role, or a list of roles, to the user who triggered this flow, and also remove previous users that had this role or these roles. |
-| **Pin the count message** |
-| **Send a message**<br/>This will send a message in any channel you'd like. See placeholders [further down](#send-a-message-placeholders). |
-| **Lock the counting channel**<br/>This will lock the counting channel for the everyone-role. This action won't work in threads as of right now. |
-| **Set the count** |
-| **Modify the count** |
-| **Set the user's score** |
-| **Modify the user's score** |
-| **Message reaction**<br/>This will react to the counting message with an emoji. It also supports the `nodelete` module for failed counts. |
+| **Give a role (or list of roles) to the user**<br/>This action will add one or many roles to the user who triggered this flow. |
+| **Remove a role (or list of roles) from the user**<br/>This action will remove one or many roles from the user who triggered this flow. |
+| **Give a unique role (or list of roles) to the user**<br/>This action will add one or many roles to the user who triggered this flow, and also remove previous users from this or these roles. |
+| **Pin the count message**<br/>This action will pin the counting message. |
+| **Send a message**<br/>This action will send a message in any channel you'd like. See placeholders [further down](#send-a-message-placeholders). |
+| **Lock the counting channel**<br/>This action will lock the counting channel for the everyone-role. This action won't work in threads as of right now.. |
+| **Set the count**<br/>This action will set the count to a specific number. |
+| **Modify the count**<br/>This action will modify the count by a specific number. |
+| **Set the user's score**<br/>This action will set the user's score to a specific number. |
+| **Modify the user's score**<br/>This action will modify the user's score by a specific number. |
+| **Message reaction**<br/>This action will react to the counting message with an emoji. It also supports the `nodelete` module for failed counts. |
 
 
-### "Send a message" placeholders
+### "Send a message" Placeholders
 
-<details>
-  <summary>Click to see all placeholders</summary>
+When using the "Send a message" action in a flow, you can use placeholders to customize the message. Here are the available placeholders:
 
-  | Placeholder | Description                                           |
-  |:-----------:|:------------------------------------------------------|
-  | {count}     | The count that triggered this flow                  |
-  | {mention}   | Mentions the user who triggered this flow           |
-  | {tag}       | The tag of the user who triggered this flow         |
-  | {username}  | The username of the user who triggered this flow    |
-  | {nickname}  | The nickname of the user who triggered this flow    |
-  | {everyone}  | Mentions the everyone-role                          |
-  | {score}     | The new score of the user who triggered this flow   |
-  | {content}   | The content of the message that triggered this flow |
-</details>
+* `{count}`:	The count that triggered this flow.
+* `{mention}`:	Mentions the user who triggered this flow.
+* `{tag}`:	The tag of the user who triggered this flow.
+* `{username}`:	The username of the user who triggered this flow.
+* `{nickname}`:	The nickname of the user who triggered this flow.
+* `{everyone}`:	Mentions the everyone-role.
+* `{score}`:	The new score of the user who triggered this flow.
+* `{content}`:	The content of the message that triggered this flow.
+* `{failreason}`:	The reason why the count failed (if it failed).
 
+To use a placeholder, simply include it in your message surrounded by curly braces. For example, if you want to mention the user who triggered the flow, you can use the `{mention}` placeholder.
 
 ## How to use emojis in flows
 
-Some actions, such as the Message reaction action, allows for emojis as input. If you're on Windows then you can press Windows key + . (period) which will open up the emoji picker. If you want to use a server emoji then type out the emoji in a Discord channel and prefix it with a backslash, like this: `\:emoji:`. It will then look something like this: `<:emoji:1234567890123456789>` - paste this entire thing in the field where it asks for an emoji.
+Some actions, such as the Message reaction action, allow for emojis as input. If you're on Windows, you can press Windows key + . (period) to open the emoji picker. If you want to use a server emoji, type out the emoji in a Discord channel and prefix it with a backslash, like this: `\:emoji:`. It will then look something like this: `<:emoji:1234567890123456789>` - paste this entire thing in the field where it asks for an emoji.
 
-Make sure to only enter one emoji in the text field, and no spaces.
+Please be sure to only enter one emoji in the text field, and no spaces.
 
 
 ## Flow Ideas {#ideas}
 
-We've collected a few ideas for your server here. You can of course make your own flow however you'd like, but here are a few ideas to help get you started.
+If you're not sure where to start with creating a flow, here are a few ideas to help get you started:
 
-  * **Role rewards:** Give out a role to people that counted a total of 1000 counts or more.
-  * **Milestone pin:** Pin every 1000th count in the channel.
+* **Role rewards:** Give out a role to people that counted a total of 1000 counts or more.
+* **Milestone pin:** Pin every 1000th count in the channel.
+* **React on failed counts:** React to failed counts with a red cross when enabling the `nodelete` module.
 
-
-## Need help with your flow? {#help}
-
-Join our support server, we would love to help you creating your flow! The flow editor is still in development, so we would love to hear your feedback to improve it as well.
+Of course, you can create your own flow however you'd like. If you need help with your flow, feel free to join our support server. We're always happy to help!

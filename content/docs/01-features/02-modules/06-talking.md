@@ -1,6 +1,6 @@
 # Talking module
 
-The talking module allows users to talk after their count.
+The talking module allows users to add a message after their count.
 
 ```mdx-code-block
 import {
@@ -16,5 +16,5 @@ import {
 <br/>
 
 :::note
-If you want to filter out content, like disallow multiple lines or have a character limit then you can use [regex filters](../03-regex-filters.md).
+If you want to filter out content, like disallow multiple lines or have a character limit, then you can use [regex filters](../03-regex-filters.md).
 :::

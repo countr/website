@@ -1,6 +1,6 @@
 # Math equations
 
-Count with math equations to train your brain.
+Using math equations to count can be a fun way to challenge yourself and others. Give it a try and see how you do!
 
 ```mdx-code-block
 import {

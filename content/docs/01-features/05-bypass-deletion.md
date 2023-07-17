@@ -1,8 +1,6 @@
-# Bypass message deletion
+# Bypass Message Deletion
 
-If you want to announce something in the channel without actually counting something then you can set up a bypassable role. Anyone with a bypassable role can bypass message deletion by starting their message with `!`.
-
-You can later edit the message and remove the exclamation mark from the message.
+If you want to make an announcement in the counting channel without actually counting something, you can set up a bypassable role. Anyone with a bypassable role can bypass message deletion by starting their message with `!`. Once your message is sent, feel free to edit the message and remove the exclamation mark.
 
 ```mdx-code-block
 import {

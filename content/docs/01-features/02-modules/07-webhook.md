@@ -1,6 +1,6 @@
 # Webhook module
 
-The webhook module reposts all counts in the counting channel through a webhook, impersonating the user that sent it.
+The webhook module allows you to repost all counts in the counting channel through a webhook, impersonating the user that sent it. This can be useful if you want to prevent members from editing or deleting their messages afterwards.
 
 ```mdx-code-block
 import {
@@ -17,10 +17,5 @@ import {
 <br/>
 
 :::note
-There will appear a BOT tag in the message since it's posted through a webhook. That's how webhook works, and there's nothing we can do to disable this.
+Keep in mind that when you use the webhook module, the message will have a "BOT" tag since it's posted through a webhook. This is a limitation of how webhooks work and cannot be disabled.
 :::
-
-
-## Purpose
-
-The purpose is, like the [embed](01-embed.md#purpose) and the [reposting](04-reposting.md#purpose) module, to disallow the members to edit or delete their messages afterwards.
