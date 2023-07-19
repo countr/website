@@ -14,7 +14,7 @@ We're only halfway into the summer, but there have already been a lot of changes
 
 This feature has been requested [since January 2020](https://github.com/countr/countr/issues/16), and we're excited to finally make it available. With the /scores fetch command, you can easily count up all the scores in your counting channel. This feature is perfect for servers that would like to move over to Countr and are not able to export scores from their previous system.
 
-If you want to try it out then go ahead! It responds with a scores file that you can import through `/data import scores`, it will not modify the database directly, so you can safely try it out without worrying about overwriting your scores.
+If you want to try it out then go ahead! It responds with a scores file that you can import through `/data import scores`, it will not modify the database directly, so you can safely try it out without worrying about overwriting your current scores.
 
 ## The new reaction action
 
