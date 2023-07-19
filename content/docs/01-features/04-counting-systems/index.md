@@ -12,5 +12,5 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 ```
 
 :::note
-You can always run `/count` to see what the next number will be. This is really helpful when counting in weird counting systems like [base64](./05-base64.md).
+You can always run `/count` to see what the next number will be. It will also tell you what the number is currently in decimal format.
 :::
