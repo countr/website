@@ -16,15 +16,15 @@ This feature has been requested [since January 2020](https://github.com/countr/c
 
 If you want to try it out then go ahead! It responds with a scores file that you can import through `/data import scores`, it will not modify the database directly, so you can safely try it out without worrying about overwriting your scores.
 
-## The new `nodelete` module
-
-This module has been requested [since October 2021](https://github.com/countr/countr/issues/138)! With the "nodelete" module, failed counts will no longer be deleted from the counting channel. This means you can have a normal conversation in your counting channel, if you want that. Combined with the [new react action](#the-new-reaction-action), you can also cross out failed counts.
-
 ## The new reaction action
 
 This action has been *highly* requested multiple times, and it's finally here. With the new reaction action, you can react to a count with a Discord emoji or a custom server emoji. For example, you can react with a cross to cross out a failed count, or react with a checkmark to successful counts. Another idea is to add a "nice!" reaction to counts ending in 69.
 
-You can easily stack these as well, so if you want to spell out "nice" with reactions, you can do that!
+You can easily combine these as well, so if you want to spell out "nice" with reactions, you can do that!
+
+## The new `nodelete` module
+
+This module has been requested [since October 2021](https://github.com/countr/countr/issues/138)! With the "nodelete" module, failed counts will no longer be deleted from the counting channel. This means you can have a normal conversation in your counting channel, if you want that. Combined with the [new react action](#the-new-reaction-action), you can also cross out failed counts.
 
 ## You can now run a random flow action
 
