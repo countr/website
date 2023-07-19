@@ -12,15 +12,15 @@ We're only halfway into the summer, but there have already been a lot of changes
 
 ## The new `/scores fetch` command
 
-This feature has been requested [since January 2020](https://github.com/countr/countr/issues/16), and we're excited to finally make it available. With the /scores fetch command, you can easily count up all the scores in your counting channel. This feature is perfect for servers that would like to move over to Countr and are not able to export scores from their previous system.
+This feature has been requested [since January 2020](https://github.com/countr/countr/issues/16), and we're excited to finally make it available. With the `/scores fetch` command, you can easily count up all the scores in your counting channel. This feature is perfect for servers that would like to move over to Countr and are not able to export scores from their previous system.
 
-If you want to try it out then go ahead! It responds with a scores file that you can import through `/data import scores`, it will not modify the database directly, so you can safely try it out without worrying about overwriting your current scores.
+If you want to try it out then go ahead! It responds with a file that you can import later through `/data import scores`. The fetch command will not modify the database directly, so you can safely try it out without worrying about overwriting your current scores.
 
 ## The new reaction action
 
 This action has been *highly* requested multiple times, and it's finally here. With the new reaction action, you can react to a count with a Discord emoji or a custom server emoji. For example, you can react with a cross to cross out a failed count, or react with a checkmark to successful counts. Another idea is to add a "nice!" reaction to counts ending in 69.
 
-You can easily combine these as well, so if you want to spell out "nice" with reactions, you can do that!
+You can easily combine reactions as well, so if you want to spell out "nice" with reactions, you can do that!
 
 ## The new `nodelete` module
 
