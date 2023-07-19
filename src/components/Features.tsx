@@ -17,33 +17,33 @@ interface FeatureItem {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Instant setup",
-    svg: <ImageSetup xlinkTitle="test" />,
-    description: <>Get started right away by adding the bot and setting it up. You can easily create a new counting channel, or use a channel you already have. <Link to="/docs">Read more on how to set it up here</Link>.</>,
+    title: "Instant Setup",
+    svg: <ImageSetup xlinkTitle="Instant setup" />,
+    description: <>Getting started with Countr is easy! Simply add the bot to your server and follow our <Link to="/docs">step-to-step guide</Link> to set it up. You can create a new counting channel or use an existing one.</>,
     size: 4,
   },
   {
-    title: "Customize your channel",
-    svg: <ImageFlows xlinkTitle="test" />,
-    description: <>We have even made it possible for you to customize how the counting works. Set up rewards, milestones, goals and more with flows. <Link to="/docs/features/flows">Read more on flows here</Link>.</>,
+    title: "Customize Your Channel",
+    svg: <ImageFlows xlinkTitle="Image flows" />,
+    description: <>Customize how the counting works with <Link to="/docs/features/flows">Countr{"'"}s flows</Link>, including rewards, milestones, goals, and more. The possibilities are endless!</>,
     size: 4,
   },
   {
-    title: "Helpdesk server",
-    svg: <ImageSupport xlinkTitle="test" />,
-    description: <>We have super-great, super-friendly support members available on our support server that can assist you in anything you need. <Link to="https://promise.solutions/discord">Get support here</Link>.</>,
+    title: "Helpdesk Server",
+    svg: <ImageSupport xlinkTitle="Helpdesk server" />,
+    description: <>Our support team is here to help you with anything you need! Join our <Link to="https://promise.solutions/discord">super-friendly support server</Link> and get the assistance you need to make the most of Countr.</>,
     size: 4,
   },
   {
-    title: "Well documented",
-    svg: <ImageDocs xlinkTitle="test" />,
-    description: <>The documentation is up-to-date, and we will keep it that way. We also now have a Posts-tab that we regularly post articles on. <Link to="/docs">Read the docs here</Link>.</>,
+    title: "Well Documented",
+    svg: <ImageDocs xlinkTitle="Well documented" />,
+    description: <>Our documentation is always up-to-date and easy to follow, so you can get started with Countr in no time! Plus, check out our Posts-tab for regular articles and updates. <Link to="/docs">Read the docs here</Link> and start counting like a pro!</>,
     size: 6,
   },
   {
-    title: "Completely free",
-    svg: <ImageFree xlinkTitle="test" />,
-    description: <>We believe in free and open-source services with no ads. We also believe in a &quot;pay-whatever-you-want&quot;-model which has worked pretty well, starting from just $1/month. <Link to="/docs/premium">Read more on Premium here</Link>.</>,
+    title: "Completely Free",
+    svg: <ImageFree xlinkTitle="Completely free" />,
+    description: <>At Promise Solutions, we believe in providing free and open-source services without any ads. We also offer a {"\""}pay-what-you-want{"\""} model, starting from just $1/month, so you can support us and get access to premium features. <Link to="/docs/premium">Read more about our premium features here</Link> and take your counting experience to the next level!</>,
     size: 6,
   },
 ];
