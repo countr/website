@@ -61,7 +61,7 @@ browser where they get saved before going back to the same Website(s).
 
 Certain information may be stored about your usage of the Website(s) through Google
 Analytics, which is used for marketing and Search Engine Optimisation (SEO) purposes. This
-information is only accessible to `Promise#0001`, with user identifier `110090225929191424`,
+information is only accessible to `@promise`, with user identifier `110090225929191424`,
 hereby referenced to as the Bot Creator.
 
 
@@ -95,7 +95,7 @@ Amendments, omissions or other changes made to the database directly can only be
 by the Bot Creator.
 
 
-## 5. Request for Data Erasure
+## 5. Request for Data Erasure {#request-for-data-erasure}
 
 If you wish to clear any and all stored information on a guild in which you have sufficient
 access, you may run the /data reset command, which will remove your guild from our
