@@ -39,8 +39,8 @@ dependencies:
     specifier: 1.6.22
     version: 1.6.22(react@17.0.2)
   '@skyra/discord-components-react':
-    specifier: 3.6.0
-    version: 3.6.0(react-dom@17.0.2)(react@17.0.2)
+    specifier: 3.6.1
+    version: 3.6.1(react-dom@17.0.2)(react@17.0.2)
   clsx:
     specifier: 2.0.0
     version: 2.0.0
@@ -93,7 +93,7 @@ devDependencies:
     version: 8.47.0
   eslint-config-promise:
     specifier: github:promise/eslint-config
-    version: github.com/promise/eslint-config/621a3c66a2b227073351485762897c212bc35804(@typescript-eslint/eslint-plugin@6.4.0)(@typescript-eslint/parser@6.4.0)(eslint-plugin-i@2.27.5)(eslint-plugin-jest@27.2.3)(eslint-plugin-react@7.33.2)(eslint@8.47.0)
+    version: github.com/promise/eslint-config/64a38b9fc39c688cda312c4696c46c025184fa91(@typescript-eslint/eslint-plugin@6.4.0)(@typescript-eslint/parser@6.4.0)(eslint-plugin-i@2.27.5)(eslint-plugin-jest@27.2.3)(eslint-plugin-react@7.33.2)(eslint@8.47.0)
   typescript:
     specifier: 5.1.6
     version: 5.1.6
@@ -2829,23 +2829,23 @@ packages:
     resolution: {integrity: sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==}
     engines: {node: '>=6'}
 
-  /@skyra/discord-components-core@3.6.0:
-    resolution: {integrity: sha512-13aVNoleHyAMqd4lcfcfjEduV4QavlHn9P2TUlTUPQC8m8cd8n8wSUTDUxKhQbYpzJ0hn7AHnlmLixfiqQT4FQ==}
+  /@skyra/discord-components-core@3.6.1:
+    resolution: {integrity: sha512-mAjdASizJLEy9OVM2e5TrkqNr036mYuEsXlq8OrYkKtEgYbEMe7NIKIw0qHwfy+FmxYxrQCuhhODZzQmdof4+Q==}
     engines: {node: '>=v14.0.0'}
     dependencies:
-      '@stencil/core': 2.22.3
+      '@stencil/core': 3.4.2
       clsx: 1.2.1
       hex-to-rgba: 2.0.1
     dev: false
 
-  /@skyra/discord-components-react@3.6.0(react-dom@17.0.2)(react@17.0.2):
-    resolution: {integrity: sha512-M3N22C5wktZwOAfkTaEKPQSxsjeeB9+Prtrg9zyW2/+UYDscsAM1sVxC9mzC/D0O5Ayx0c3OAqu+HF5xc6y0/g==}
+  /@skyra/discord-components-react@3.6.1(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-+3DX4z9DZVdwBaGrlgrYdrOlCl8VA0dqezsmovy08TfN7iIpnzWzi2bLuAw74aqHYQQJCDmolYsDp265mtE9ow==}
     engines: {node: '>=v14.0.0'}
     peerDependencies:
       react: 16.8.x || 17.x || 18.x
       react-dom: 16.8.x || 17.x || 18.x
     dependencies:
-      '@skyra/discord-components-core': 3.6.0
+      '@skyra/discord-components-core': 3.6.1
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       tslib: 2.6.1
@@ -2859,9 +2859,9 @@ packages:
       p-map: 4.0.0
       webpack-sources: 3.2.3
 
-  /@stencil/core@2.22.3:
-    resolution: {integrity: sha512-kmVA0M/HojwsfkeHsifvHVIYe4l5tin7J5+DLgtl8h6WWfiMClND5K3ifCXXI2ETDNKiEk21p6jql3Fx9o2rng==}
-    engines: {node: '>=12.10.0', npm: '>=6.0.0'}
+  /@stencil/core@3.4.2:
+    resolution: {integrity: sha512-FAUhUVaakCy29nU2GwO/HQBRV1ihPRvncz3PUc8oR+UJLAxGabTmP8PLY7wvHfbw+Cvi4VXfJFTBvdfDu6iKPQ==}
+    engines: {node: '>=14.10.0', npm: '>=6.0.0'}
     hasBin: true
     dev: false
 
@@ -9679,9 +9679,9 @@ packages:
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
 
-  github.com/promise/eslint-config/621a3c66a2b227073351485762897c212bc35804(@typescript-eslint/eslint-plugin@6.4.0)(@typescript-eslint/parser@6.4.0)(eslint-plugin-i@2.27.5)(eslint-plugin-jest@27.2.3)(eslint-plugin-react@7.33.2)(eslint@8.47.0):
-    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/621a3c66a2b227073351485762897c212bc35804}
-    id: github.com/promise/eslint-config/621a3c66a2b227073351485762897c212bc35804
+  github.com/promise/eslint-config/64a38b9fc39c688cda312c4696c46c025184fa91(@typescript-eslint/eslint-plugin@6.4.0)(@typescript-eslint/parser@6.4.0)(eslint-plugin-i@2.27.5)(eslint-plugin-jest@27.2.3)(eslint-plugin-react@7.33.2)(eslint@8.47.0):
+    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/64a38b9fc39c688cda312c4696c46c025184fa91}
+    id: github.com/promise/eslint-config/64a38b9fc39c688cda312c4696c46c025184fa91
     name: eslint-config-promise
     version: 0.0.0
     peerDependencies:
