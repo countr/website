@@ -86,8 +86,8 @@ devDependencies:
     specifier: 18.2.21
     version: 18.2.21
   discord-api-types:
-    specifier: 0.37.55
-    version: 0.37.55
+    specifier: 0.37.56
+    version: 0.37.56
   eslint:
     specifier: 8.48.0
     version: 8.48.0
@@ -4728,8 +4728,8 @@ packages:
     dependencies:
       path-type: 4.0.0
 
-  /discord-api-types@0.37.55:
-    resolution: {integrity: sha512-XIf8AELxg76AH1WzrgB5ziFyIxSs4tLK1XGjFs4oE6t7M7r1B0Chdylaz76ALhvRXAUBGHGFXu/pKAa5Q+LbQg==}
+  /discord-api-types@0.37.56:
+    resolution: {integrity: sha512-Ih3wj0ZTaQxaJRqUEXHMIXfXB86bwMGC0wc2nNsyCJqeo3lC4qnxXtFIsC+IGI46+dSIinuayCAZ6sLEEM02Bw==}
     dev: true
 
   /dns-equal@1.0.0:
