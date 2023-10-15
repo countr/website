@@ -36,7 +36,7 @@
     "@docusaurus/preset-classic": "2.4.3",
     "@docusaurus/theme-common": "2.4.3",
     "@docusaurus/types": "2.4.3",
-    "@tsconfig/docusaurus": "2.0.1",
+    "@tsconfig/docusaurus": "2.0.2",
     "@tsconfig/strictest": "2.0.2",
     "@types/react": "18.2.28",
     "discord-api-types": "0.37.60",
