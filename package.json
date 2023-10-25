@@ -38,7 +38,7 @@
     "@docusaurus/types": "2.4.3",
     "@tsconfig/docusaurus": "2.0.2",
     "@tsconfig/strictest": "2.0.2",
-    "@types/react": "18.2.31",
+    "@types/react": "18.2.32",
     "discord-api-types": "0.37.60",
     "eslint": "8.52.0",
     "eslint-config-promise": "github:promise/eslint-config",
