@@ -34,7 +34,7 @@ dependencies:
     version: 2.4.3(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
   '@docusaurus/theme-search-algolia':
     specifier: 2.4.3
-    version: 2.4.3(@algolia/client-search@4.20.0)(@docusaurus/types@2.4.3)(@types/react@18.2.34)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)(typescript@5.2.2)
+    version: 2.4.3(@algolia/client-search@4.20.0)(@docusaurus/types@2.4.3)(@types/react@18.2.35)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)(typescript@5.2.2)
   '@mdx-js/react':
     specifier: 1.6.22
     version: 1.6.22(react@17.0.2)
@@ -69,7 +69,7 @@ devDependencies:
     version: 2.4.3(esbuild@0.17.19)(react-dom@17.0.2)(react@17.0.2)
   '@docusaurus/preset-classic':
     specifier: 2.4.3
-    version: 2.4.3(@algolia/client-search@4.20.0)(@types/react@18.2.34)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)(typescript@5.2.2)
+    version: 2.4.3(@algolia/client-search@4.20.0)(@types/react@18.2.35)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)(typescript@5.2.2)
   '@docusaurus/theme-common':
     specifier: 2.4.3
     version: 2.4.3(@docusaurus/types@2.4.3)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
@@ -83,8 +83,8 @@ devDependencies:
     specifier: 2.0.2
     version: 2.0.2
   '@types/react':
-    specifier: 18.2.34
-    version: 18.2.34
+    specifier: 18.2.35
+    version: 18.2.35
   discord-api-types:
     specifier: 0.37.62
     version: 0.37.62
@@ -1559,7 +1559,7 @@ packages:
   /@docsearch/css@3.5.2:
     resolution: {integrity: sha512-SPiDHaWKQZpwR2siD0KQUwlStvIAnEyK6tAE2h2Wuoq8ue9skzhlyVQ1ddzOxX6khULnAALDiR/isSF3bnuciA==}
 
-  /@docsearch/react@3.5.2(@algolia/client-search@4.20.0)(@types/react@18.2.34)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0):
+  /@docsearch/react@3.5.2(@algolia/client-search@4.20.0)(@types/react@18.2.35)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0):
     resolution: {integrity: sha512-9Ahcrs5z2jq/DcAvYtvlqEBHImbm4YJI8M9y0x6Tqg598P40HTEkX7hsMcIuThI+hTFxRGZ9hll0Wygm2yEjng==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 19.0.0'
@@ -1579,7 +1579,7 @@ packages:
       '@algolia/autocomplete-core': 1.9.3(@algolia/client-search@4.20.0)(algoliasearch@4.20.0)(search-insights@2.9.0)
       '@algolia/autocomplete-preset-algolia': 1.9.3(@algolia/client-search@4.20.0)(algoliasearch@4.20.0)
       '@docsearch/css': 3.5.2
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
       algoliasearch: 4.20.0
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
@@ -1758,7 +1758,7 @@ packages:
       '@docusaurus/react-loadable': 5.5.2(react@17.0.2)
       '@docusaurus/types': 2.4.3(esbuild@0.17.19)(react-dom@17.0.2)(react@17.0.2)
       '@types/history': 4.7.11
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
       '@types/react-router-config': 5.0.9
       '@types/react-router-dom': 5.3.3
       react: 17.0.2
@@ -1926,7 +1926,7 @@ packages:
       - vue-template-compiler
       - webpack-cli
 
-  /@docusaurus/plugin-debug@2.4.3(@types/react@18.2.34)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2):
+  /@docusaurus/plugin-debug@2.4.3(@types/react@18.2.35)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2):
     resolution: {integrity: sha512-LkUbuq3zCmINlFb+gAd4ZvYr+bPAzMC0hwND4F7V9bZ852dCX8YoWyovVUBKq4er1XsOwSQaHmNGtObtn8Av8Q==}
     engines: {node: '>=16.14'}
     peerDependencies:
@@ -1939,7 +1939,7 @@ packages:
       fs-extra: 10.1.0
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
-      react-json-view: 1.21.3(@types/react@18.2.34)(react-dom@17.0.2)(react@17.0.2)
+      react-json-view: 1.21.3(@types/react@18.2.35)(react-dom@17.0.2)(react@17.0.2)
       tslib: 2.6.2
     transitivePeerDependencies:
       - '@parcel/css'
@@ -2131,7 +2131,7 @@ packages:
       - vue-template-compiler
       - webpack-cli
 
-  /@docusaurus/preset-classic@2.4.3(@algolia/client-search@4.20.0)(@types/react@18.2.34)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)(typescript@5.2.2):
+  /@docusaurus/preset-classic@2.4.3(@algolia/client-search@4.20.0)(@types/react@18.2.35)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)(typescript@5.2.2):
     resolution: {integrity: sha512-tRyMliepY11Ym6hB1rAFSNGwQDpmszvWYJvlK1E+md4SW8i6ylNHtpZjaYFff9Mdk3i/Pg8ItQq9P0daOJAvQw==}
     engines: {node: '>=16.14'}
     peerDependencies:
@@ -2142,14 +2142,14 @@ packages:
       '@docusaurus/plugin-content-blog': 2.4.3(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
       '@docusaurus/plugin-content-docs': 2.4.3(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
       '@docusaurus/plugin-content-pages': 2.4.3(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
-      '@docusaurus/plugin-debug': 2.4.3(@types/react@18.2.34)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
+      '@docusaurus/plugin-debug': 2.4.3(@types/react@18.2.35)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
       '@docusaurus/plugin-google-analytics': 2.4.3(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
       '@docusaurus/plugin-google-gtag': 2.4.3(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
       '@docusaurus/plugin-google-tag-manager': 2.4.3(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
       '@docusaurus/plugin-sitemap': 2.4.3(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
       '@docusaurus/theme-classic': 2.4.3(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
       '@docusaurus/theme-common': 2.4.3(@docusaurus/types@2.4.3)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
-      '@docusaurus/theme-search-algolia': 2.4.3(@algolia/client-search@4.20.0)(@docusaurus/types@2.4.3)(@types/react@18.2.34)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)(typescript@5.2.2)
+      '@docusaurus/theme-search-algolia': 2.4.3(@algolia/client-search@4.20.0)(@docusaurus/types@2.4.3)(@types/react@18.2.35)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)(typescript@5.2.2)
       '@docusaurus/types': 2.4.3(esbuild@0.17.19)(react-dom@17.0.2)(react@17.0.2)
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
@@ -2180,7 +2180,7 @@ packages:
     peerDependencies:
       react: '*'
     dependencies:
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
       prop-types: 15.8.1
       react: 17.0.2
 
@@ -2266,7 +2266,7 @@ packages:
       '@docusaurus/utils': 2.4.3(@docusaurus/types@2.4.3)(esbuild@0.17.19)
       '@docusaurus/utils-common': 2.4.3(@docusaurus/types@2.4.3)
       '@types/history': 4.7.11
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
       '@types/react-router-config': 5.0.9
       clsx: 1.2.1
       parse-numeric-range: 1.3.0
@@ -2294,14 +2294,14 @@ packages:
       - vue-template-compiler
       - webpack-cli
 
-  /@docusaurus/theme-search-algolia@2.4.3(@algolia/client-search@4.20.0)(@docusaurus/types@2.4.3)(@types/react@18.2.34)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)(typescript@5.2.2):
+  /@docusaurus/theme-search-algolia@2.4.3(@algolia/client-search@4.20.0)(@docusaurus/types@2.4.3)(@types/react@18.2.35)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)(typescript@5.2.2):
     resolution: {integrity: sha512-jziq4f6YVUB5hZOB85ELATwnxBz/RmSLD3ksGQOLDPKVzat4pmI8tddNWtriPpxR04BNT+ZfpPUMFkNFetSW1Q==}
     engines: {node: '>=16.14'}
     peerDependencies:
       react: ^16.8.4 || ^17.0.0
       react-dom: ^16.8.4 || ^17.0.0
     dependencies:
-      '@docsearch/react': 3.5.2(@algolia/client-search@4.20.0)(@types/react@18.2.34)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)
+      '@docsearch/react': 3.5.2(@algolia/client-search@4.20.0)(@types/react@18.2.35)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.9.0)
       '@docusaurus/core': 2.4.3(@docusaurus/types@2.4.3)(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
       '@docusaurus/logger': 2.4.3
       '@docusaurus/plugin-content-docs': 2.4.3(esbuild@0.17.19)(eslint@8.53.0)(react-dom@17.0.2)(react@17.0.2)(typescript@5.2.2)
@@ -2354,7 +2354,7 @@ packages:
       react-dom: ^16.8.4 || ^17.0.0
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
       commander: 5.1.0
       joi: 17.11.0
       react: 17.0.2
@@ -3155,24 +3155,24 @@ packages:
     resolution: {integrity: sha512-a7zOj9yVUtM3Ns5stoseQAAsmppNxZpXDv6tZiFV5qlRmV4W96u53on1vApBX1eRSc8mrFOiB54Hc0Pk1J8GFg==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
       '@types/react-router': 5.1.20
 
   /@types/react-router-dom@5.3.3:
     resolution: {integrity: sha512-kpqnYK4wcdm5UaWI3fLcELopqLrHgLqNsdpHauzlQktfkHL3npOSwtj1Uz9oKBAzs7lFtVkV8j83voAz2D8fhw==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
       '@types/react-router': 5.1.20
 
   /@types/react-router@5.1.20:
     resolution: {integrity: sha512-jGjmu/ZqS7FjSH6owMcD5qpq19+1RS9DeVRqfl1FeBMxTDQAGwlMWOcs52NDoXaNKyG3d1cYQFMs9rCrb88o9Q==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
 
-  /@types/react@18.2.34:
-    resolution: {integrity: sha512-U6eW/alrRk37FU/MS2RYMjx0Va2JGIVXELTODaTIYgvWGCV4Y4TfTUzG8DdmpDNIT0Xpj/R7GfyHOJJrDttcvg==}
+  /@types/react@18.2.35:
+    resolution: {integrity: sha512-LG3xpFZ++rTndV+/XFyX5vUP7NI9yxyk+MQvBDq+CVs8I9DLSc3Ymwb1Vmw5YDoeNeHN4PDZa3HylMKJYT9PNQ==}
     dependencies:
       '@types/prop-types': 15.7.9
       '@types/scheduler': 0.16.5
@@ -7999,7 +7999,7 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-json-view@1.21.3(@types/react@18.2.34)(react-dom@17.0.2)(react@17.0.2):
+  /react-json-view@1.21.3(@types/react@18.2.35)(react-dom@17.0.2)(react@17.0.2):
     resolution: {integrity: sha512-13p8IREj9/x/Ye4WI/JpjhoIwuzEgUAtgJZNBJckfzJt1qyh24BdTm6UQNGnyTq9dapQdrqvquZTo3dz1X6Cjw==}
     peerDependencies:
       react: ^17.0.0 || ^16.3.0 || ^15.5.4
@@ -8010,7 +8010,7 @@ packages:
       react-base16-styling: 0.6.0
       react-dom: 17.0.2(react@17.0.2)
       react-lifecycles-compat: 3.0.4
-      react-textarea-autosize: 8.5.3(@types/react@18.2.34)(react@17.0.2)
+      react-textarea-autosize: 8.5.3(@types/react@18.2.35)(react@17.0.2)
     transitivePeerDependencies:
       - '@types/react'
       - encoding
@@ -8084,7 +8084,7 @@ packages:
       tiny-invariant: 1.3.1
       tiny-warning: 1.0.3
 
-  /react-textarea-autosize@8.5.3(@types/react@18.2.34)(react@17.0.2):
+  /react-textarea-autosize@8.5.3(@types/react@18.2.35)(react@17.0.2):
     resolution: {integrity: sha512-XT1024o2pqCuZSuBt9FwHlaDeNtVrtCXu0Rnz88t1jUGheCLa3PhjE1GH8Ctm2axEtvdCl5SUHYschyQ0L5QHQ==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -8093,7 +8093,7 @@ packages:
       '@babel/runtime': 7.23.2
       react: 17.0.2
       use-composed-ref: 1.3.0(react@17.0.2)
-      use-latest: 1.2.1(@types/react@18.2.34)(react@17.0.2)
+      use-latest: 1.2.1(@types/react@18.2.35)(react@17.0.2)
     transitivePeerDependencies:
       - '@types/react'
     dev: true
@@ -9429,7 +9429,7 @@ packages:
       react: 17.0.2
     dev: true
 
-  /use-isomorphic-layout-effect@1.1.2(@types/react@18.2.34)(react@17.0.2):
+  /use-isomorphic-layout-effect@1.1.2(@types/react@18.2.35)(react@17.0.2):
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
     peerDependencies:
       '@types/react': '*'
@@ -9438,11 +9438,11 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
       react: 17.0.2
     dev: true
 
-  /use-latest@1.2.1(@types/react@18.2.34)(react@17.0.2):
+  /use-latest@1.2.1(@types/react@18.2.35)(react@17.0.2):
     resolution: {integrity: sha512-xA+AVm/Wlg3e2P/JiItTziwS7FK92LWrDB0p+hgXloIMuVCeJJ8v6f0eeHyPZaJrM+usM1FkFfbNCrJGs8A/zw==}
     peerDependencies:
       '@types/react': '*'
@@ -9451,9 +9451,9 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
       react: 17.0.2
-      use-isomorphic-layout-effect: 1.1.2(@types/react@18.2.34)(react@17.0.2)
+      use-isomorphic-layout-effect: 1.1.2(@types/react@18.2.35)(react@17.0.2)
     dev: true
 
   /use-sync-external-store@1.2.0(react@17.0.2):
