@@ -9,7 +9,7 @@ To set up a new position role, use the `/positionroles set` command. This comman
 
 You can also list all of your position roles using the `/positionroles list` command. This command will show you all of the position roles that you've set up, along with the position on the leaderboard that each role is assigned to.
 
-If you want to remove a position role, use the `/positionroles remove` command. This command allows you to remove a position role by specifying the name of the role.
+If you want to remove a position role, use the dropdown menu of `/positionroles list` command.
 
 
 ## Limitations
