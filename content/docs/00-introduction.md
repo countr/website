@@ -3,7 +3,7 @@ slug: .
 ---
 
 
-# Welcome to Countr! {#introduction}
+# Welcome to Countr!
 
 Countr is a powerful counting bot that can help you manage the counting channels in your Discord server. Unlike other multi-purpose bots that try to do too many things at once, Countr is made for counting, which means it has more advanced counting features than other bots.
 
