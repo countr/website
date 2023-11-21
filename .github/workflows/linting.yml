@@ -26,7 +26,6 @@ jobs:
       uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4
       with:
         node-version-file: ".nvmrc"
-        cache: "pnpm"
 
     - name: Install dependencies
       run: pnpm install --frozen-lockfile
