@@ -1,16 +1,16 @@
 {
   "extends": [
     "github>promise/renovate-config:fully-automated-repository",
-    "github>promise/renovate-config:force-node-version(16)"
+    "github>promise/renovate-config:force-node-version(18)"
   ],
   "packageRules": [
     {
       "matchPackageNames": ["react", "react-dom"],
-      "allowedVersions": "17"
+      "allowedVersions": "18"
     },
     {
       "matchPackageNames": ["@mdx-js/react"],
-      "allowedVersions": "1"
+      "allowedVersions": "3"
     }
   ]
 }

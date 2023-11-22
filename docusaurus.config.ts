@@ -1,10 +1,18 @@
-// @ts-check
+import type { Options as PluginClientRedirectsOptions } from "@docusaurus/plugin-client-redirects";
+import type { Options as PluginContentBlogOptions } from "@docusaurus/plugin-content-blog";
+import type { Options as PluginContentDocsOptions } from "@docusaurus/plugin-content-docs";
+import type { Options as PluginContentPagesOptions } from "@docusaurus/plugin-content-pages";
+import type { Options as PluginGoogleGtagOptions } from "@docusaurus/plugin-google-gtag";
+import type { Options as PluginIdealImageOptions } from "@docusaurus/plugin-ideal-image";
+import type { Options as PluginSitemapOptions } from "@docusaurus/plugin-sitemap";
+import type { ThemeConfig } from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
+import { EnumChangefreq } from "sitemap";
 
 const copyright = `Copyright © ${new Date().getFullYear()} Promise Solutions`;
 const editUrl = "https://github.dev/countr/website/blob/main";
 
-/** @type { import("@docusaurus/types").Config } */
-const config = {
+const config: Config = {
   baseUrl: "/",
   title: "Countr",
   url: "https://countr.xyz",
@@ -14,7 +22,6 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   onDuplicateRoutes: "warn",
 
-  /** @type { import("@docusaurus/preset-classic").ThemeConfig } */
   themeConfig: {
     colorMode: {
       defaultMode: "dark",
@@ -83,25 +90,21 @@ const config = {
       apiKey: "911d13589678145ce659d8ff2fb31c8f",
       indexName: "countr",
     },
-  },
+  } satisfies ThemeConfig,
 
   plugins: [
     [
       "@docusaurus/plugin-content-docs",
-
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      ({ // eslint-disable-line no-extra-parens
+      {
         path: "content/docs",
         editUrl,
         routeBasePath: "/docs",
         exclude: ["README.md", "template.md"],
-      }),
+      } satisfies PluginContentDocsOptions,
     ],
     [
       "@docusaurus/plugin-content-blog",
-
-      /** @type {import('@docusaurus/plugin-content-blog').Options} */
-      ({ // eslint-disable-line no-extra-parens
+      {
         path: "content/blog",
         blogTitle: "Countr Blog",
         blogDescription: "The Countr Blog, where we announce everything new about Countr.",
@@ -117,37 +120,27 @@ const config = {
           language: "en",
         },
         exclude: ["README.md", "template.md"],
-      }),
+      } satisfies PluginContentBlogOptions,
     ],
     [
       "@docusaurus/plugin-content-pages",
-
-      /** @type {import('@docusaurus/plugin-content-pages').Options} */
-      ({ path: "src/pages", routeBasePath: "/" }), // eslint-disable-line no-extra-parens
+      { path: "src/pages", routeBasePath: "/" } satisfies PluginContentPagesOptions,
     ],
     [
       "@docusaurus/plugin-client-redirects",
-
-      /** @type {import('@docusaurus/plugin-client-redirects').Options} */
-      ({ fromExtensions: ["html"]}), // eslint-disable-line no-extra-parens
+      { fromExtensions: ["html"] } satisfies PluginClientRedirectsOptions,
     ],
     [
       "@docusaurus/plugin-google-gtag",
-
-      /** @type {import('@docusaurus/plugin-google-gtag').Options} */
-      ({ trackingID: "G-07GPGSSG3Y" }), // eslint-disable-line no-extra-parens
+      { trackingID: "G-07GPGSSG3Y" } satisfies PluginGoogleGtagOptions,
     ],
     [
       "@docusaurus/plugin-sitemap",
-
-      /** @type {import('@docusaurus/plugin-sitemap').Options} */
-      ({ changefreq: "hourly", priority: 0.5 }), // eslint-disable-line no-extra-parens
+      { changefreq: EnumChangefreq.HOURLY, priority: 0.5 } satisfies PluginSitemapOptions,
     ],
     [
       "@docusaurus/plugin-ideal-image",
-
-      /** @type {import('@docusaurus/plugin-ideal-image').PluginOptions} */
-      ({ name: "assets/images/[name]-[hash:hex:7]-[width].[ext]" }), // eslint-disable-line no-extra-parens
+      { name: "assets/images/[name]-[hash:hex:7]-[width].[ext]" } satisfies PluginIdealImageOptions,
     ],
   ],
   scripts: [
@@ -161,4 +154,4 @@ const config = {
   ],
 };
 
-module.exports = config;
+export default config;

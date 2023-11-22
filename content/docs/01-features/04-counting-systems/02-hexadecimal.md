@@ -1,8 +1,3 @@
-# Hexadecimal
-
-Hexadecimal is a base-16 counting system used in computing. It's often used to represent colors, as color codes are usually in hexadecimal format, like Countr's theme color [#BD4632](https://google.com/search?q=%23BD4632).
-
-```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -10,6 +5,10 @@ import {
   DiscordMention as Mention,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
+
+# Hexadecimal
+
+Hexadecimal is a base-16 counting system used in computing. It's often used to represent colors, as color codes are usually in hexadecimal format, like Countr's theme color [#BD4632](https://google.com/search?q=%23BD4632).
 
 <Discord>
   <Message>539</Message>
@@ -30,4 +29,3 @@ import {
   </Message>
   <Message>53d</Message>
 </Discord>
-```

@@ -1,10 +1,3 @@
-# Roman numerals
-
-The Roman numeral system uses the letters I, V, X, L, C, D, and M to represent numbers. It's a system that has been used for centuries and is still used today in some contexts.
-
-Traditionally, the highest number you can represent using Roman numerals is 3,999. However, the bot accepts higher values by just adding more M's.
-
-```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -12,6 +5,12 @@ import {
   DiscordMention as Mention,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
+
+# Roman numerals
+
+The Roman numeral system uses the letters I, V, X, L, C, D, and M to represent numbers. It's a system that has been used for centuries and is still used today in some contexts.
+
+Traditionally, the highest number you can represent using Roman numerals is 3,999. However, the bot accepts higher values by just adding more M's.
 
 <Discord>
   <Message>CDXXIII</Message>
@@ -32,4 +31,3 @@ import {
   </Message>
   <Message>CDXXVII</Message>
 </Discord>
-```

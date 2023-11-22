@@ -1,3 +1,15 @@
+import {
+  DiscordActionRow as ActionRow,
+  DiscordAttachments as Attachments,
+  DiscordBold as Bold,
+  DiscordButton as Button,
+  DiscordCommand as Command,
+  DiscordEmbedDescription as Description,
+  DiscordMessages as Discord,
+  DiscordEmbed as Embed,
+  DiscordMessage as Message,
+} from "@skyra/discord-components-react";
+
 # Flows
 
 A flow is a configurable automated process that will run one or more actions. It sounds complicated, but we've tried to make it as user-friendly as we can with our flow editor.
@@ -10,19 +22,6 @@ You can also make it run a random action by enabling the "Randomize action" opti
 ## How to create a flow {#how}
 
 To create a flow, use the `/flows create` command. This will open the flow editor, which will guide you through the process of creating a new flow.
-
-```mdx-code-block
-import {
-  DiscordActionRow as ActionRow,
-  DiscordAttachments as Attachments,
-  DiscordBold as Bold,
-  DiscordButton as Button,
-  DiscordCommand as Command,
-  DiscordEmbedDescription as Description,
-  DiscordMessages as Discord,
-  DiscordEmbed as Embed,
-  DiscordMessage as Message,
-} from "@skyra/discord-components-react";
 
 <Discord>
   <Message profile="countr">
@@ -58,7 +57,6 @@ import {
     </Attachments>
   </Message>
 </Discord>
-```
 
 <br/>
 

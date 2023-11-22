@@ -1,12 +1,3 @@
-# Multiple Counting Channels
-
-With Countr, you can have up to 2 counting channels for free, and up to 5 counting channels with Premium. If you have more than one counting channel, some commands might require you to use the `/select` command to specify which counting channel you are referring to.
-
-Your selected counting channel is remembered for 24 hours, after which you will need to use the `/select` command again. You can also run the original command in the counting channel itself to avoid having to select it and/or override your already-selected counting channel. However, some commands are required to be run outside of the counting channel, so you will need to select it first.
-
-If Countr needs you to select a counting channel, it will let you know. Simply type `/select` to select a counting channel, and then run the command again.
-
-```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -14,6 +5,14 @@ import {
   DiscordMention as Mention,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
+
+# Multiple Counting Channels
+
+With Countr, you can have up to 2 counting channels for free, and up to 5 counting channels with Premium. If you have more than one counting channel, some commands might require you to use the `/select` command to specify which counting channel you are referring to.
+
+Your selected counting channel is remembered for 24 hours, after which you will need to use the `/select` command again. You can also run the original command in the counting channel itself to avoid having to select it and/or override your already-selected counting channel. However, some commands are required to be run outside of the counting channel, so you will need to select it first.
+
+If Countr needs you to select a counting channel, it will let you know. Simply type `/select` to select a counting channel, and then run the command again.
 
 <Discord>
   <Message profile="countr" ephemeral>
@@ -35,4 +34,3 @@ import {
     {" is now set to 123."}
   </Message>
 </Discord>
-```

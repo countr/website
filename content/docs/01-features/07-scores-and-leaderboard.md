@@ -1,3 +1,16 @@
+import {
+  DiscordBold as Bold,
+  DiscordEmbed as Embed,
+  DiscordEmbedDescription as Description,
+  DiscordEmbedFooter as Footer,
+  DiscordItalic as Italic,
+  DiscordCommand as Command,
+  DiscordMessages as Discord,
+  DiscordMention as Mention,
+  DiscordMessage as Message,
+  DiscordUnderlined as Underline,
+} from "@skyra/discord-components-react";
+
 # Scores & Leaderboard
 
 Countr keeps track of how many times each user has counted in the counting channel, and can display this information in a score table and leaderboard.
@@ -14,20 +27,6 @@ To view the score table, use the `/leaderboard` command. This command displays t
 
 
 ### Leaderboard Example {#view-example}
-
-```mdx-code-block
-import {
-  DiscordBold as Bold,
-  DiscordEmbed as Embed,
-  DiscordEmbedDescription as Description,
-  DiscordEmbedFooter as Footer,
-  DiscordItalic as Italic,
-  DiscordCommand as Command,
-  DiscordMessages as Discord,
-  DiscordMention as Mention,
-  DiscordMessage as Message,
-  DiscordUnderlined as Underline,
-} from "@skyra/discord-components-react";
 
 <Discord>
   <Message profile="countr">
@@ -51,7 +50,6 @@ import {
     </Embed>
   </Message>
 </Discord>
-```
 
 ### Users that have left the server {#users-left}
 

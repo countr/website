@@ -1,3 +1,5 @@
+import Image from "@theme/IdealImage";
+
 # Permissions
 
 Countr's command permissions are now handled by Discord, which means there are no internal checks in the code anymore. This gives you more flexibility in deciding who can access commands.
@@ -9,14 +11,8 @@ By default, the permissions are either none (0x0) or `Administrator` (0x8). In s
 
 In the image below, you can see that although the `everyone` role has access to all the commands, the `Staff` role must also be added and granted permissions. This is because Discord is weird and doesn't actually tell you which commands are locked behind permissions, even if you click on a permission-locked command. We hope this will be fixed soon.
 
-```mdx-code-block
-import Image from "@theme/IdealImage";
-
 <Image img={require("../../assets/docs/countr-integration.png")} alt="Countr Integrations page" />
-```
 
 The `/data` command, for example, is still only available to those with the `Administrator` permission and everyone in the `Staff` role.
 
-```mdx-code-block
 <Image img={require("../../assets/docs/countr-data-command.png")} alt="Countr /data command" />
-```

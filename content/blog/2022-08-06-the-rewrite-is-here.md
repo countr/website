@@ -2,6 +2,7 @@
 authors: promise
 tags: [updates]
 ---
+import { TwitterTweetEmbed } from 'react-twitter-embed';
 
 
 # The rewrite is here!
@@ -12,8 +13,4 @@ There's a lot of changes, which also means a lot of things might've been missed 
 
 <!-- truncate -->
 
-```mdx-code-block
-import { TwitterTweetEmbed } from 'react-twitter-embed';
-
 <TwitterTweetEmbed tweetId="1556055055467515905"/>
-```
