@@ -1,17 +1,15 @@
-# Talking module
-
-The talking module allows users to add a message after their count.
-
-```mdx-code-block
 import {
   DiscordMessages as Discord,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
 
+# Talking module
+
+The talking module allows users to add a message after their count.
+
 <Discord>
   <Message profile="promise">1000 wooo! let's gooooo</Message>
 </Discord>
-```
 
 <br/>
 

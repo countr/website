@@ -1,3 +1,8 @@
+import {
+  DiscordMessages as Discord,
+  DiscordMessage as Message,
+} from "@skyra/discord-components-react";
+
 # Recover module
 
 The recover module deletes unprocessed messages from the counting channel whenever the bot is restarted.
@@ -5,12 +10,6 @@ The recover module deletes unprocessed messages from the counting channel whenev
 ## Example
 
 ### Before
-
-```mdx-code-block
-import {
-  DiscordMessages as Discord,
-  DiscordMessage as Message,
-} from "@skyra/discord-components-react";
 
 <Discord>
   <Message profile="promise">42</Message>
@@ -20,16 +19,14 @@ import {
   <Message profile="promise">aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Message>
   <Message>ooooooooooooooo</Message>
 </Discord>
-```
+
 
 ### After
 
-```mdx-code-block
 <Discord>
   <Message profile="promise">42</Message>
   <Message>43</Message>
 </Discord>
-```
 
 <br/>
 

@@ -1,3 +1,5 @@
+import Image from "@theme/IdealImage";
+
 # Regex Filters
 
 Regex filters are an advanced tool for filtering out unwanted messages in your counting channel without affecting the count.
@@ -17,11 +19,7 @@ To add a new filter, use the `/filters add` command. To remove a filter, use the
 
 We recommend using a [Regex Tester](https://regexr.com/) to test your regex filters. Here's an example:
 
-```mdx-code-block
-import Image from "@theme/IdealImage";
-
 <Image img={require("../../../assets/docs/regex-tester.png")} alt="Regex Tester" />
-```
 
 In the tester, you can enter a regex pattern and test it against sample messages to see if it matches. Once you have a working regex pattern, you can add it as a filter using the `/filters add` command.
 

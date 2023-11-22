@@ -1,8 +1,3 @@
-# Alphabet
-
-Count using the alphabet!
-
-```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -10,6 +5,10 @@ import {
   DiscordMention as Mention,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
+
+# Alphabet
+
+Count using the alphabet!
 
 <Discord>
   <Message>SV</Message>
@@ -31,4 +30,3 @@ import {
   <Message>SZ</Message>
   <Message>TA</Message>
 </Discord>
-```

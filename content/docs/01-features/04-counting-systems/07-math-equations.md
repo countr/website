@@ -1,8 +1,3 @@
-# Math equations
-
-Using math equations to count can be a fun way to challenge yourself and others. Give it a try and see how you do!
-
-```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -11,10 +6,16 @@ import {
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
 
+# Math equations
+
+Using math equations to count can be a fun way to challenge yourself and others. Give it a try and see how you do!
+
 <Discord>
   <Message>27*3+14</Message>
+  <!-- mdx fails without this space?? -->
   <Message>16*6</Message>
   <Message>81+16</Message>
+  <!-- mdx fails without this space?? -->
   <Message>7*7*2</Message>
   <Message profile="countr" ephemeral>
     <Command slot="reply" command="/count" />
@@ -29,7 +30,6 @@ import {
   <Message>11*9</Message>
   <Message>100</Message>
 </Discord>
-```
 
 <br/>
 

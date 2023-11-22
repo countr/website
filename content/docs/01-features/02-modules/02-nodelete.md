@@ -1,29 +1,23 @@
-# Nodelete module
-
-The nodelete module allows you to send any message in the chat.
-
-```mdx-code-block
 import {
   DiscordMessages as Discord,
   DiscordMessage as Message,
+  DiscordReactions as Reactions,
+  DiscordReaction as Reaction,
 } from "@skyra/discord-components-react";
+
+# Nodelete module
+
+The nodelete module allows you to send any message in the chat.
 
 <Discord>
   <Message>123</Message>
   <Message>hello world!</Message>
 </Discord>
-```
 
 
 ## Purpose
 
 The purpose of the nodelete module is to allow for normal messages in the chat. Combined with the ["Message reaction" flow action](../01-flows.md), you can easily distinguish between correct counts and failed counts/other messages.
-
-```mdx-code-block
-import {
-  DiscordReactions as Reactions,
-  DiscordReaction as Reaction,
-} from "@skyra/discord-components-react";
 
 <Discord>
   <Message>
@@ -39,4 +33,3 @@ import {
     </Reactions>
   </Message>
 </Discord>
-```

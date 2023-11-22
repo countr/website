@@ -1,3 +1,10 @@
+import {
+  DiscordMessages as Discord,
+  DiscordItalic as Italic,
+  DiscordMention as Mention,
+  DiscordMessage as Message,
+} from "@skyra/discord-components-react";
+
 # Troubleshooting
 
 If you're experiencing issues with Countr, don't worry! We're here to help. Check out the common issues below to see if your problem is listed. If it's not, or if you're still having trouble, join our [support server](https://promise.solutions/discord) and we'll assist you further.
@@ -24,21 +31,13 @@ If you're not receiving notifications from Countr, it may be because we block se
 
 If Countr reposted your message without a reposting module enabled, it's likely because we automatically repost messages that have been edited or deleted. You can distinguish this from the [reposting module](01-features/02-modules/04-reposting.md) as the entire message is cursive, like this:
 
-```mdx-code-block
-import {
-  DiscordMessages as Discord,
-  DiscordItalic as Italic,
-  DiscordMention as Mention,
-  DiscordMessage as Message,
-} from "@skyra/discord-components-react";
-
 <Discord>
   <Message profile="countr" highlight>
     <Italic><Mention>Promise</Mention>{": 933"}</Italic>
   </Message>
 </Discord>
+
 <br/>
-```
 
 If Countr deletes messages and reposts like this automatically in your server then check if there's some other bot interfering. One way to check if this is the case is to manually remove the "Manage Messages" permission from Countr in the counting channel, and then try to send a message. If it still deletes then some other bot is interfering, if it doesn't then it's an issue with your setup.
 

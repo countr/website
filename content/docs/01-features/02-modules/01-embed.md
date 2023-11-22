@@ -1,8 +1,3 @@
-# Embed module
-
-The embed module reposts all counts in the counting channel in an embed.
-
-```mdx-code-block
 import {
   DiscordEmbed as Embed,
   DiscordEmbedDescription as Description,
@@ -10,6 +5,10 @@ import {
   DiscordMention as Mention,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
+
+# Embed module
+
+The embed module reposts all counts in the counting channel in an embed.
 
 <Discord>
   <Message profile="countr">
@@ -20,4 +19,3 @@ import {
     </Embed>
   </Message>
 </Discord>
-```

@@ -1,8 +1,3 @@
-# Binary
-
-Binary is a base-2 counting system used by computers. In binary, each digit can only be 0 or 1, representing "off" or "on", respectively.
-
-```mdx-code-block
 import {
   DiscordInlineCode as Code,
   DiscordCommand as Command,
@@ -10,6 +5,10 @@ import {
   DiscordMention as Mention,
   DiscordMessage as Message,
 } from "@skyra/discord-components-react";
+
+# Binary
+
+Binary is a base-2 counting system used by computers. In binary, each digit can only be 0 or 1, representing "off" or "on", respectively.
 
 <Discord>
   <Message>110100100</Message>
@@ -30,4 +29,3 @@ import {
   </Message>
   <Message>110101000</Message>
 </Discord>
-```
