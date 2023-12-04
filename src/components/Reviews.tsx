@@ -68,6 +68,7 @@ export default class Reviews extends React.Component<Record<string, never>, { re
             .map((review, index) => <div key={index} className={styles["review"]}>
               <h2>{review.serverName} {serverData[review.serverInvite] ? `• ${serverData[review.serverInvite]!.members.toLocaleString("en-US")} members` : ""}</h2>
               <p>{review.description} <Link to={`https://discord.gg/${review.serverInvite}`}>Join {review.serverName}</Link></p>
+              {/* eslint-disable-next-line @stylistic/jsx/jsx-closing-tag-location */}
             </div>)
         }
       </div>
