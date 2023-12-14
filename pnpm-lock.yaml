@@ -54,8 +54,8 @@ dependencies:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
   react-player:
-    specifier: 2.13.0
-    version: 2.13.0(react@18.2.0)
+    specifier: 2.14.0
+    version: 2.14.0(react@18.2.0)
   react-twitter-embed:
     specifier: 4.0.4
     version: 4.0.4(react-dom@18.2.0)(react@18.2.0)
@@ -8619,8 +8619,8 @@ packages:
       react-loadable: /@docusaurus/react-loadable@5.5.2(react@18.2.0)
       webpack: 5.89.0(esbuild@0.17.19)
 
-  /react-player@2.13.0(react@18.2.0):
-    resolution: {integrity: sha512-gkY7ZdbVFztlKFFhCPcnDrFQm+L399b8fhWsKatZ+b2wpKJwfUHBXQFMRxqYQGT0ic1/wQ7D7EZEWy7ZBqk2pw==}
+  /react-player@2.14.0(react@18.2.0):
+    resolution: {integrity: sha512-tUyv6oVD+B+ccJD81GuQQUVU++q3wsMUoDeDsZ0wAivRsmkq0RjERLT79Bi/JDcMwQm3wCwBEzXYbLnCW7c2nQ==}
     peerDependencies:
       react: '>=16.6.0'
     dependencies:
