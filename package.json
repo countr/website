@@ -27,7 +27,7 @@
     "global": "4.4.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-player": "2.13.0",
+    "react-player": "2.14.0",
     "react-twitter-embed": "4.0.4",
     "sitemap": "7.1.1"
   },
