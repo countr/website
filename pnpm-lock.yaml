@@ -65,8 +65,8 @@ dependencies:
 
 devDependencies:
   '@cloudflare/workers-types':
-    specifier: 4.20240117.0
-    version: 4.20240117.0
+    specifier: 4.20240129.0
+    version: 4.20240129.0
   '@docusaurus/module-type-aliases':
     specifier: 3.1.1
     version: 3.1.1(esbuild@0.17.19)(react-dom@18.2.0)(react@18.2.0)
@@ -1481,8 +1481,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workers-types@4.20240117.0:
-    resolution: {integrity: sha512-HQU8lJhaJVh8gQXFtVA7lZwd0hK1ckIFjRuxOXkVN2Z9t7DtzNbA2YTwBry5thKNgF5EwjN4THjHg5NUZzj05A==}
+  /@cloudflare/workers-types@4.20240129.0:
+    resolution: {integrity: sha512-VyHbih/bqh/RN2FRxnXznG0bpBIg9RfSP1ldbAVnCXFinjOdv0zm2P/RWqOVN9+FgU5sanRltwwT7jGngxZy8w==}
     dev: true
 
   /@colors/colors@1.5.0:
