@@ -13,7 +13,7 @@ export const onRequest: PagesFunction<Partial<Record<"COUNTR_STATS_ENDPOINT" | "
 
   const content = JSON.stringify({
     count: Math.floor(count / 1000) * 1000,
-    guilds: Math.floor(guilds / 100) * 100,
+    guilds: guilds == null ? null : Math.floor(guilds / 100) * 100,
     ranking,
     users: Math.floor(users / 100_000) * 100_000,
   } as APIStats);
@@ -27,12 +27,12 @@ export const onRequest: PagesFunction<Partial<Record<"COUNTR_STATS_ENDPOINT" | "
   });
 };
 
-async function getDblStatistics(token?: string): Promise<Record<"guilds" | "ranking", number>> {
+async function getDblStatistics(token?: string): Promise<Record<"guilds" | "ranking", number | null>> {
   if (!token) return { guilds: 0, ranking: 0 };
 
   const {
-    server_count: guilds = NaN,
-    server_count_rank: ranking = NaN,
+    server_count: guilds = null,
+    server_count_rank: ranking = null,
   } = await fetch("https://dblstatistics.com/api/bots/467377486141980682", {
     headers: { Authorization: token },
     cf: { cacheTtl, cacheEverything: true },
