@@ -31,17 +31,17 @@ async function getDblStatistics(token?: string): Promise<Record<"guilds" | "rank
   if (!token) return { guilds: 0, ranking: 0 };
 
   const {
-    server_count: guilds,
-    server_count_rank: ranking,
+    server_count: guilds = NaN,
+    server_count_rank: ranking = NaN,
   } = await fetch("https://dblstatistics.com/api/bots/467377486141980682", {
     headers: { Authorization: token },
     cf: { cacheTtl, cacheEverything: true },
   })
-    .then(async res => res.json<Record<"server_count_rank" | "server_count", number>>())
+    .then(async res => res.json<Record<"server_count_rank" | "server_count", number | undefined>>())
     .catch(() => ({
       /* eslint-disable camelcase */
-      server_count: 0,
-      server_count_rank: 0,
+      server_count: NaN,
+      server_count_rank: NaN,
       /* eslint-enable camelcase */
     }));
 
