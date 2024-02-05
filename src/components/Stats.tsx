@@ -5,7 +5,7 @@ import styles from "./Stats.module.css";
 
 interface Stat {
   title: string;
-  count: number;
+  count: number | null;
   link?: string;
 }
 

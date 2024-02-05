@@ -13,7 +13,7 @@ export const onRequest: PagesFunction<Partial<Record<"COUNTR_STATS_ENDPOINT" | "
 
   const content = JSON.stringify({
     count: Math.floor(count / 1000) * 1000,
-    guilds: guilds == null ? null : Math.floor(guilds / 100) * 100,
+    guilds: guilds === null ? null : Math.floor(guilds / 100) * 100,
     ranking,
     users: Math.floor(users / 100_000) * 100_000,
   } as APIStats);
