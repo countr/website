@@ -38,7 +38,7 @@
     "@docusaurus/theme-common": "3.1.1",
     "@docusaurus/tsconfig": "3.1.1",
     "@docusaurus/types": "3.1.1",
-    "@tsconfig/strictest": "2.0.2",
+    "@tsconfig/strictest": "2.0.3",
     "@types/react": "18.2.55",
     "discord-api-types": "0.37.69",
     "eslint": "8.56.0",

@@ -83,8 +83,8 @@ devDependencies:
     specifier: 3.1.1
     version: 3.1.1(esbuild@0.17.19)(react-dom@18.2.0)(react@18.2.0)
   '@tsconfig/strictest':
-    specifier: 2.0.2
-    version: 2.0.2
+    specifier: 2.0.3
+    version: 2.0.3
   '@types/react':
     specifier: 18.2.55
     version: 18.2.55
@@ -3081,8 +3081,8 @@ packages:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
 
-  /@tsconfig/strictest@2.0.2:
-    resolution: {integrity: sha512-jt4jIsWKvUvuY6adJnQJlb/UR7DdjC8CjHI/OaSQruj2yX9/K6+KOvDt/vD6udqos/FUk5Op66CvYT7TBLYO5Q==}
+  /@tsconfig/strictest@2.0.3:
+    resolution: {integrity: sha512-MroLvRhMbqtXI5WBSwoomro6OQS4xnCoudUrMb20JO0vLKUs0bAaCEcvM/immEBSJjFAK1l6jW1oAO8q3Ancrg==}
     dev: true
 
   /@types/acorn@4.0.6:
