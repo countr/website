@@ -89,8 +89,8 @@ devDependencies:
     specifier: 18.3.3
     version: 18.3.3
   discord-api-types:
-    specifier: 0.37.93
-    version: 0.37.93
+    specifier: 0.37.94
+    version: 0.37.94
   eslint:
     specifier: 8.57.0
     version: 8.57.0
@@ -5099,8 +5099,8 @@ packages:
     dependencies:
       path-type: 4.0.0
 
-  /discord-api-types@0.37.93:
-    resolution: {integrity: sha512-M5jn0x3bcXk8EI2c6F6V6LeOWq10B/cJf+YJSyqNmg7z4bdXK+Z7g9zGJwHS0h9Bfgs0nun2LQISFOzwck7G9A==}
+  /discord-api-types@0.37.94:
+    resolution: {integrity: sha512-gD1CDdsnXNTLGwvVoxCXMlM4L2NXUaB227h5z2F0oQ0VkRFi/BzSOTPuOoieq8czUMl67Z+rVstKNVcPFom6fw==}
     dev: true
 
   /dlv@1.1.3:
