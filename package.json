@@ -41,7 +41,7 @@
     "@tsconfig/strictest": "2.0.5",
     "@types/react": "18.3.6",
     "discord-api-types": "0.37.100",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "eslint-config-promise": "github:promise/eslint-config",
     "typescript": "5.6.2",
     "wrangler": "3.78.2"
