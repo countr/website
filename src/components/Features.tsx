@@ -9,10 +9,10 @@ import React from "react";
 import styles from "./Features.module.css";
 
 interface FeatureItem {
-  title: string;
-  svg: JSX.Element;
   description: JSX.Element;
   size: number;
+  svg: JSX.Element;
+  title: string;
 }
 
 const FeatureList: FeatureItem[] = [
@@ -51,7 +51,7 @@ const FeatureList: FeatureItem[] = [
 function Feature({ title, svg, description, size }: FeatureItem) {
   return (
     <div className={`col col--${size}`}>
-      <div className={clsx("text--center", styles["featureSvg"])}>
+      <div className={clsx("text--center", styles.featureSvg)}>
         {svg}
       </div>
       <div className="text--center padding-horiz--md">
@@ -64,7 +64,7 @@ function Feature({ title, svg, description, size }: FeatureItem) {
 
 export default function Features(): JSX.Element {
   return (
-    <section className={styles["features"]}>
+    <section className={styles.features}>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, index) => <Feature key={index} {...props} />)}

@@ -4,9 +4,9 @@ import type { APIStats } from "../../functions/api/stats";
 import styles from "./Stats.module.css";
 
 interface Stat {
-  title: string;
-  count: number | null;
+  count: null | number;
   link?: string;
+  title: string;
 }
 
 export default class Stats extends React.Component<Record<string, never>, { stats: Stat[] }> {
@@ -50,9 +50,9 @@ export default class Stats extends React.Component<Record<string, never>, { stat
     if (!stats.length) return <div>Loading ...</div>;
 
     return (
-      <div className={styles["stats"]}>
+      <div className={styles.stats}>
         {stats
-          .map((stat, index) => <div className={styles["stat"]} key={index}>
+          .map((stat, index) => <div className={styles.stat} key={index}>
             <h2>{stat.title}{stat.link ? <Link to={stat.link}>*</Link> : ""}</h2>
             <p>{stat.count === null ? <i>Error loading statistics</i> : stat.count.toLocaleString("en-US")}</p>
             {/* eslint-disable-next-line @stylistic/jsx/jsx-closing-tag-location */}

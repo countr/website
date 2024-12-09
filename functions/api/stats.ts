@@ -27,7 +27,7 @@ export const onRequest: PagesFunction<Partial<Record<"COUNTR_STATS_ENDPOINT" | "
   });
 };
 
-async function getDblStatistics(token?: string): Promise<Record<"guilds" | "ranking", number | null>> {
+async function getDblStatistics(token?: string): Promise<Record<"guilds" | "ranking", null | number>> {
   if (!token) return { guilds: 0, ranking: 0 };
 
   const {

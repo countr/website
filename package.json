@@ -58,13 +58,5 @@
       "last 1 safari version"
     ]
   },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "node": true
-    },
-    "extends": [
-      "promise"
-    ]
-  }
+  "packageManager": "pnpm@9.15.0"
 }
