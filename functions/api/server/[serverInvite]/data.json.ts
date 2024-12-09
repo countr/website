@@ -1,8 +1,8 @@
 import type { RESTGetAPIInviteResult } from "discord-api-types/rest/v10";
 
 export interface APIServerData {
-  name: string;
   members: number;
+  name: string;
 }
 
 const cacheTtl = 60 * 60 * 24;

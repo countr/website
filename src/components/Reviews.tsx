@@ -4,9 +4,9 @@ import type { APIServerData } from "../../functions/api/server/[serverInvite]/da
 import styles from "./Reviews.module.css";
 
 interface Review {
-  serverName: string;
-  serverInvite: string;
   description: string;
+  serverInvite: string;
+  serverName: string;
 }
 
 const reviews: Review[] = [
@@ -61,11 +61,11 @@ export default class Reviews extends React.Component<Record<string, never>, { re
     const { reviewsToShow, serverData } = this.state;
 
     return (
-      <div className={styles["reviews"]}>
+      <div className={styles.reviews}>
         {
           // get three random reviews and display them
           reviewsToShow
-            .map((review, index) => <div key={index} className={styles["review"]}>
+            .map((review, index) => <div className={styles.review} key={index}>
               <h2>{review.serverName} {serverData[review.serverInvite] ? `• ${serverData[review.serverInvite]!.members.toLocaleString("en-US")} members` : ""}</h2>
               <p>{review.description} <Link to={`https://discord.gg/${review.serverInvite}`}>Join {review.serverName}</Link></p>
               {/* eslint-disable-next-line @stylistic/jsx/jsx-closing-tag-location */}
