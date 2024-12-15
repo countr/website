@@ -143,10 +143,7 @@ const config: Config = {
       { name: "assets/images/[name]-[hash:hex:7]-[width].[ext]" } satisfies PluginIdealImageOptions,
     ],
   ],
-  scripts: [
-    { src: "https://arc.io/widget.min.js#7MqQMouh", async: true },
-    { src: "https://status.countr.xyz/widget/script.js", async: true },
-  ],
+  scripts: [{ src: "https://status.countr.xyz/widget/script.js", async: true }],
   themes: ["@docusaurus/theme-classic", "@docusaurus/theme-search-algolia"],
   clientModules: [
     require.resolve("./src/discord-components.js"),
