@@ -67,8 +67,8 @@ importers:
         version: 8.0.0
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: 4.20250124.3
-        version: 4.20250124.3
+        specifier: 4.20250129.0
+        version: 4.20250129.0
       '@docusaurus/module-type-aliases':
         specifier: 3.6.3
         version: 3.6.3(acorn@8.14.0)(esbuild@0.17.19)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -104,7 +104,7 @@ importers:
         version: 5.7.3
       wrangler:
         specifier: 3.106.0
-        version: 3.106.0(@cloudflare/workers-types@4.20250124.3)
+        version: 3.106.0(@cloudflare/workers-types@4.20250129.0)
 
 packages:
 
@@ -838,8 +838,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20250124.3':
-    resolution: {integrity: sha512-WRZ+ol4RnMroF3tc7en6w8b0MqLrmGnLr2LIhG8EWqIoy8MeYk5uhyNXMZ0WPBhwkRtDcTRwOt61xwnJrthskA==}
+  '@cloudflare/workers-types@4.20250129.0':
+    resolution: {integrity: sha512-H7g/sDB9GaV+fIPf3utNEYncFhryIvDThiBbfZtu0bZmVXcVd9ApP3OMqUYhNV8MShWQASvgWletKKBZGT9/oA==}
 
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -7359,7 +7359,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20250124.0':
     optional: true
 
-  '@cloudflare/workers-types@4.20250124.3': {}
+  '@cloudflare/workers-types@4.20250129.0': {}
 
   '@colors/colors@1.5.0':
     optional: true
@@ -14527,7 +14527,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20250124.0
       '@cloudflare/workerd-windows-64': 1.20250124.0
 
-  wrangler@3.106.0(@cloudflare/workers-types@4.20250124.3):
+  wrangler@3.106.0(@cloudflare/workers-types@4.20250129.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
@@ -14539,7 +14539,7 @@ snapshots:
       unenv: 2.0.0-rc.1
       workerd: 1.20250124.0
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20250124.3
+      '@cloudflare/workers-types': 4.20250129.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
