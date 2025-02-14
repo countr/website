@@ -26,7 +26,7 @@ export default class Stats extends React.Component<Record<string, never>, { stat
             {
               title: "Bot Ranking",
               count: stats.ranking,
-              link: "https://dblstatistics.com/bot/467377486141980682",
+              link: "https://topstats.gg/discord/bots/467377486141980682",
             },
             {
               title: "Server Count",
