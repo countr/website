@@ -33,7 +33,7 @@ async function getDblStatistics(token?: string): Promise<Record<"guilds" | "rank
   const {
     server_count: guilds = null,
     server_count_rank: ranking = null,
-  } = await fetch("https://dblstatistics.com/api/bots/467377486141980682", {
+  } = await fetch("https://api.topstats.gg/discord/bots/467377486141980682", {
     headers: { Authorization: token },
     cf: { cacheTtl, cacheEverything: true },
   })
