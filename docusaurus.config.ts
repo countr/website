@@ -5,6 +5,7 @@ import type { Options as PluginContentPagesOptions } from "@docusaurus/plugin-co
 import type { Options as PluginGoogleGtagOptions } from "@docusaurus/plugin-google-gtag";
 import type { Options as PluginIdealImageOptions } from "@docusaurus/plugin-ideal-image";
 import type { Options as PluginSitemapOptions } from "@docusaurus/plugin-sitemap";
+import type { Options as PluginSVGROptions } from "@docusaurus/plugin-svgr";
 import type { ThemeConfig } from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { EnumChangefreq } from "sitemap";
@@ -141,6 +142,10 @@ const config: Config = {
     [
       "@docusaurus/plugin-ideal-image",
       { name: "assets/images/[name]-[hash:hex:7]-[width].[ext]" } satisfies PluginIdealImageOptions,
+    ],
+    [
+      "@docusaurus/plugin-svgr",
+      { } satisfies PluginSVGROptions,
     ],
   ],
   scripts: [{ src: "https://status.countr.xyz/widget/script.js", async: true }],
