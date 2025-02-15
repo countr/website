@@ -21,7 +21,7 @@ export const onRequest: PagesFunction<never, "serverInvite", never> = async requ
   return new Response(icon.body, {
     headers: {
       "Content-Type": "image/webp",
-      "Content-Length": String(icon.body),
+      "Content-Length": String(icon.headers.get("Content-Length")),
       "Cache-Control": `public, max-age=${cacheTtl}`,
     },
   });
