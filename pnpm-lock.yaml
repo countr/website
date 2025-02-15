@@ -32,6 +32,9 @@ importers:
       '@docusaurus/plugin-sitemap':
         specifier: 3.7.0
         version: 3.7.0(@mdx-js/react@3.1.0(@types/react@19.0.8)(react@18.3.1))(acorn@8.14.0)(esbuild@0.17.19)(eslint@9.20.1(jiti@1.21.7))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-svgr':
+        specifier: 3.7.0
+        version: 3.7.0(@mdx-js/react@3.1.0(@types/react@19.0.8)(react@18.3.1))(acorn@8.14.0)(esbuild@0.17.19)(eslint@9.20.1(jiti@1.21.7))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/theme-classic':
         specifier: 3.7.0
         version: 3.7.0(@types/react@19.0.8)(acorn@8.14.0)(esbuild@0.17.19)(eslint@9.20.1(jiti@1.21.7))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
