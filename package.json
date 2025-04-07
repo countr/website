@@ -33,7 +33,7 @@
     "sitemap": "8.0.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20250406.0",
+    "@cloudflare/workers-types": "4.20250407.0",
     "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/preset-classic": "3.7.0",
     "@docusaurus/theme-common": "3.7.0",
