@@ -14,7 +14,7 @@ Your selected counting channel is remembered for 24 hours, after which you will 
 
 If Countr needs you to select a counting channel, it will let you know. Simply type `/select` to select a counting channel, and then run the command again.
 
-<Discord>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
   <Message profile="countr" ephemeral>
     <Command slot="reply" command="/set count" profile="promise" />
     {"💥 You need a counting channel selected to run this command. Type "}

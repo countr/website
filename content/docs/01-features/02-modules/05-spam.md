@@ -7,7 +7,7 @@ import {
 
 The spam module allows users to send multiple counts in a row, instead of having to wait for someone else to count before they can count again.
 
-<Discord>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
   <Message profile="promise">432</Message>
   <Message profile="promise">433</Message>
   <Message profile="promise">434</Message>

@@ -11,7 +11,7 @@ The recover module deletes unprocessed messages from the counting channel whenev
 
 ### Before
 
-<Discord>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
   <Message profile="promise">42</Message>
   <Message>43</Message>
   <Message profile="promise">bot is dead?</Message>
@@ -23,7 +23,7 @@ The recover module deletes unprocessed messages from the counting channel whenev
 
 ### After
 
-<Discord>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
   <Message profile="promise">42</Message>
   <Message>43</Message>
 </Discord>

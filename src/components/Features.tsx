@@ -4,9 +4,7 @@ import ImageFlows from "@site/assets/features/flows.svg";
 import ImageFree from "@site/assets/features/free.svg";
 import ImageSetup from "@site/assets/features/setup.svg";
 import ImageSupport from "@site/assets/features/support.svg";
-import clsx from "clsx";
 import React from "react";
-import styles from "./Features.module.css";
 
 interface FeatureItem {
   description: JSX.Element;
@@ -50,13 +48,13 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({ title, svg, description, size }: FeatureItem) {
   return (
-    <div className={`col col--${size}`}>
-      <div className={clsx("text--center", styles.featureSvg)}>
+    <div className={`col col--${size} text-center p-4`}>
+      <div className="flex justify-center mb-4">
         {svg}
       </div>
-      <div className="text--center padding-horiz--md">
-        <h2>{title}</h2>
-        <p>{description}</p>
+      <div className="text-center px-4">
+        <h2 className="text-2xl font-bold mb-2">{title}</h2>
+        <p className="text-lg">{description}</p>
       </div>
     </div>
   );
@@ -64,9 +62,9 @@ function Feature({ title, svg, description, size }: FeatureItem) {
 
 export default function Features(): JSX.Element {
   return (
-    <section className={styles.features}>
+    <section className="flex flex-wrap justify-center py-8 w-full">
       <div className="container">
-        <div className="row">
+        <div className="flex flex-wrap">
           {FeatureList.map((props, index) => <Feature key={index} {...props} />)}
         </div>
       </div>

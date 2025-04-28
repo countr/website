@@ -10,22 +10,22 @@ import {
 
 Binary is a base-2 counting system used by computers. In binary, each digit can only be 0 or 1, representing "off" or "on", respectively.
 
-<Discord>
-  <Message>110100100</Message>
-  <Message>110100101</Message>
-  <Message>110100110</Message>
-  <Message>110100111</Message>
-  <Message profile="countr" ephemeral>
-    <Command slot="reply" command="/count" />
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
+  <Message className="text-blue-500">110100100</Message>
+  <Message className="text-blue-500">110100101</Message>
+  <Message className="text-blue-500">110100110</Message>
+  <Message className="text-blue-500">110100111</Message>
+  <Message profile="countr" ephemeral className="bg-yellow-100 p-2 rounded-md">
+    <Command slot="reply" command="/count" className="text-green-500" />
     {"📊 Current count for "}
-    <Mention type="channel">counting</Mention>
+    <Mention type="channel" className="text-red-500">counting</Mention>
     {" is "}
-    <Code>110100111</Code>
+    <Code className="bg-gray-200 p-1 rounded">110100111</Code>
     {" (decimal: "}
-    <Code>423</Code>
+    <Code className="bg-gray-200 p-1 rounded">423</Code>
     {"), next up is "}
-    <Code>110101000</Code>
+    <Code className="bg-gray-200 p-1 rounded">110101000</Code>
     {"."}
   </Message>
-  <Message>110101000</Message>
+  <Message className="text-blue-500">110101000</Message>
 </Discord>

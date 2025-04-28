@@ -147,9 +147,13 @@ const config: Config = {
       "@docusaurus/plugin-svgr",
       { } satisfies PluginSVGROptions,
     ],
+    [
+      "docusaurus-plugin-tailwindcss",
+      { } satisfies PluginSVGROptions,
+    ],
   ],
   scripts: [{ src: "https://status.countr.xyz/widget/script.js", async: true }],
-  themes: ["@docusaurus/theme-classic", "@docusaurus/theme-search-algolia"],
+  themes: ["@docusaurus/theme-classic", "@docusaurus/theme-search-algolia", "docusaurus-theme-tailwindcss"],
   clientModules: [
     require.resolve("./src/discord-components.js"),
     require.resolve("./src/style.css"),

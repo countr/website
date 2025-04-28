@@ -10,25 +10,25 @@ import {
 
 Using math equations to count can be a fun way to challenge yourself and others. Give it a try and see how you do!
 
-<Discord>
-  <Message>27*3+14</Message>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
+  <Message className="text-blue-500">27*3+14</Message>
   <!-- mdx fails without this space?? -->
-  <Message>16*6</Message>
-  <Message>81+16</Message>
+  <Message className="text-blue-500">16*6</Message>
+  <Message className="text-blue-500">81+16</Message>
   <!-- mdx fails without this space?? -->
-  <Message>7*7*2</Message>
-  <Message profile="countr" ephemeral>
-    <Command slot="reply" command="/count" />
+  <Message className="text-blue-500">7*7*2</Message>
+  <Message profile="countr" ephemeral className="bg-yellow-100 p-2 rounded-md">
+    <Command slot="reply" command="/count" className="text-green-500" />
     {"📊 Current count for "}
-    <Mention type="channel">counting</Mention>
+    <Mention type="channel" className="text-red-500">counting</Mention>
     {" is "}
-    <Code>98</Code>
+    <Code className="bg-gray-200 p-1 rounded">98</Code>
     {", next up is "}
-    <Code>99</Code>
+    <Code className="bg-gray-200 p-1 rounded">99</Code>
     {"."}
   </Message>
-  <Message>11*9</Message>
-  <Message>100</Message>
+  <Message className="text-blue-500">11*9</Message>
+  <Message className="text-blue-500">100</Message>
 </Discord>
 
 <br/>

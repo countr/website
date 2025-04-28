@@ -1,7 +1,6 @@
 import Link from "@docusaurus/Link";
 import React from "react";
 import type { APIServerData } from "../../functions/api/server/[serverInvite]/data.json";
-import styles from "./Reviews.module.css";
 
 interface Review {
   description: string;
@@ -61,11 +60,11 @@ export default class Reviews extends React.Component<Record<string, never>, { re
     const { reviewsToShow, serverData } = this.state;
 
     return (
-      <div className={styles.reviews}>
+      <div className="grid grid-cols-2 gap-8">
         {
           // get three random reviews and display them
           reviewsToShow
-            .map((review, index) => <div className={styles.review} key={index}>
+            .map((review, index) => <div className="flex flex-col items-center justify-center text-center" key={index}>
               <h2>{review.serverName} {serverData[review.serverInvite] ? `• ${serverData[review.serverInvite]!.members.toLocaleString("en-US")} members` : ""}</h2>
               <p>{review.description} <Link to={`https://discord.gg/${review.serverInvite}`}>Join {review.serverName}</Link></p>
               {/* eslint-disable-next-line @stylistic/jsx/jsx-closing-tag-location */}

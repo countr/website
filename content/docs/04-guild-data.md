@@ -2,7 +2,6 @@
 
 At Promise Solutions, we take your privacy seriously. The data we collect is only used for our own legitimate interests and is handled in accordance with our [Privacy Policy](/privacy).
 
-
 ## Managing Your Guild Data {#how}
 
 We've made it easy to manage your guild data with the `/data` commands:

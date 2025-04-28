@@ -1,7 +1,6 @@
 import Link from "@docusaurus/Link";
 import React from "react";
 import type { APIStats } from "../../functions/api/stats";
-import styles from "./Stats.module.css";
 
 interface Stat {
   count: null | number;
@@ -50,9 +49,9 @@ export default class Stats extends React.Component<Record<string, never>, { stat
     if (!stats.length) return <div>Loading ...</div>;
 
     return (
-      <div className={styles.stats}>
+      <div className="grid grid-cols-4 gap-4">
         {stats
-          .map((stat, index) => <div className={styles.stat} key={index}>
+          .map((stat, index) => <div className="flex flex-col items-center justify-center text-center" key={index}>
             <h2>{stat.title}{stat.link ? <Link to={stat.link}>*</Link> : ""}</h2>
             <p>{stat.count === null ? <i>Error loading statistics</i> : stat.count.toLocaleString("en-US")}</p>
             {/* eslint-disable-next-line @stylistic/jsx/jsx-closing-tag-location */}

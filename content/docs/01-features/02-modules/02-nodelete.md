@@ -9,7 +9,7 @@ import {
 
 The nodelete module allows you to send any message in the chat.
 
-<Discord>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
   <Message>123</Message>
   <Message>hello world!</Message>
 </Discord>
@@ -19,7 +19,7 @@ The nodelete module allows you to send any message in the chat.
 
 The purpose of the nodelete module is to allow for normal messages in the chat. Combined with the ["Message reaction" flow action](../01-flows.md), you can easily distinguish between correct counts and failed counts/other messages.
 
-<Discord>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
   <Message>
     123
     <Reactions slot="reactions">

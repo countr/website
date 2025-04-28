@@ -1,12 +1,11 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
-import styles from "./ResponsiveLazyPlayer.module.css";
 
 export default function ResponsivePlayer({ url, front = false, start, loopAfter }: { front: boolean; loopAfter?: number; start?: number; url: string }): JSX.Element {
   return (
-    <div className={styles.wrapper}>
+    <div className="relative pb-[56.25%]">
       <ReactPlayer
-        className={styles.player}
+        className="absolute top-0 left-0"
         config={start ?? loopAfter ?
           {
             playerVars: {

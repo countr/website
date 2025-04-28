@@ -2,11 +2,9 @@
 
 Countr can send you a DM to help you stay up-to-date in counting channels everywhere!
 
-
 ## How to set up {#how}
 
 To create a new notification alert, use the `/notifications create` command. You can also list all your notifications, and delete some if you want, with the `/notifications list` command.
-
 
 ## Notification triggers {#triggers}
 

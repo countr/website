@@ -7,7 +7,7 @@ import {
 
 The talking module allows users to add a message after their count.
 
-<Discord>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
   <Message profile="promise">1000 wooo! let's gooooo</Message>
 </Discord>
 

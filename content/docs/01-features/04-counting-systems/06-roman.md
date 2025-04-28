@@ -12,22 +12,22 @@ The Roman numeral system uses the letters I, V, X, L, C, D, and M to represent n
 
 Traditionally, the highest number you can represent using Roman numerals is 3,999. However, the bot accepts higher values by just adding more M's.
 
-<Discord>
-  <Message>CDXXIII</Message>
-  <Message>CDXXIV</Message>
-  <Message>CDXXV</Message>
-  <Message>CDXXVI</Message>
-  <Message profile="countr" ephemeral>
-    <Command slot="reply" command="/count" />
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
+  <Message className="text-blue-500">CDXXIII</Message>
+  <Message className="text-blue-500">CDXXIV</Message>
+  <Message className="text-blue-500">CDXXV</Message>
+  <Message className="text-blue-500">CDXXVI</Message>
+  <Message profile="countr" ephemeral className="bg-yellow-100 p-2 rounded-md">
+    <Command slot="reply" command="/count" className="text-green-500" />
     {"📊 Current count for "}
-    <Mention type="channel">counting</Mention>
+    <Mention type="channel" className="text-red-500">counting</Mention>
     {" is "}
-    <Code>CDXXVI</Code>
+    <Code className="bg-gray-200 p-1 rounded">CDXXVI</Code>
     {" (decimal: "}
-    <Code>426</Code>
+    <Code className="bg-gray-200 p-1 rounded">426</Code>
     {"), next up is "}
-    <Code>CDXXVII</Code>
+    <Code className="bg-gray-200 p-1 rounded">CDXXVII</Code>
     {"."}
   </Message>
-  <Message>CDXXVII</Message>
+  <Message className="text-blue-500">CDXXVII</Message>
 </Discord>

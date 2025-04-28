@@ -10,11 +10,11 @@ import {
 
 The embed module reposts all counts in the counting channel in an embed.
 
-<Discord>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
   <Message profile="countr">
     <Embed slot="embeds" color="#36393f">
       <Description slot="description">
-        <Mention>Promise</Mention>{": 2793"}
+        <Mention className="text-blue-500 font-semibold">Promise</Mention>{": 2793"}
       </Description>
     </Embed>
   </Message>

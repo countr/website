@@ -10,23 +10,23 @@ import {
 
 Count using the alphabet!
 
-<Discord>
-  <Message>SV</Message>
-  <Message>SW</Message>
-  <Message>SX</Message>
-  <Message>SY</Message>
-  <Message profile="countr" ephemeral>
-    <Command slot="reply" command="/count" />
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
+  <Message className="text-blue-500">SV</Message>
+  <Message className="text-blue-500">SW</Message>
+  <Message className="text-blue-500">SX</Message>
+  <Message className="text-blue-500">SY</Message>
+  <Message profile="countr" ephemeral className="bg-yellow-100 p-2 rounded-md">
+    <Command slot="reply" command="/count" className="text-green-500" />
     {"📊 Current count for "}
-    <Mention type="channel">counting</Mention>
+    <Mention type="channel" className="text-red-500">counting</Mention>
     {" is "}
-    <Code>SY</Code>
+    <Code className="bg-gray-200 p-1 rounded">SY</Code>
     {" (decimal: "}
-    <Code>519</Code>
+    <Code className="bg-gray-200 p-1 rounded">519</Code>
     {"), next up is "}
-    <Code>SZ</Code>
+    <Code className="bg-gray-200 p-1 rounded">SZ</Code>
     {"."}
   </Message>
-  <Message>SZ</Message>
-  <Message>TA</Message>
+  <Message className="text-blue-500">SZ</Message>
+  <Message className="text-blue-500">TA</Message>
 </Discord>

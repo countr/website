@@ -28,7 +28,7 @@ To view the score table, use the `/leaderboard` command. This command displays t
 
 ### Leaderboard Example {#view-example}
 
-<Discord>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
   <Message profile="countr">
     <Command slot="reply" command="/leaderboard" profile="promise" />
     {"🏆 Top 25 users of "}<Mention type="channel">counting</Mention>{":"}

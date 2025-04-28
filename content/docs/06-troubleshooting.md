@@ -9,6 +9,7 @@ import {
 
 If you're experiencing issues with Countr, don't worry! We're here to help. Check out the common issues below to see if your problem is listed. If it's not, or if you're still having trouble, join our [support server](https://promise.solutions/discord) and we'll assist you further.
 
+<div className="bg-gray-100 p-4 rounded-lg shadow-md">
 
 ## My regex doesn't work as it should. {#regex}
 
@@ -16,16 +17,25 @@ If your regex isn't working as expected, there are two possible reasons. First, 
 
 Second, your regex may be too complex. If your regex takes more than 100 milliseconds (which is actually a lot of time for a computer to evaluate a regex), it will fail. We do this to avoid a Regex Denial of Service (ReDoS) attack. Most regex should be fine, so this is highly unlikely.
 
+</div>
+
+<div className="bg-gray-100 p-4 rounded-lg shadow-md">
 
 ## Deletions in the counting channel is slow. {#queue-delete}
 
 To work around Discord's rate limit system, we've implemented a bulk delete system that bulk deletes messages if it becomes too active for Discord to handle. It may take up to 10 seconds before it deletes incorrect messages. If it never deletes your messages, it's probably a permission issue.
 
+</div>
+
+<div className="bg-gray-100 p-4 rounded-lg shadow-md">
 
 ## I'm not receiving notifications! {#notifications}
 
 If you're not receiving notifications from Countr, it may be because we block sending messages to you for five minutes if we detect that we're unable to send you a notification. If you've recently made sure Countr can send you notifications and it's still not working after five minutes, then you might have an issue with the notification itself.
 
+</div>
+
+<div className="bg-gray-100 p-4 rounded-lg shadow-md">
 
 ## Countr reposted my message without a reposting module enabled. {#reposting-tampered-message}
 
@@ -41,6 +51,9 @@ If Countr reposted your message without a reposting module enabled, it's likely 
 
 If Countr deletes messages and reposts like this automatically in your server then check if there's some other bot interfering. One way to check if this is the case is to manually remove the "Manage Messages" permission from Countr in the counting channel, and then try to send a message. If it still deletes then some other bot is interfering, if it doesn't then it's an issue with your setup.
 
+</div>
+
+<div className="bg-gray-100 p-4 rounded-lg shadow-md">
 
 ## I don't see the commands! {#permissions}
 
@@ -48,19 +61,36 @@ All commands have a default permission requirement of Administrator, meaning you
 
 If you're a server admin or the server owner, you should have access to all commands by default. If you're still having trouble, or if you have any questions or concerns, please don't hesitate to reach out to us. We're here to help!
 
+</div>
+
+<div className="bg-gray-100 p-4 rounded-lg shadow-md">
 
 ## What is Countr's prefix? {#prefix}
 
 Countr uses Discord slash commands, so you can use `/` as your new prefix! To see a list of available commands, simply type `/` in any channel where Countr is present.
 
+</div>
+
+<div className="bg-gray-100 p-4 rounded-lg shadow-md">
+
 ## Does Countr have a dashboard? {#dashboard}
 
 No, Countr does not have a dashboard. We've made it easy to manage your counting channels with slash commands, so you don't need a dashboard. If you have feedback on the current user interface, please let us know in the [support server](https://promise.solutions/discord)!
+
+</div>
+
+<div className="bg-gray-100 p-4 rounded-lg shadow-md">
 
 ## Can we add a slowmode? {#slowmode}
 
 Discord integrates slowmode into the channel itself, so you can use the `/set slowmode` command to set a slowmode, or optionally edit the channel itself.
 
+</div>
+
+<div className="bg-gray-100 p-4 rounded-lg shadow-md">
+
 ## Does Countr support multiple languages? {#languages}
 
 We currently only support English, but we might add more languages in the future.
+
+</div>

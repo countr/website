@@ -2,6 +2,7 @@
 
 Position roles are roles that are automatically assigned to users based on their position on the leaderboard. For example, you can create a role called "Top Counter" and assign it to the user who is currently in first place on the leaderboard.
 
+<div class="bg-blue-100 p-4 rounded-lg shadow-md">
 
 ## How to set up {#how}
 
@@ -11,9 +12,14 @@ You can also list all of your position roles using the `/positionroles list` com
 
 If you want to remove a position role, use the dropdown menu of `/positionroles list` command.
 
+</div>
+
+<div class="bg-red-100 p-4 rounded-lg shadow-md">
 
 ## Limitations
 
 Please note that position roles are only updated when the leaderboard is updated. This means that there may be a delay between when a user's position changes and when their position role is updated.
 
 Additionally, position roles are only assigned to users who have a score in the counting channel. If a user doesn't have a score, they won't be assigned a position role.
+
+</div>

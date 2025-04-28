@@ -8,7 +8,7 @@ import {
 
 The webhook module allows you to repost all counts in the counting channel through a webhook, impersonating the user that sent it. This can be useful if you want to prevent members from editing or deleting their messages afterwards.
 
-<Discord>
+<Discord className="bg-gray-100 p-4 rounded-lg shadow-md">
   <Message profile="promise" bot>1337</Message>
 </Discord>
 
