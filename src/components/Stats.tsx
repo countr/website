@@ -1,12 +1,48 @@
+import type { JSX } from "react";
 import Link from "@docusaurus/Link";
 import React from "react";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 import type { APIStats } from "../../functions/api/stats";
-import styles from "./Stats.module.css";
 
 interface Stat {
   count: null | number;
   link?: string;
   title: string;
+}
+
+function StatItem({ stat, index }: { index: number; stat: Stat }) {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  return (
+    // remove transition-colors
+    <div
+      className={`
+        flex transform flex-col items-center justify-center rounded-lg border border-emphasis-300 bg-background-surface p-6 shadow-sm dark:shadow-md
+        transition duration-300 ease-in-out hover:bg-emphasis-100
+        ${inView ? "animate-in fade-in slide-in-from-bottom-5 duration-500" : "opacity-0"}
+      `}
+      ref={ref}
+      style={{ animationDelay: `${index * 50}ms` }}
+    >
+      {/* remove transition-colors */}
+      <h3 className={"mb-2 text-base font-medium text-content-secondary duration-300 ease-in-out"}>
+        {stat.title}
+        {/* add dark mode hover color for link */}
+        {stat.link ? <Link className={"ml-1 text-countr-red hover:text-countr-red/80 dark:hover:text-countr-red/70"} to={stat.link}>*</Link> : ""}
+      </h3>
+      {/* count color should be fine if it's an accent */}
+      <p className={"text-4xl font-bold text-countr-red md:text-5xl"}>
+        {/* remove transition-colors */}
+        {stat.count === null ?
+          <span className={"text-xl text-content-secondary duration-300 ease-in-out"}>N/A</span> :
+          inView ? <CountUp duration={2.5} end={stat.count} separator="," /> : "0"}
+      </p>
+    </div>
+  );
 }
 
 export default class Stats extends React.Component<Record<string, never>, { stats: Stat[] }> {
@@ -40,6 +76,16 @@ export default class Stats extends React.Component<Record<string, never>, { stat
               title: "Counts this week",
               count: stats.count,
             },
+          ].map(stat => ({ ...stat, count: stat.count ?? null })),
+        });
+      })
+      .catch(() => {
+        this.setState({
+          stats: [
+            { title: "Bot Ranking", count: null, link: "https://topstats.gg/discord/bots/467377486141980682" },
+            { title: "Server Count", count: null },
+            { title: "User Count", count: null },
+            { title: "Counts this week", count: null },
           ],
         });
       });
@@ -47,16 +93,23 @@ export default class Stats extends React.Component<Record<string, never>, { stat
 
   override render(): JSX.Element {
     const { stats } = this.state;
-    if (!stats.length) return <div>Loading ...</div>;
+
+    // remove transition-colors
+    if (!stats.length) {
+      return (
+        <div className={"grid grid-cols-1 gap-8 text-center md:grid-cols-2 lg:grid-cols-4 text-content-secondary duration-300 ease-in-out"}>
+          {[...Array(4)].map((_, index) => <div className="animate-pulse rounded-lg border border-emphasis-300 bg-background-surface p-6 shadow-sm dark:shadow-md duration-300 ease-in-out" key={index}>
+            {/* remove transition-colors */}
+            <div className="mb-2 h-5 w-3/4 mx-auto rounded bg-emphasis-200 dark:bg-emphasis-700 duration-300 ease-in-out" />
+            <div className="h-10 w-1/2 mx-auto rounded bg-emphasis-200 dark:bg-emphasis-700 duration-300 ease-in-out" />
+          </div>)}
+        </div>
+      );
+    }
 
     return (
-      <div className={styles.stats}>
-        {stats
-          .map((stat, index) => <div className={styles.stat} key={index}>
-            <h2>{stat.title}{stat.link ? <Link to={stat.link}>*</Link> : ""}</h2>
-            <p>{stat.count === null ? <i>Error loading statistics</i> : stat.count.toLocaleString("en-US")}</p>
-            {/* eslint-disable-next-line @stylistic/jsx/jsx-closing-tag-location */}
-          </div>)}
+      <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-2 lg:grid-cols-4">
+        {stats.map((stat, index) => <StatItem index={index} key={index} stat={stat} />)}
       </div>
     );
   }

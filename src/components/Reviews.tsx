@@ -1,10 +1,13 @@
+import type { JSX } from "react";
 import Link from "@docusaurus/Link";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import type { APIServerData } from "../../functions/api/server/[serverInvite]/data.json";
-import styles from "./Reviews.module.css";
 
 interface Review {
   description: string;
+  // optional: Add field for potential icon URL from API
+  serverIcon?: null | string;
   serverInvite: string;
   serverName: string;
 }
@@ -32,45 +35,114 @@ const reviews: Review[] = [
   },
 ];
 
-export default class Reviews extends React.Component<Record<string, never>, { reviewsToShow: Review[]; serverData: Record<string, APIServerData> }> {
+// combine Review and APIServerData for easier state management
+interface ReviewState extends Review {
+  loading: boolean;
+  serverData?: APIServerData;
+}
+
+// create a new component for individual review items
+function ReviewItem({ review, index }: { index: number; review: ReviewState }) {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  return (
+    // remove transition-colors
+    <figure
+      className={`
+        flex flex-col rounded-lg border border-emphasis-300 bg-background-surface p-6 shadow-sm dark:shadow-md
+        transition-opacity duration-500 ease-in-out duration-300
+        ${inView ? "animate-in fade-in zoom-in-95 duration-500" : "opacity-0"}
+      `}
+      ref={ref}
+      style={{ animationDelay: `${index * 100}ms` }}
+    >
+      {/* remove transition-colors */}
+      <blockquote className="grow text-base leading-relaxed text-content-secondary md:text-lg duration-300 ease-in-out">
+        <p>"{review.description}"</p>
+      </blockquote>
+      {/* remove transition-colors */}
+      <figcaption className="mt-6 flex items-center gap-4 border-t border-emphasis-300 pt-5 duration-300 ease-in-out">
+        {/* remove transition-colors */}
+        <div className="h-12 w-12 flex-shrink-0 rounded-full bg-emphasis-200 flex items-center justify-center overflow-hidden duration-300 ease-in-out">
+          {review.loading ?
+            <div className="h-full w-full animate-pulse rounded-full bg-emphasis-300 dark:bg-emphasis-700 duration-300 ease-in-out" /> :
+            review.serverData?.icon ?
+              <img alt={`${review.serverName} icon`} className="h-full w-full object-cover" src={review.serverData.icon} /> :
+              <span className={"text-lg font-semibold text-content-secondary duration-300 ease-in-out"}>{review.serverName.charAt(0)}</span>}
+        </div>
+        <div className="text-left">
+          {/* remove transition-colors */}
+          <div className="text-sm font-semibold text-content duration-300 ease-in-out">{review.serverName}</div>
+          {/* remove transition-colors */}
+          <div className="text-xs text-content-secondary duration-300 ease-in-out">
+            {review.loading ?
+              // remove transition-colors
+              <span className="inline-block h-3 w-16 animate-pulse rounded bg-emphasis-300 dark:bg-emphasis-700 duration-300 ease-in-out" /> :
+              review.serverData ?
+                `${review.serverData.members.toLocaleString("en-US")} members` :
+                // add dark mode hover color for link
+                <Link
+                  className={"font-medium text-countr-red transition duration-300 hover:text-countr-red/80 dark:hover:text-countr-red/70"}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  to={`https://discord.gg/${review.serverInvite}`}
+                >
+                  Join Server
+                </Link>}
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+  );
+}
+
+
+export default class Reviews extends React.Component<Record<string, never>, { reviewsToShow: ReviewState[] }> {
   constructor(props: Record<string, never>) {
     super(props);
+    // select random reviews and add loading state
+    const selectedReviews = reviews.sort(() => Math.random() - 0.5).slice(0, 2);
     this.state = {
-      reviewsToShow: reviews.sort(() => Math.random() - 0.5).slice(0, 2),
-      serverData: {},
+      reviewsToShow: selectedReviews.map(review => ({ ...review, loading: true })),
     };
   }
 
   override componentDidMount(): void {
-    this.state.reviewsToShow.forEach(review => {
+    this.state.reviewsToShow.forEach((review, index) => {
       void fetch(`/api/server/${review.serverInvite}/data.json`)
-        .then(res => res.json<APIServerData>())
+        .then(res => {
+          if (!res.ok) throw new Error("Failed to fetch");
+          return res.json<APIServerData>();
+        })
         .then(stats => {
-          this.setState(state => ({
-            ...state,
-            serverData: {
-              ...state.serverData,
-              [review.serverInvite]: stats,
-            },
-          }));
+          this.setState(state => {
+            const updatedReviews = [...state.reviewsToShow];
+            updatedReviews[index] = { ...updatedReviews[index], serverData: stats, loading: false };
+            return { reviewsToShow: updatedReviews };
+          });
+        })
+        .catch(() => {
+          // handle fetch error for individual review
+          this.setState(state => {
+            const updatedReviews = [...state.reviewsToShow];
+            updatedReviews[index] = { ...updatedReviews[index], loading: false, serverData: undefined }; // keep data undefined on error
+            return { reviewsToShow: updatedReviews };
+          });
         });
     });
   }
 
+
   override render(): JSX.Element {
-    const { reviewsToShow, serverData } = this.state;
+    const { reviewsToShow } = this.state;
 
     return (
-      <div className={styles.reviews}>
-        {
-          // get three random reviews and display them
-          reviewsToShow
-            .map((review, index) => <div className={styles.review} key={index}>
-              <h2>{review.serverName} {serverData[review.serverInvite] ? `• ${serverData[review.serverInvite]!.members.toLocaleString("en-US")} members` : ""}</h2>
-              <p>{review.description} <Link to={`https://discord.gg/${review.serverInvite}`}>Join {review.serverName}</Link></p>
-              {/* eslint-disable-next-line @stylistic/jsx/jsx-closing-tag-location */}
-            </div>)
-        }
+      // adjusted grid gap
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
+        {reviewsToShow.map((review, index) => <ReviewItem index={index} key={index} review={review} />)}
       </div>
     );
   }

@@ -9,6 +9,7 @@ import type { Options as PluginSVGROptions } from "@docusaurus/plugin-svgr";
 import type { ThemeConfig } from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { EnumChangefreq } from "sitemap";
+import tailwindPlugin from "./src/plugins/tailwind";
 
 const copyright = `Copyright © ${new Date().getFullYear()} Promise Solutions`;
 const editUrl = "https://github.dev/countr/website/blob/main";
@@ -30,10 +31,11 @@ const config: Config = {
     },
     metadata: [{ name: "theme-color", content: "#bd4632" }],
     navbar: {
-      title: "Countr",
       logo: {
         alt: "Countr Logo",
         src: "/logo.png",
+        href: "/",
+        target: "_self",
       },
       items: [
         {
@@ -47,34 +49,42 @@ const config: Config = {
           to: "blog",
         },
         {
-          label: "Bot Status",
+          label: "Support",
+          position: "right",
+          href: "https://promise.solutions/discord",
+        },
+        {
+          label: "Status",
           position: "right",
           href: "https://status.countr.xyz",
         },
         {
-          label: "Support Server",
+          label: "Invite Bot",
           position: "right",
-          href: "https://promise.solutions/discord",
+          href: "https://discord.com/oauth2/authorize?client_id=467377486141980682&scope=bot%20applications.commands&permissions=137439333440",
+          className: "invite-bot-button", // add this class
         },
       ],
-      hideOnScroll: true,
     },
     footer: {
       links: [
         {
-          title: "Countr",
           items: [
             {
-              label: "Terms of Service",
+              label: "Terms",
               to: "/terms",
             },
             {
-              label: "Privacy Policy",
+              label: "Privacy",
               to: "/privacy",
             },
             {
               label: "GitHub",
               href: "https://github.com/countr",
+            },
+            {
+              label: "Support",
+              href: "https://promise.solutions/discord",
             },
           ],
         },
@@ -147,6 +157,7 @@ const config: Config = {
       "@docusaurus/plugin-svgr",
       { } satisfies PluginSVGROptions,
     ],
+    [tailwindPlugin, {}],
   ],
   scripts: [{ src: "https://status.countr.xyz/widget/script.js", async: true }],
   themes: ["@docusaurus/theme-classic", "@docusaurus/theme-search-algolia"],
@@ -154,6 +165,17 @@ const config: Config = {
     require.resolve("./src/discord-components.js"),
     require.resolve("./src/style.css"),
   ],
+  future: {
+    // eslint-disable-next-line camelcase
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      mdxCrossCompilerCache: true,
+    },
+  },
 };
 
 export default config;

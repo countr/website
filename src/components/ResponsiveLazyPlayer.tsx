@@ -1,25 +1,24 @@
+// no changes needed for the redesign, styling is applied to the container div in index.tsx
+import type { JSX } from "react";
 import React from "react";
 import ReactPlayer from "react-player/youtube";
-import styles from "./ResponsiveLazyPlayer.module.css";
 
 export default function ResponsivePlayer({ url, front = false, start, loopAfter }: { front: boolean; loopAfter?: number; start?: number; url: string }): JSX.Element {
   return (
-    <div className={styles.wrapper}>
+    // the relative padding-bottom trick handles aspect ratio
+    <div className="relative pb-[56.25%] h-0 overflow-hidden"> {/* ensure h-0 and overflow-hidden */}
       <ReactPlayer
-        className={styles.player}
-        config={start ?? loopAfter ?
-          {
-            playerVars: {
-              start, end: loopAfter,
-            },
-          } :
-          {}}
+        className="absolute top-0 left-0" // position player absolutely within the container
+        config={start ?? loopAfter ? { playerVars: { start, end: loopAfter } } : {}}
         height="100%"
         loop={Boolean(loopAfter)}
-        muted={front}
-        playing={front}
+        muted={front} // muted is good for autoplaying front-page videos
+        playing={front} // autoplay if it's the front video
         url={url}
         width="100%"
+        // add light controls for better integration if needed
+        // controls={true}
+        // light={!front} // Show preview image until clicked unless it's the autoplaying one
       />
     </div>
   );
