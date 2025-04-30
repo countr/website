@@ -1,3 +1,5 @@
+/* eslint-disable @stylistic/jsx/jsx-closing-tag-location */
+/* eslint-disable no-nested-ternary */
 import type { JSX } from "react";
 import Link from "@docusaurus/Link";
 import React from "react";
@@ -76,7 +78,7 @@ export default class Stats extends React.Component<Record<string, never>, { stat
               title: "Counts this week",
               count: stats.count,
             },
-          ].map(stat => ({ ...stat, count: stat.count ?? null })),
+          ],
         });
       })
       .catch(() => {
@@ -98,11 +100,13 @@ export default class Stats extends React.Component<Record<string, never>, { stat
     if (!stats.length) {
       return (
         <div className={"grid grid-cols-1 gap-8 text-center md:grid-cols-2 lg:grid-cols-4 text-content-secondary duration-300 ease-in-out"}>
-          {[...Array(4)].map((_, index) => <div className="animate-pulse rounded-lg border border-emphasis-300 bg-background-surface p-6 shadow-sm dark:shadow-md duration-300 ease-in-out" key={index}>
-            {/* remove transition-colors */}
-            <div className="mb-2 h-5 w-3/4 mx-auto rounded bg-emphasis-200 dark:bg-emphasis-700 duration-300 ease-in-out" />
-            <div className="h-10 w-1/2 mx-auto rounded bg-emphasis-200 dark:bg-emphasis-700 duration-300 ease-in-out" />
-          </div>)}
+          {Array(4).fill(true)
+            .map((_, index) => <>
+              <div className="animate-pulse rounded-lg border border-emphasis-300 bg-background-surface p-6 shadow-sm dark:shadow-md duration-300 ease-in-out" key={index}>
+                <div className="mb-2 h-5 w-3/4 mx-auto rounded bg-emphasis-200 dark:bg-emphasis-700 duration-300 ease-in-out" />
+                <div className="h-10 w-1/2 mx-auto rounded bg-emphasis-200 dark:bg-emphasis-700 duration-300 ease-in-out" />
+              </div>
+            </>)}
         </div>
       );
     }

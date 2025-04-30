@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import type { JSX } from "react";
 import Link from "@docusaurus/Link";
 import React from "react";
@@ -61,7 +62,7 @@ function ReviewItem({ review, index }: { index: number; review: ReviewState }) {
     >
       {/* remove transition-colors */}
       <blockquote className="grow text-base leading-relaxed text-content-secondary md:text-lg duration-300 ease-in-out">
-        <p>"{review.description}"</p>
+        <p>&quot;{review.description}&quot;</p>
       </blockquote>
       {/* remove transition-colors */}
       <figcaption className="mt-6 flex items-center gap-4 border-t border-emphasis-300 pt-5 duration-300 ease-in-out">
@@ -69,8 +70,8 @@ function ReviewItem({ review, index }: { index: number; review: ReviewState }) {
         <div className="h-12 w-12 flex-shrink-0 rounded-full bg-emphasis-200 flex items-center justify-center overflow-hidden duration-300 ease-in-out">
           {review.loading ?
             <div className="h-full w-full animate-pulse rounded-full bg-emphasis-300 dark:bg-emphasis-700 duration-300 ease-in-out" /> :
-            review.serverData?.icon ?
-              <img alt={`${review.serverName} icon`} className="h-full w-full object-cover" src={review.serverData.icon} /> :
+            review.serverIcon ?
+              <img alt={`${review.serverName} icon`} className="h-full w-full object-cover" src={review.serverIcon} /> :
               <span className={"text-lg font-semibold text-content-secondary duration-300 ease-in-out"}>{review.serverName.charAt(0)}</span>}
         </div>
         <div className="text-left">
@@ -120,7 +121,7 @@ export default class Reviews extends React.Component<Record<string, never>, { re
         .then(stats => {
           this.setState(state => {
             const updatedReviews = [...state.reviewsToShow];
-            updatedReviews[index] = { ...updatedReviews[index], serverData: stats, loading: false };
+            updatedReviews[index] = { ...updatedReviews[index]!, serverData: stats, loading: false };
             return { reviewsToShow: updatedReviews };
           });
         })
@@ -128,7 +129,8 @@ export default class Reviews extends React.Component<Record<string, never>, { re
           // handle fetch error for individual review
           this.setState(state => {
             const updatedReviews = [...state.reviewsToShow];
-            updatedReviews[index] = { ...updatedReviews[index], loading: false, serverData: undefined }; // keep data undefined on error
+            // eslint-disable-next-line no-undefined
+            updatedReviews[index] = { ...updatedReviews[index]!, loading: false, serverData: undefined as never };
             return { reviewsToShow: updatedReviews };
           });
         });

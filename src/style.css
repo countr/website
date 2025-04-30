@@ -9,8 +9,8 @@
 @layer components {
   .invite-bot-button {
     /* Apply styles only on medium screens and up */
-    @apply md:bg-primary md:text-primary-contrast-foreground md:font-bold md:py-2 md:px-6 md:rounded-lg md:transition-colors md:duration-200 md:ease-in-out md:mx-2; /* Reduced py, removed my */
-    @apply md:hover:bg-primary-dark md:hover:no-underline md:hover:text-primary-contrast-foreground;
+    @apply md:bg-primary md:text-white md:font-bold md:py-2 md:px-6 md:rounded-lg md:transition-colors md:duration-200 md:ease-in-out md:mx-2; /* Reduced py, removed my */
+    @apply md:hover:bg-primary-dark md:hover:no-underline;
   }
 }
 

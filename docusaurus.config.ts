@@ -61,8 +61,8 @@ const config: Config = {
         {
           label: "Invite Bot",
           position: "right",
-          href: "https://discord.com/oauth2/authorize?client_id=467377486141980682&scope=bot%20applications.commands&permissions=137439333440",
-          className: "invite-bot-button", // add this class
+          href: "/invite",
+          className: "invite-bot-button",
         },
       ],
     },

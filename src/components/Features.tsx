@@ -1,3 +1,5 @@
+/* eslint-disable @stylistic/jsx/jsx-closing-bracket-location */
+/* eslint-disable no-nested-ternary */
 import type { JSX } from "react";
 import Link from "@docusaurus/Link";
 import ImageDocs from "@site/assets/features/docs.svg";
@@ -15,10 +17,8 @@ interface FeatureItem {
   title: string;
 }
 
-// helper function or constant for link classes
 const linkClasses = "text-countr-red hover:text-countr-red/80 dark:hover:text-countr-red/70 font-medium";
 
-// use Tailwind color classes in Link components
 const FeatureList: FeatureItem[] = [
   {
     title: "Instant Setup",
@@ -47,48 +47,38 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-// redesigned Feature component for alternating layout
 function Feature({ title, svg, description, isReversed }: { isReversed: boolean } & FeatureItem) {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2, // trigger animation when 20% is visible
-  });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    // remove transition-colors
     <div
       className={clsx(
         "md:grid md:grid-cols-2 md:items-center md:gap-8 lg:gap-16",
-        "transition-opacity duration-700 ease-in-out", // apply animation classes here
-        "duration-300 ease-in-out", // remove color transition
+        "transition-opacity duration-700 ease-in-out",
+        "duration-300 ease-in-out",
         inView ? "opacity-100" : "opacity-0",
       )}
       ref={ref}
     >
-      {/* sVG Illustration Column */}
       <div
         className={clsx(
           "mb-6 md:mb-0 flex justify-center",
-          // apply order based on isReversed for medium screens and up
           isReversed ? "md:order-last" : "",
-          // add slide-in animation based on position
           inView ? isReversed ? "animate-in slide-in-from-right-10" : "animate-in slide-in-from-left-10" : "",
-          "duration-700", // match duration
+          "duration-700",
+          "[animation-delay:150ms]",
         )}
-        style={{ animationDelay: "150ms" }} // slight delay for image
       >
-        {React.cloneElement(svg, { className: "h-48 w-auto md:h-64 lg:h-72 text-countr-red" })} {/* larger SVG */}
+        {React.cloneElement(svg, { className: "h-48 w-auto md:h-64 lg:h-72 text-countr-red" })}
       </div>
 
-      {/* text Content Column */}
       <div
         className={clsx(
           "text-center md:text-left",
-          // add slide-in animation based on position
           inView ? isReversed ? "animate-in slide-in-from-left-10" : "animate-in slide-in-from-right-10" : "",
-          "duration-700", // match duration
+          "duration-700",
+          "[animation-delay:50ms]",
         )}
-        style={{ animationDelay: "50ms" }} // slight delay for text
       >
         {/* remove transition-colors */}
         <h3 className={"mb-3 text-2xl font-bold text-content md:text-3xl duration-300 ease-in-out"}>{title}</h3>
@@ -108,7 +98,7 @@ export default function Features(): JSX.Element {
         {...props}
         // alternate layout based on index
         isReversed={index % 2 !== 0}
-                                         />)}
+      />)}
     </div>
   );
 }
