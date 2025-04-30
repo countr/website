@@ -2,6 +2,7 @@
 slug: .
 ---
 
+import Link from "@docusaurus/Link";
 
 # Welcome to Countr!
 
@@ -10,7 +11,7 @@ Countr is a powerful counting bot that can help you manage the counting channels
 
 ## Getting Started with Countr {#get-started}
 
-  1. Add the bot to your server using [this invite link](https://discord.com/api/oauth2/authorize?client_id=467377486141980682&scope=bot+applications.commands&permissions=395942423568).
+  1. Add the bot by clicking here: <Link to="/invite" className="invite-bot-button">Invite Bot</Link>
   2. Use the `/channels new` command to create a new counting channel, or link an existing channel with `/channels link`.
   3. Count in the counting channel.
 
