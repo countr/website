@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary */
 import type { JSX } from "react";
 import Link from "@docusaurus/Link";
 import React from "react";
@@ -7,8 +6,6 @@ import type { APIServerData } from "../../functions/api/server/[serverInvite]/da
 
 interface Review {
   description: string;
-  // optional: Add field for potential icon URL from API
-  serverIcon?: null | string;
   serverInvite: string;
   serverName: string;
 }
@@ -70,9 +67,7 @@ function ReviewItem({ review, index }: { index: number; review: ReviewState }) {
         <div className="h-12 w-12 flex-shrink-0 rounded-full bg-emphasis-200 flex items-center justify-center overflow-hidden duration-300 ease-in-out">
           {review.loading ?
             <div className="h-full w-full animate-pulse rounded-full bg-emphasis-300 dark:bg-emphasis-700 duration-300 ease-in-out" /> :
-            review.serverIcon ?
-              <img alt={`${review.serverName} icon`} className="h-full w-full object-cover" src={review.serverIcon} /> :
-              <span className={"text-lg font-semibold text-content-secondary duration-300 ease-in-out"}>{review.serverName.charAt(0)}</span>}
+            <img alt={`${review.serverName} icon`} className="h-full w-full object-cover" src={`/api/server/${review.serverInvite}/icon.webp`} />}
         </div>
         <div className="text-left">
           {/* remove transition-colors */}
@@ -80,11 +75,8 @@ function ReviewItem({ review, index }: { index: number; review: ReviewState }) {
           {/* remove transition-colors */}
           <div className="text-xs text-content-secondary duration-300 ease-in-out">
             {review.loading ?
-              // remove transition-colors
               <span className="inline-block h-3 w-16 animate-pulse rounded bg-emphasis-300 dark:bg-emphasis-700 duration-300 ease-in-out" /> :
-              review.serverData ?
-                `${review.serverData.members.toLocaleString("en-US")} members` :
-                // add dark mode hover color for link
+              <>
                 <Link
                   className={"font-medium text-countr-red transition duration-300 hover:text-countr-red/80 dark:hover:text-countr-red/70"}
                   rel="noopener noreferrer"
@@ -92,7 +84,13 @@ function ReviewItem({ review, index }: { index: number; review: ReviewState }) {
                   to={`https://discord.gg/${review.serverInvite}`}
                 >
                   Join Server
-                </Link>}
+                </Link>
+                {review.serverData &&
+                  <>
+                    <span className="mx-1">•</span>
+                    <span>{review.serverData.members.toLocaleString("en-US")} members</span>
+                  </>}
+              </>}
           </div>
         </div>
       </figcaption>
