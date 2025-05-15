@@ -94,8 +94,8 @@ importers:
         specifier: 19.1.4
         version: 19.1.4
       discord-api-types:
-        specifier: 0.38.5
-        version: 0.38.5
+        specifier: 0.38.7
+        version: 0.38.7
       eslint:
         specifier: 9.26.0
         version: 9.26.0(jiti@1.21.7)
@@ -2958,8 +2958,8 @@ packages:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
     engines: {node: '>=8'}
 
-  discord-api-types@0.38.5:
-    resolution: {integrity: sha512-2sRkDRid39myMMeRzVTWLc2PyafSxu6k3LHpkB1Lx6IVzqycRnIhOedCbXg3IYpbJhKvA7ErNAh0DA/nXG/1Uw==}
+  discord-api-types@0.38.7:
+    resolution: {integrity: sha512-Ms1PLtC6OwngaJA5PGvwdm5Uj/VnYYHLxKuSyrCsS5t0NxrS9tnbHbNaY5O0yC/WPkugmKW896WXjDJDiWXYZA==}
 
   dlv@1.1.3:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
@@ -10375,7 +10375,7 @@ snapshots:
     dependencies:
       path-type: 4.0.0
 
-  discord-api-types@0.38.5: {}
+  discord-api-types@0.38.7: {}
 
   dlv@1.1.3: {}
 
