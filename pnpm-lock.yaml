@@ -94,14 +94,14 @@ importers:
         specifier: 19.1.8
         version: 19.1.8
       discord-api-types:
-        specifier: 0.38.12
-        version: 0.38.12
+        specifier: 0.38.13
+        version: 0.38.13
       eslint:
         specifier: 9.29.0
         version: 9.29.0(jiti@1.21.7)
       eslint-config-promise:
         specifier: github:promise/eslint-config
-        version: https://codeload.github.com/promise/eslint-config/tar.gz/035359d7a1be7c0b0a7e038295260985bd806830(2sn2bebnxsgaiw2szq6ytsxee4)
+        version: https://codeload.github.com/promise/eslint-config/tar.gz/9dda76dfbf745099095dc29aab0975bd1c25b016(2sn2bebnxsgaiw2szq6ytsxee4)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -2954,8 +2954,8 @@ packages:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
     engines: {node: '>=8'}
 
-  discord-api-types@0.38.12:
-    resolution: {integrity: sha512-vqkRM50N5Zc6OVckAqtSslbUEoXmpN4bd9xq2jkoK9fgO3KNRIOyMMQ7ipqjwjKuAgzWvU6G8bRIcYWaUe1sCA==}
+  discord-api-types@0.38.13:
+    resolution: {integrity: sha512-FELWJRgLVQuR7Az8RhdEZE0k6QNjSW9PCUcU1iyP2Gke8HrJmnMceSS9pD93UM64s3tvZzJPajpPLjWZJylf4g==}
 
   dlv@1.1.3:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
@@ -3134,8 +3134,8 @@ packages:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
 
-  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/035359d7a1be7c0b0a7e038295260985bd806830:
-    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/035359d7a1be7c0b0a7e038295260985bd806830}
+  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/9dda76dfbf745099095dc29aab0975bd1c25b016:
+    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/9dda76dfbf745099095dc29aab0975bd1c25b016}
     version: 0.0.0
     peerDependencies:
       '@stylistic/eslint-plugin-js': 4.2.0
@@ -10150,7 +10150,7 @@ snapshots:
     dependencies:
       path-type: 4.0.0
 
-  discord-api-types@0.38.12: {}
+  discord-api-types@0.38.13: {}
 
   dlv@1.1.3: {}
 
@@ -10415,7 +10415,7 @@ snapshots:
 
   escape-string-regexp@5.0.0: {}
 
-  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/035359d7a1be7c0b0a7e038295260985bd806830(2sn2bebnxsgaiw2szq6ytsxee4):
+  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/9dda76dfbf745099095dc29aab0975bd1c25b016(2sn2bebnxsgaiw2szq6ytsxee4):
     dependencies:
       '@stylistic/eslint-plugin-js': 4.2.0(eslint@9.29.0(jiti@1.21.7))
       '@stylistic/eslint-plugin-jsx': 4.2.0(eslint@9.29.0(jiti@1.21.7))
