@@ -60,8 +60,8 @@ importers:
         specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       react-player:
-        specifier: 2.16.0
-        version: 2.16.0(react@18.3.1)
+        specifier: 2.16.1
+        version: 2.16.1(react@18.3.1)
       react-twitter-embed:
         specifier: 4.0.4
         version: 4.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -5354,8 +5354,8 @@ packages:
       react-loadable: '*'
       webpack: '>=4.41.1 || 5.x'
 
-  react-player@2.16.0:
-    resolution: {integrity: sha512-mAIPHfioD7yxO0GNYVFD1303QFtI3lyyQZLY229UEAp/a10cSW+hPcakg0Keq8uWJxT2OiT/4Gt+Lc9bD6bJmQ==}
+  react-player@2.16.1:
+    resolution: {integrity: sha512-mxP6CqjSWjidtyDoMOSHVPdhX0pY16aSvw5fVr44EMaT7X5Xz46uQ4b/YBm1v2x+3hHkB9PmjEEkmbHb9PXQ4w==}
     peerDependencies:
       react: '>=16.6.0'
 
@@ -6290,6 +6290,7 @@ packages:
   wrangler@4.24.1:
     resolution: {integrity: sha512-n7d5BQyOQU7WyEYMC3zNarWzsqWttsusP6qWz4rbbydmnWKSP1wLtsv0yKiyz/LYFumpolz48d5phHp04nR6uw==}
     engines: {node: '>=18.0.0'}
+    deprecated: '⚠️ Deprecated: 4.24.1 and 4.24.2 have a regression with redeploying a container. Please downgrade to 4.24.0 or upgrade to 4.24.3 when it is published.'
     hasBin: true
     peerDependencies:
       '@cloudflare/workers-types': ^4.20250709.0
@@ -13110,7 +13111,7 @@ snapshots:
       react-loadable: '@docusaurus/react-loadable@6.0.0(react@18.3.1)'
       webpack: 5.99.9
 
-  react-player@2.16.0(react@18.3.1):
+  react-player@2.16.1(react@18.3.1):
     dependencies:
       deepmerge: 4.3.1
       load-script: 1.0.0
