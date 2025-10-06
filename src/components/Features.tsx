@@ -4,7 +4,7 @@ import ImageFlows from "@site/assets/features/flows.svg";
 import ImageFree from "@site/assets/features/free.svg";
 import ImageSetup from "@site/assets/features/setup.svg";
 import ImageSupport from "@site/assets/features/support.svg";
-import clsx from "clsx";
+import { clsx } from "clsx";
 import React from "react";
 import styles from "./Features.module.css";
 

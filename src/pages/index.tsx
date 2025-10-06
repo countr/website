@@ -1,7 +1,7 @@
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import clsx from "clsx";
+import { clsx } from "clsx";
 import React from "react";
 import Features from "../components/Features";
 import ResponsivePlayer from "../components/ResponsiveLazyPlayer";
