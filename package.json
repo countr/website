@@ -41,7 +41,7 @@
     "@docusaurus/types": "3.9.1",
     "@tsconfig/strictest": "2.0.6",
     "@types/react": "19.2.2",
-    "discord-api-types": "0.38.29",
+    "discord-api-types": "0.38.30",
     "eslint": "9.37.0",
     "eslint-config-promise": "github:promise/eslint-config",
     "typescript": "5.9.3",
