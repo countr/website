@@ -66,8 +66,8 @@ importers:
         specifier: 4.0.4
         version: 4.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       sitemap:
-        specifier: 8.0.1
-        version: 8.0.1
+        specifier: 8.0.2
+        version: 8.0.2
     devDependencies:
       '@cloudflare/workers-types':
         specifier: 4.20251014.0
@@ -101,7 +101,7 @@ importers:
         version: 9.38.0(jiti@1.21.7)
       eslint-config-promise:
         specifier: github:promise/eslint-config
-        version: https://codeload.github.com/promise/eslint-config/tar.gz/892296e29f511766c8223209eb7557e982c34829(205f523c3c38afaa07ba68a7f7be10b6)
+        version: https://codeload.github.com/promise/eslint-config/tar.gz/b9484e13b8382dde180551ae3fb47dde32fff8e4(205f523c3c38afaa07ba68a7f7be10b6)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -3261,8 +3261,8 @@ packages:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
 
-  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/892296e29f511766c8223209eb7557e982c34829:
-    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/892296e29f511766c8223209eb7557e982c34829}
+  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/b9484e13b8382dde180551ae3fb47dde32fff8e4:
+    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/b9484e13b8382dde180551ae3fb47dde32fff8e4}
     version: 0.0.0
     peerDependencies:
       '@stylistic/eslint-plugin-js': 4.2.0
@@ -5862,8 +5862,8 @@ packages:
     engines: {node: '>=12.0.0', npm: '>=5.6.0'}
     hasBin: true
 
-  sitemap@8.0.1:
-    resolution: {integrity: sha512-4Y8ynSMFAy/DadeAeio8Kx4zfC8/0VcKi7TH0I1SazvBcrU2fpJaGoeWsX1FMRaHoe3VGMA53DqVoLErZrtG9Q==}
+  sitemap@8.0.2:
+    resolution: {integrity: sha512-LwktpJcyZDoa0IL6KT++lQ53pbSrx2c9ge41/SeLTyqy2XUNA6uR4+P9u5IVo5lPeL2arAcOKn1aZAxoYbCKlQ==}
     engines: {node: '>=14.0.0', npm: '>=6.0.0'}
     hasBin: true
 
@@ -10733,7 +10733,7 @@ snapshots:
 
   escape-string-regexp@5.0.0: {}
 
-  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/892296e29f511766c8223209eb7557e982c34829(205f523c3c38afaa07ba68a7f7be10b6):
+  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/b9484e13b8382dde180551ae3fb47dde32fff8e4(205f523c3c38afaa07ba68a7f7be10b6):
     dependencies:
       '@stylistic/eslint-plugin-js': 4.2.0(eslint@9.38.0(jiti@1.21.7))
       '@stylistic/eslint-plugin-jsx': 4.2.0(eslint@9.38.0(jiti@1.21.7))
@@ -13980,7 +13980,7 @@ snapshots:
       arg: 5.0.2
       sax: 1.4.1
 
-  sitemap@8.0.1:
+  sitemap@8.0.2:
     dependencies:
       '@types/node': 17.0.45
       '@types/sax': 1.2.7
