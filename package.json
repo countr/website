@@ -39,7 +39,7 @@
     "@docusaurus/theme-common": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
-    "@tsconfig/strictest": "2.0.6",
+    "@tsconfig/strictest": "2.0.7",
     "@types/react": "19.2.2",
     "discord-api-types": "0.38.31",
     "eslint": "9.38.0",
