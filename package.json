@@ -45,7 +45,7 @@
     "eslint": "9.39.4",
     "eslint-config-promise": "github:promise/eslint-config",
     "typescript": "6.0.3",
-    "wrangler": "4.86.0"
+    "wrangler": "4.87.0"
   },
   "browserslist": {
     "production": [
