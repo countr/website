@@ -19,9 +19,16 @@ const config: Config = {
   url: "https://countr.xyz",
   favicon: "/favicon.ico",
   tagline: "An advanced counting bot to manage a counting channel in your guild!",
+
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
   onDuplicateRoutes: "warn",
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownImages: "warn",
+      onBrokenMarkdownLinks: "warn",
+    },
+  },
 
   themeConfig: {
     colorMode: {
