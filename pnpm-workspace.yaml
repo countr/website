@@ -1,6 +1,5 @@
-onlyBuiltDependencies:
-  - core-js
-  - core-js-pure
-  - esbuild
-  - sharp
-  - workerd
+allowBuilds:
+  core-js: true
+  esbuild: true
+  sharp: true
+  workerd: true
