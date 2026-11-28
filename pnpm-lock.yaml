@@ -283,8 +283,8 @@ importers:
         specifier: 6.0.3
         version: 6.0.3
       wrangler:
-        specifier: 4.167.0
-        version: 4.167.0(@cloudflare/workers-types@5.20261125.1)(@types/node@26.4.0)
+        specifier: 4.168.0
+        version: 4.168.0(@cloudflare/workers-types@5.20261125.1)(@types/node@26.4.0)
 
 packages:
 
@@ -5000,8 +5000,8 @@ packages:
     peerDependencies:
       webpack: ^5.0.0
 
-  miniflare@5.20261123.0-beta:
-    resolution: {integrity: sha512-ObCOK12WQjUw2yWJH8olMzDSkXaj8xlmZkfJp0MU7y/gnvfv9cBGj9o075ywFeBCBoKopRy8J9Ci3Sh4cquoxg==}
+  miniflare@5.20261123.1-beta:
+    resolution: {integrity: sha512-o2a+xv6Ug144FgUJm7ciSWMiI7R0OH0svGCfqb1+6l9cUfZebc6YMWIK43PeyzWr3x6BLq2j4O9i8BsKk055oA==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
       kerberos: ^2.0.0
@@ -6942,8 +6942,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@4.167.0:
-    resolution: {integrity: sha512-9P1rSUpjH96RSIEntUjkycglR5m3WcwwYRjPqbf9VN83Wizhk5s7J+Q3g5eUZGGTgtPhv763KZ4hw3jFnUjlTg==}
+  wrangler@4.168.0:
+    resolution: {integrity: sha512-CqxlSPbapKwhH2moKcJlWCYqzB/Gk93rKQcul0KioLLYDKgJpuwuddE5rminAgDkI0YyEjzw4MoCasojog4lJw==}
     engines: {node: '>=22.12.0'}
     hasBin: true
     peerDependencies:
@@ -13411,7 +13411,7 @@ snapshots:
       tapable: 2.3.3
       webpack: 5.110.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.26))(csso@5.0.5)(esbuild@0.28.2)(html-minifier-terser@7.2.0)(postcss@8.5.26)
 
-  miniflare@5.20261123.0-beta(@types/node@26.4.0):
+  miniflare@5.20261123.1-beta(@types/node@26.4.0):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       sharp: 0.35.5(@types/node@26.4.0)
@@ -15721,7 +15721,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20261123.1
       '@cloudflare/workerd-windows-64': 1.20261123.1
 
-  wrangler@4.167.0(@cloudflare/workers-types@5.20261125.1)(@types/node@26.4.0):
+  wrangler@4.168.0(@cloudflare/workers-types@5.20261125.1)(@types/node@26.4.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.5.1
       '@cloudflare/unenv-preset': 2.16.2(unenv@2.0.0-rc.24)(workerd@1.20261123.1)
@@ -15731,7 +15731,7 @@ snapshots:
       cloudflare: 5.2.0
       devtools-protocol: 0.0.1182435
       esbuild: 0.28.2
-      miniflare: 5.20261123.0-beta(@types/node@26.4.0)
+      miniflare: 5.20261123.1-beta(@types/node@26.4.0)
       path-to-regexp: 6.3.0
       undici: 7.30.2
       unenv: 2.0.0-rc.24
